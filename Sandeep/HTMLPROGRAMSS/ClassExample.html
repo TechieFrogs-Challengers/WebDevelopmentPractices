@@ -1,0 +1,56 @@
+<!--Using The class Attribute
+The class attribute is often used to point to a class name in a style sheet. 
+It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+    In the following example we have three <div> elements with a class attribute with the 
+value of "city". All of the three <div> elements will be styled equally according to the .
+city style definition in the head section-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .city{
+            background-color: skyblue;
+            color: green;
+            border: 1.5px solid black;
+            margin: 2px;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="city">
+        <h2>Delhi</h2>
+        <p>Delhi  is the capital of India.</p>
+      </div>
+      
+      <div class="city">
+        <h2>Amaravathi</h2>
+        <p>Amaravathi is the capital of Andhra Pradesh.</p>
+      </div>
+      
+      <div class="city">
+        <h2>Hyderabad</h2>
+        <p>Hyderabad is the capital of Telengana.</p>
+      </div>
+      <p class="city">hi iam sandeep</p>
+</body>
+</html>
+<br><br><hr>
+<!--In the following example we have two <span> elements with a 
+ class attribute with the value of "note". Both <span>
+ elements will be styled equally according to the .note style definition in the head section-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+     .note {
+            font-size: 120%;
+            color: red;
+            }
+ </style>
+</head>
+<body>
+    <h1>Iam <span class="note">Sandeep</span> Maddipati</h1>
+<p>Iam from  <span class="note">Tadepalligudem</span> AP.</p>
+</body>
+</html>
