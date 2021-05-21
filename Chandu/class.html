@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class lay out</title>
+    </head>
+    <style>
+        .header{
+            background-color: tomato;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+        .nav{
+            background-color: #125b76;
+            padding: 5px;
+        }
+        .nav li{
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        .lside{
+            background-color: yellow;
+            padding: 10px;
+            width: 100%;
+           min-height: 100px;
+            text-align: center;
+            float: left;
+        }
+        .rside{
+            background-color: grey;
+            padding: 10px;
+            width: 20%;
+            min-height: 100px;
+            text-align: center;
+            float: right;
+        }
+        .footer{
+            background-color: #11bc67;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <h1>JavaTpoint</h1>
+        </div>
+        <div class="nav">
+           <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#Menu">Menu</a></li>
+               <li><a href="#About">About</a></li>
+               <li><a href="Contact">Contact</a></li>
+               <li style="float:right";><a href="#Sign in">Sign in</a></li>
+               <li style="float: right;"><a href="#Login in">Login in</a></li>
+           </ul>
+        </div>
+        <div class="lside">
+            <p>Write your Content Here</p>
+        </div>
+        <div class="risde">
+            <p>This is side</p>
+        </div>
+        <div class="footer">
+            <p>@ Copyright 2010</p>
+        </div>
+    </body>
+    
+</html>
