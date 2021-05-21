@@ -49,7 +49,7 @@
             </div>
         </div>
         <hr>
-        <form>
+        <form action="/Respond.php" id="form1" autocomplete="on">
             <div>
                 <div>
                     <div class="left marginleft">
@@ -71,9 +71,9 @@
                     </div>
         
                     <div class="left" style="margin-left: 30px;">
-                        <div class="margin"><input type="date" name="date" id="date" required></div>
+                        <div class="margin"><input type="date" name="date" id="date" required autofocus ></div>
                         <div class="margin">
-                            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                            <input type="text" name="fname" id="fname" placeholder="First Name" required >
                             <input style="margin-left: 5px;" type="text" name="lname" id="lname" placeholder="Last Name">
                         </div>
                         <div class="margin"><input type="text" name="compnay name" id="company name" required></div>
@@ -89,9 +89,9 @@
                                 maxlength="6">
                         </div>
                         <div class="margin">
-                            <input type="number" name="Areacode" id="Areacode" placeholder="Areacode" maxlength="2" required>
-                            <input style="margin-left: 5px;" type="number" name="Pnumber" id="Pnumber"
-                                placeholder="Phone Number" maxlength="10" required>
+                            <input type="text" name="Areacode" id="Areacode" placeholder="Areacode" maxlength="3" pattern="+[91]*" required>
+                            <input style="margin-left: 5px;" type="tel" name="Pnumber" id="Pnumber"
+                                placeholder="123-456-7890" maxlength="13"  pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" required >
                         </div>
                         <div class="left" style="margin-top: 30px;">
                             <div>
@@ -150,19 +150,19 @@
                             <label for="iteamPrice">
                                 <h4>Item Price</h4>
                             </label>
-                            <input class="size labbottom" type="number"><br>
+                            <input class="size labbottom" type="number" step="3"><br>
                             <input class="size labbottom" type="number"><br>
                             <input class="size labbottom" type="number"><br>
                             <input class="size labbottom" type="number"><br>
                             <input class="size labbottom" type="number"><br>
                         </div>
                         <div><input style="margin-top: 50px;" type="email" name="email" id="email"
-                                placeholder="example@gmail.com" required></div>
+                                placeholder="example@gmail.com" required formnovalidate="formnovalidate"></div>
                         <div style="margin-top: 30px;"><textarea rows="10" cols="50" name="signature" id="signature"
                                 required></textarea></div>
                         <div style="margin-top:30px;padding-bottom: 30px;">
-                            <input type="submit" value="Submit">
-                            <input style="margin-left: 20px;" type="submit" value="Print">
+                            <input type="submit" value="Submit" formaction="/action_page2.php" formtarget="_blank">
+                            <input style="margin-left: 20px;" type="submit" value="Print" formaction="/print.php">
                         </div>
         
                     </div>
@@ -174,6 +174,7 @@
         
         </form>
     </div>
+    <!-- comments data -->
     
 </body>
 </html>
