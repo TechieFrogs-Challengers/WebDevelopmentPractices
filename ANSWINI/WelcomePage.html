@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("E:\\webdesigncontent\\image6.jpg");
+    background-size:cover;
+}
+
+.box {
+	display: flex;
+    
+}
+
+.box .inner {
+	width: 400px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+    margin-top: 270px;
+}
+
+.box .inner:first-child {
+	background-color: rgb(92, 197, 205);
+	color: darkred;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+    
+}
+
+.box .inner:last-child {
+	background-color: rgb(90, 12, 80);
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner">
+          <span>WELCOME TECHIE</span>
+        </div>
+        <div class="inner">
+          <span>WELCOME TECHIE</span>
+        </div>
+      </div>
+</body>
+</html>

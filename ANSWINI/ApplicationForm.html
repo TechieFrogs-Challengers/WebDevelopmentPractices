@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <style>
+        .left{
+            float:left;
+        }
+        .right
+        {
+            float:right;
+        }
+        .margin{
+            margin-top: 24px;
+        }
+        .lmargin{
+            margin-top: 28px;
+        }
+        body {
+            background-image: url("E:\\webdesigncontent\\image7.jpg");
+            background-size: cover;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+        <div style="color:rgb(7, 105, 12);">
+            
+            <center>
+                <form action="WelcomePage.html" target="_blank">
+                    <input type = "image" name = "imagebutton" src="E:\webdesigncontent\home.jpg" style="width: 40px;height: 40px;margin-top: -10px;">
+                </form>
+                
+                <h1 style="font-family: 'Times New Roman', Times, serif ;margin-top: -8px;">JOB APPLICATION FORM </h1>
+            </center>
+        </div>
+    </div>
+    <form >
+        <div style="margin-left: 80px;">
+            <div class="left" style="margin-right: 30px;color:rgb(7, 105, 12);">
+                <div class="margin"><label for="name"> <b>Name</b> </label></div>
+                <div class="margin"><label for="gender"> <b>Gender</b> </label></div>
+                <div class="lmargin"><label for="dob"> <b>DOB</b> </label></div>
+                <div class="lmargin"><label for="email"> <b>Email</b> </label></div>
+                <div class="lmargin"><label for="phone"> <b>Mobile Number</b> </label></div>
+                <div class="lmargin"><label for="Id"> <b>Identity Proof</b> </label></div>
+                <div class="lmargin"><label for="study"> <b>Education</b> </label></div>
+                <div class="lmargin"><label for="exp"> <b>Experience</b> </label></div>
+                <div class="lmargin"><label for="technology"> <b>Technology</b> </label></div>
+                <div class="margin"><label for="address"> <b>Address</b> </label></div>
+                
+            </div>
+            <div class="left">
+                <div class="margin">
+                    <input type="text" name="fname" placeholder="First Name" autofocus required>
+                    <input type="text" name="lname" placeholder="Last Name">
+                </div>
+                <div class="margin"><input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Others
+                </div>
+                <div class="margin"><input type="date" name="dob"></div>
+                <div class="margin"><input type="email" name="mail" required autocomplete="name" placeholder="example@gmail.com"></div>
+                <div class="margin">
+                    <input list="Areacode" placeholder="Areacode">
+                    <datalist id="Areacode">
+                        <option value="91">
+                        <option value="95">
+                        <option value="35">
+                        <option value="21">
+                        <option value="18">
+                    </datalist>
+                    <input type="tel" name="number" placeholder="Mobile Number" pattern="[0-9]" maxlength="10">
+                </div>
+                <div class="margin"><input type="file" name="doc" accept=".jpg" ></div>
+                <div class="margin"><select name="Education" id="ed">
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="B.Com">B.Com</option>
+                </select></div>
+                <div class="margin"><input type="number" name="experience" placeholder="years"></div>
+                <div class="margin"><input type="checkbox" name="technology" value="java">
+                    <label for="tech">JAVA</label>
+                    <input type="checkbox" name="technology" value="python">
+                    <label for="tech">PYTHON</label>
+                    <input type="checkbox" name="technology" value="aws">
+                    <label for="tech">AWS</label>
+                    <input type="checkbox" name="technology" value="spring">
+                    <label for="tech">SPRING</label>
+                </div>
+                <div class="margin"><textarea name="address" id="1" cols="5" rows="3" style="width: 175px;height: 80px;" placeholder="write here.."></textarea></div>
+                <div class="margin">
+                    
+                    <input type="submit" value="Submit" style="background-color: rgb(110, 211, 85);">
+                    <input type="reset" value="Reset" style="background-color:indianred;margin-left: 15px;">
+                
+                </div> 
+                
+            </div>
+        </div>
+    </form>
+</body>
+</html>
