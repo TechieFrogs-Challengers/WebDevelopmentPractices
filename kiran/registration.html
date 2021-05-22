@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(60, 224, 19);
+        }
+        .oo{
+            text-align: center;
+            color: white;
+            font-size: 100%;
+            font-family: cursive;
+        }
+        .res1{
+            padding-left: 38%;
+            padding-top: 15px;
+            font-style: oblique;
+            color: white;
+            font-size:130%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h3 class="oo">Oorwin Employee Registration</h3>
+    <form action="/action_page.php">
+    <div class="res1">
+        <div class="res2" style="float:left;">FirstName :</div>
+        <div style="margin-left: 170px;"><input type="text" name="uname"  placeholder="Firstname"></div>
+        <br>
+        <div  class="res2"style="float:left;">LastName :</div>
+        <div style="margin-left: 170px;"><input type="text" name="uname"  placeholder="Lastname"></div>
+        <br>
+        <div class="res2" style="float:left;">Password :</div>
+        <div style="margin-left: 170px;"><input type="password" name="pwd"  placeholder="Password"></div>
+        <br>
+        <div class="res2" style="float:left;">Confirm Password :</div>
+        <div style="margin-left: 170px;"><input type="password" name="pwd"  placeholder="Confirm Password"></div>
+        <br>
+        <div class="res2" style="float:left;">Email :</div>
+        <div style="margin-left: 170px;"><input type="email" name="ename" placeholder="Email"></div>
+        <br>
+        <div class="res2" style="float:left;">Mobile No :</div>
+        <div style="margin-left: 170px;"><input type="number" name="uname"  placeholder="mobile no" maxlength="10"></div>
+        <br>
+        <div class="res2" style="float:left;">Alternative No :</div>
+        <div style="margin-left:170px;"><input type="number" name="uname"  placeholder="Alternative no" maxlength="10"></div>
+            <br>
+        <div class="res2" style="float:left;">Date Of Birth :</div>
+        <div style="margin-left: 170px;"><input type="date" name="uname"></div>
+        <br>
+        <div class="res2" style="float:left;">Gender :</div>
+        <div style="margin-left: 165px;"><input type="radio" name="uname">Male
+        <input type="radio" name="uname">Female</div>
+        <br>
+        <div class="res2" style="float:left;">Languages Known :</div>
+        <div style="margin-left: 165px;"><input type="checkbox" name="uname">Telugu
+            <input type="checkbox" name="uname">English
+            <input type="checkbox" name="uname">Hindhi</div>
+            <br>
+        <div class="res2" style="float:left;">Education :</div>
+        <div style="margin-left: 165px;"><input type="radio" name="uname">B.E/B.tech
+            <input type="radio" name="uname">B.com
+            <input type="radio" name="uname">Degree</div>
+            <br>
+        <div class="res2" style="float: left;">Web Technologies :</div>
+            <select name="dropdown" style="margin-left: 10px;">
+                    <option value="html" selected>HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JAVASCRIPT</option>
+                    <option value="jquery">JQuery</option>
+                    <option value="php">PHP</option>
+                    </select>
+                    <br><br>
+        <div class="res2" style="float:left;">Pincode :</div>
+        <div style="margin-left: 170px;"><input type="number" name="uname" placeholder="pincode" maxlength="6"></div>
+        <br>
+        <div class="res2" style="float:left;">Address :</div>
+        <div  class="res" style="margin-left: 170px;"><textarea name="ADDR" rows="4" cols="20" placeholder="enter your address"></textarea></div>
+        <div class="res2" style="float:left;">Upload file :
+        <input style="margin-left: 60px;" type="file" name="uname"></div><br><br>
+        <div class="res2" style="float: left;">
+            <input style="margin-left: 90px;" type="Button"onclick="alert('Your Registration is Successful!!!')" value="Submit">
+            <input type="Button"onclick="alert('Your Registration is Cancelled!!!')" value="Cancel">
+            <input type="reset">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
