@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase order</title>
+    <style>
+        .container{
+            margin-left: 15%;
+            margin-right: 20%;
+            background-color: white; 
+        }
+        .row1{
+            float: left;
+            margin-left: 50px;
+            font-size: 140%;
+            margin-top: 10px;
+        }
+        .row2{
+            margin-left: 60%;
+            font-size: 270%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:rgba(2, 36, 99, 0.829);
+        }
+        .row3{
+            margin-left: 50px;
+            float: left;
+        }
+        .row4{
+            margin-top: 2px;
+            margin-left: 68%;
+            float: left;
+        }
+        .tab1{
+            margin-right:35px;
+            float: right;
+            border: 0px solid black;
+        }
+        .row5{
+            margin-left: 50px;
+            float: left;
+        }
+        .row6{
+            padding-top: 3px;
+            margin-left: 70%;
+            float: left;
+        }
+        .tab2{
+            margin-right:35px;
+            margin-top: -4px;
+            float: right;
+            border: 0px solid black;
+        }
+        .row7{
+            margin-left: 50px;
+        }
+        .row8{
+            float: left;
+            background:rgba(2, 36, 99, 0.829);
+            width: 35%;
+            height: 23px;
+        }
+        .row8 span{
+            padding-top: -5px;
+            color: white;
+            margin-left: 25px;
+        }
+        .row9{
+           float: right;
+            margin-right:35px;
+            background:rgba(2, 36, 99, 0.829);
+            width: 35%;
+            height: 23px;
+        }
+        .row9 span{
+            padding-top: 2px;
+            color: white;
+            margin-left: 25px;
+        }
+        .row10{
+           
+           margin-top: -10px;
+           padding-left: -10px;
+        }
+        .row11{
+            float: right;
+            margin-top: -2%;
+            margin-right: 314px;
+        }
+        .row12{
+            float: right;
+            margin-top: -2%;
+            margin-right: 249px;
+        }
+        .row13{
+            float: right;
+            margin-top: -2%;
+            margin-right: 259px;
+        }
+        .row14{
+            float: right;
+            margin-top: -2%;
+            margin-right: 271px;
+        }
+        .row15{
+            float: right;
+            margin-right: 311px;
+        }
+        .tab3{
+            margin-right: 4%;
+        }
+        .tab3  tr td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .tab3  tr th{
+            width:5%;
+            color: white;
+            background-color: rgba(2, 36, 99, 0.829);
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .colo{
+            background-color: #fdfaf6;
+            text-align: right;
+            padding-right: 9px;
+        }
+        .list{
+            padding:1px;
+            float: left;
+            margin-left: 72%;
+        }
+        .tab4 tr td{
+            margin-right: -81%;
+            width: 163%;
+            float: right;
+            border: 1px solid black;
+            text-align: right; 
+        }
+        .colo1{
+            background-color: #fdfaf6;
+        }
+        .lcol{
+            text-align: left;
+            background-color:rgba(29, 83, 184, 0.829);
+        }
+        .last{
+            float: left;
+            margin-left: 10%;
+            margin-top: -8%;
+        }
+        .lasttab{
+            border: 1px solid black;
+            border-collapse:collapse;
+        }
+        .lasttab th td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .last table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        .last th, td {
+            padding: 1px;
+        }
+        .last th{
+            background-color: gray;
+            
+        }
+        .last th{
+            width:450px;
+        }
+        .lco tr td{
+            height: 10%;
+        }
+        .para{
+            float: right;
+            margin-top:5%;
+            margin-right: -2%;
+        }
+        .para1{
+            float: right;
+            margin-right:19%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">[Company Name]</div>
+        <div class="row2"> PURCHASE ORDER</div>
+        <div class="row3">[Street Address]</div>
+        <div class="row4">DATE</div>
+        <div>
+            <table class="tab1"><tr><td>9/17/2015</td></tr></table>
+        </div>
+        <div class="row5">[City, ST ZIP]</div>
+        <div class="row6">PO#</div>
+        <div>
+            <table class="tab2"><tr><td>[1234567]</td></tr></table>
+        </div>
+        <div class="row7">Phone: (000) 000-0000 
+        <div>FAX: (000) 000-0000</div>
+        <div>Website:</div><br>
+        <div class="row8"><span>VENDOR</span></div>
+        <div class="row9"><span>SHIPTO</span></div><br><br>       
+        <div class="row10">[Company Name]</div>
+        <div class="row11">[Name]</div>
+        <div>[Contact or Department]</div>
+        <div class="row12">[Company Name]</div>
+        <div>[Street Address]</div>
+        <div class="row13">[Street Address]</div>
+        <div>[City, ST ZIP]</div>
+        <div class="row14">[City, ST ZIP]</div>
+        <div class="row15">[Phone]</div>
+        <div>Phone: (000) 000-0000 </div>
+        <div>FAX: (000) 000-0000</div>
+        <div >FAX: (000) 000-0000</div><br>
+        <table class="tab3" style="border-collapse:collapse">
+        <tr>
+            <th style="width: 1%;">REQUISITIONER</th>
+            <th style="width: 3%;">SHIP VIA</th> 
+            <th style="width: 2%;">F.O.B.</th>
+            <th>SHIPPING TERMS</th>
+        </tr>
+        <tr>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+            <td>&nbsp</td>
+         </tr>
+        </table>
+        <br><br>
+        <table class="tab3" style="border-collapse:collapse">
+            <tr>
+                <th style="width: 1%;">ITEM #</th>
+                <th>DESCRIPTION</th> 
+                <th style="width: 1%;">QTY</th>
+                <th style="width: 1%;">UNIT PRICE</th>
+                <th style="width: 1%;">TOTAL</th>
+            </tr>
+            <tr>
+                <td>[23423423]</td>
+                <td>ProductXYZ</td>
+                <td style="text-align: center;">15</td>
+                <td style="text-align: right;">150.00</td>
+                <td class="colo">2,250.00</td>
+             </tr>
+             <tr>
+                <td>45645645</td>
+                <td>ProductABC</td>
+                <td style="text-align: center;">1</td>
+                <td style="text-align: right;">75.00</td>
+                <td class="colo">75.00</td>
+             </tr>
+             <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+             </tr>
+             <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+            </tr>   
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+            </tr>
+             <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+            </tr>        
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+             </tr>
+             <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td class="colo">-</td>
+             </tr>
+            </table>
+        <div class="list">
+            <div style="padding-top: 2px;">SUBTOTAL</div>
+            <div style="padding-top: 6px;">TAX</div>
+            <div style="padding-top: 4px;">SHIPPING</div>
+            <div style="padding-top: 4px;">OTHER</div>
+            <div style="padding-top: 4px;">TOTAL</div>
+            </div>
+            <div class="tab4">
+                <table style="border-collapse: collapse;">
+                    <tr>
+                        <td class="colo1">2,325.00</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="lcol">$&nbsp&nbsp2,325.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="last">
+                    <table>
+                        <tr>
+                          <th>Comment or Special Instructions</th>
+                          </tr>
+                        <tr>
+                          <td class="lco" style="padding-top:20%;" ></td>
+                        </tr>
+                      </table>               
+        <div class="para">If you have any questions about this purchase order,please contact</div>
+        <div class="para1">[Name, Phone #, E-mail]</div>
+        </div>
+    </div>
+    </body>
+</body>
+</html>

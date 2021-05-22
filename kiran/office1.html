@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <title>Office 365</title>
+    <style>
+ body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+	height:150%;
+	width:100%;
+	background: url('images/watercolor2.png');
+	background-size: cover;
+	background-position: cover;
+	position: relative;
+	box-sizing: border-box;
+	padding: 5px 0;
+}
+.navbar
+{
+	width:100%;
+	display: flex;	
+}
+.navbar .img1{
+    padding-left: 60px;
+	width: 75px;
+    height: 70px;
+	cursor: pointer;	
+}
+.navbar .buy{
+    border:1;
+}
+nav{
+	flex:1;
+	margin-left: 0px;
+}
+.navbar ul li{
+    
+    padding-left: 10px;
+	display: inline-block;
+	list-style: none;
+	margin: 10px 0px;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #333;
+	font-family:"Segoe UI";
+	font-weight: 400;
+	font-size: 15px;
+}
+.navbar ul li a i{
+    padding-left: 2px;
+    font-size: 13px;  
+}
+.paid {
+margin-top: 27px;
+text-decoration: none;
+}
+.paid a{
+    font-family:"Segoe UI";
+    font-weight: 200;
+    font-size: 16px;
+    padding-right: 10px;
+    color: black;
+}
+.paid a i{
+    padding-left: 2px;
+    font-size: 13px;
+}
+.login{
+    margin-right: 60px;
+}
+.login a{
+    margin-left: 20px;
+}
+.btn{
+   background-color: white;
+}
+.container2{
+   display: inline-block;
+   height: 30px;
+    background-color:cornflowerblue;
+    width: 100%;
+}
+.container2 p{
+    margin-left: 25px;
+    margin:6px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+    color: white;
+}
+.container2 p i{
+    padding-left: 2px;
+    font-size: 13px;
+}
+.ofc-img{
+    width:100%
+}
+.container3 h2{
+    margin-left:200px;
+    font-size: 40px;
+    font-family:"Segoe UI";
+    font-weight: 500;
+}
+.container3 ul li{
+    display: inline-block;
+    margin-left: 50px;
+    padding: 20px;
+}
+.container4{
+    background-color: #eeeeee;
+}
+.container4 h3{
+    margin-left:300px;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family:"Segoe UI";
+    font-weight: 500;
+}
+.container4 ul li{
+    display: inline-block;
+    margin-left: 220px;
+    padding:20px;
+    font-size: 30px;
+}
+.container5 h3{
+    margin-left: 700px;
+    padding: 20px;
+    font-family:"Segoe UI";
+    font-weight: 400;
+}
+.container5 ul li{
+    display: inline-block;
+    margin-left: 90px;
+    padding-left: 200px;
+}
+.container5 a{
+    color: black;
+}
+.footer1{
+    background-color: red;  
+}
+.ftr1{
+    position: absolute;
+	margin-left: 200px;
+	color: gray;
+}
+.ftr1 ul li{
+    padding-bottom: 10px;
+}
+.ftr1 ul li a{
+    font-family:"Segoe UI";
+    font-size: 10px;
+    padding-top: 10px;
+    color:gray;
+    text-decoration: none;
+    display: inline;
+}
+.ftr2{
+    position: absolute;
+	margin-left: 350px;
+	color: gray;
+}
+.ftr2 ul li a{
+    font-family:"Segoe UI";
+    font-size: 10px;
+    padding-top: 10px;
+    color:gray;
+    text-decoration: none;
+    display: inline;
+}
+.ftr2 ul li{
+    padding-bottom: 10px;
+}
+.ftr3 ul li a{
+    font-family:"Segoe UI";
+    font-size: 10px;
+    padding-top: 10px;
+    color:gray;
+    text-decoration: none;
+    display: inline;
+}
+.ftr3{
+    position: absolute;
+	margin-left: 550px;
+	color: gray;
+}
+.ftr3 ul li{
+    padding-bottom: 10px;
+}
+.ftr4 ul li a{
+    font-family:"Segoe UI";
+    font-size: 10px;
+    padding-top: 10px;
+    color:gray;
+    text-decoration: none;
+    display: inline;
+}
+.ftr4{
+    position: absolute;
+	margin-left:750px;
+	color: gray;
+}
+.ftr4 ul li{
+    padding-bottom: 10px;
+}
+.ftr5 ul li a{
+    font-family:"Segoe UI";
+    font-size: 10px;
+    padding-top: 10px;
+    color:gray;
+    text-decoration: none;
+    display: inline;
+}
+.ftr5{
+    position: absolute;
+	margin-left: 890px;
+	color: gray;
+}
+.ftr5 ul li{
+    padding-bottom: 10px;
+}
+.ftr6 ul li a{
+    font-family:"Segoe UI";
+    font-size: 10px;
+    padding-top: 10px;
+    color:gray;
+    text-decoration: none;
+    display: inline;
+}
+.ftr6{
+    position: absolute;
+	margin-left: 1100px;
+	color: gray;
+}
+.ftr6 ul li{
+    padding-bottom: 10px;
+}
+.ftr7 ul li a{
+    margin-top: 900px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="D:\KIRAN\html\HTML1\images\micro.jpg" class="img1">
+            <nav>
+                <ul>
+                    <li><a href="new" target="new"><b>|Office</b><i class="fas fa-angle-down"></i></a></li>
+                    <li><a href="new" target="new">Produts<i class="fas fa-angle-down"></i></a></li>
+                    <li><a href="new" target="new">Resources<i class="fas fa-angle-down"></i></a></li>
+                    <li><a href="new" target="new">Templetes</a></li>
+                    <li><a href="new" target="new">Support</a></li>
+                    <li><a href="new" target="new">My Account</a></li>
+                    <li><button class="btn"><a href="new" target="new" class="buy">Buy Now</a></button></li>
+                </ul>
+            </nav>
+            <span class="paid">
+                <a href="NEW" target="_blank" style="text-decoration: none">All Microsoft<i class="fas fa-angle-down"></i></a>
+                <span class="login">
+                <a href="NEW" target="_blank" style="text-decoration: none">Sign in <i class="fas fa-user-circle"></i></a></span>
+            </span>
+        </div>
+    </div>
+    <div class="container2">
+        <p>Remote Learning in education. Learn More<i class="fas fa-angle-right"></i></p>
+    </div>
+    <img src="D:\KIRAN\html\HTML1\images\officehome.jpg" class="ofc-img">
+    <div class="container3">
+        <h2>Sign in to use your favorite productivity apps from any device</h2>
+            <ul>
+                <li><img src="D:\KIRAN\html\HTML1\images\word1.jpg" width="100" height="80"></li>
+                <li><img src="D:\KIRAN\html\HTML1\images\excel.jpg" width="100" height="80"></li>
+                <li><img src="D:\KIRAN\html\HTML1\images\powerpoint.jpg" width="100" height="80"></li>
+                <li><img src="D:\KIRAN\html\HTML1\images\onenote.jpg" width="100" height="80"></li>
+                <li><img src="D:\KIRAN\html\HTML1\images\Onedrive.jpg" width="100" height="80"></li>
+                <li><img src="D:\KIRAN\html\HTML1\images\outlook.jpg" width="100" height="80"></li>
+                <li><img src="D:\KIRAN\html\HTML1\images\team.jpg" width="100" height="80"></li>
+            </ul>
+    </div>
+    <br>
+    <div>
+        <img src="D:\KIRAN\html\HTML1\images\officemotion.jpg" width="1500px">
+    </div>
+    <div class="container4">
+        <h3>Get the premium Office apps with Microsoft 365</h3>
+        <ul>
+            <li><i class="fas fa-home"></i></li>
+            <li><i class="fas fa-store"></i></li>
+            <li><i class="fas fa-city"></i></li>
+            <li><i class="fas fa-graduation-cap"></i></li>   
+        </ul>
+    </div>
+    <div class="container5">
+        <div>
+        <h3>Follow Office</h3>
+        <ul>
+            <li><a href="new" target="new"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="new" target="new"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="new" target="new"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="new" target="new"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+</div>
+</div>
+    <div class="footer1">
+        <div class="ftr1">
+            <ul type="none">
+            <li><a href="new" target="new"><b>What's new</b></a></li>
+            <li><a href="new" target="new">Surface Laptop 4</a></li>
+            <li><a href="new" target="new">Surface Laptop GO</a></li>
+            <li><a href="new" target="new">Surface Go 2</a></li>
+            <li><a href="new" target="new">Surface Pro X</a></li>
+            <li><a href="new" target="new">Surface Duo</a></li>
+            <li><a href="new" target="new">Microsoft 365</a></li>
+            <li><a href="new" target="new">Windows 10 apps</a></li>
+            <li><a href="new" target="new">HoloLens 2</a></li>
+            </ul>
+        </div>
+        <div class="ftr2">
+            <ul type="none">
+            <li><a href="new" target="new"><b>Microsoft Store</b></a></li>
+            <li><a href="new" target="new">Account  profile</a></li>
+            <li><a href="new" target="new">Download Center</a></li>
+            <li><a href="new" target="new">Microsoft Store support</a></li>
+            <li><a href="new" target="new">Returns</a></li>
+            <li><a href="new" target="new">Order tracking</a></li>
+            <li><a href="new" target="new">Virtual workshops and training</a></li>
+            <li><a href="new" target="new">Microsoft Store Promise</a></li>
+            <li><a href="new" target="new">Financing</a></li>
+            </ul>
+        </div>
+        <div class="ftr3">
+            <ul type="none">
+            <li><a href="new" target="new"><b>Education</b></a></li>
+            <li><a href="new" target="new">Microsoft in education</a></li>
+            <li><a href="new" target="new">Office for students</a></li>
+            <li><a href="new" target="new">Office 365 for schools</a></li>
+            <li><a href="new" target="new">Deals for students & parents</a></li>
+            <li><a href="new" target="new">Microsoft Azure in education</a></li>
+            </ul>
+        </div>
+        <div class="ftr4">
+            <ul type="none">
+            <li><a href="new" target="new"><b>Enterprise</b></a></li>
+            <li><a href="new" target="new">Azure</a></li>
+            <li><a href="new" target="new">AppSource</a></li>
+            <li><a href="new" target="new">Automotive</a></li>
+            <li><a href="new" target="new">Government</a></li>
+            <li><a href="new" target="new">Healthcare</a></li>
+            <li><a href="new" target="new">Manufacturing</a></li>
+            <li><a href="new" target="new">Financial services</a></li>
+            <li><a href="new" target="new">Retail</a></li>
+            </ul>
+        </div>
+        <div class="ftr5">
+            <ul type="none">
+            <li><a href="new" target="new"><b>Developer</b></a></li>
+            <li><a href="new" target="new">Microsoft Visual Studio</a></li>
+            <li><a href="new" target="new">Windows Dev Center</a></li>
+            <li><a href="new" target="new">Developer Center</a></li>
+            <li><a href="new" target="new">Microsoft developer program</a></li>
+            <li><a href="new" target="new">Channel 9</a></li>
+            <li><a href="new" target="new">Office Dev Center</a></li>
+            <li><a href="new" target="new">Microsoft Garage</a></li>
+            </ul>
+        </div>
+        <div class="ftr6">
+            <ul type="none">
+            <li><a href="new" target="new"><b>Company</b></a></li>
+            <li><a href="new" target="new">Careers</a></li>
+            <li><a href="new" target="new">About Microsoft</a></li>
+            <li><a href="new" target="new">Company news</a></li>
+            <li><a href="new" target="new">Privacy at Microsoft</a></li>
+            <li><a href="new" target="new">Investors</a></li>
+            <li><a href="new" target="new">Diversity and inclusion</a></li>
+            <li><a href="new" target="new">Accessibility</a></li>
+            <li><a href="new" target="new">Security</a></li>
+            </ul>
+        </div>
+    </div>
+    </body>
+    </html>
+
+    
+
+
+
