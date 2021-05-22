@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regestration Page</title>
+    <style>
+        .left {
+            float: left;
+            margin-left: 20px;
+        }
+
+        .margin {
+            margin-top: 30px;
+        }
+
+        .right {
+            float: right;
+            margin-top: -7px;
+        }
+
+        body {
+            background-image: url("D:\\Classes\\Web Technologies\\HTML\\Images\\image1.jpeg");
+            background-size: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <div>
+            <div style="color:yellow;">
+                <center>
+                    <h1 style="font-family: 'Times New Roman', Times, serif ;">Techiefrogs Registration Form </h1>
+                </center>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="left" style="width: 600px ;">
+            <div>
+                <div class="left margin">
+                    <label for="fname"><b>First Name :</b> </label>
+                    <input type="text" name="firstname" maxlength="15">
+                </div>
+
+            </div>
+            <div>
+                <div class="left margin" style="width: 600px;">
+                    <label for="lname"><b> Last Name : </b></label>
+                    <input type="text" name="Lastname" maxlength="15">
+                </div>
+            </div>
+            <div>
+                <div class="left margin">
+                    <label for="Education"><b>Education : </b></label>
+                    <select name="cources" style="margin-left: 8px;">
+                        <option value="b.tech">B.Tech</option>
+                        <option value="m.tech">M.Tech</option>
+                        <option value="bsc">B.SC</option>
+                        <option value="msc">M.SC</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <div class="left margin">
+                    <label for="pass out year" style="margin-left: 110px;"><b>Year Of Pass Out</b></label>
+                    <select name="pass out year">
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="left margin">
+                <label for="phone number"><b>Phone Number : </b></label>
+                <input type="text" name="phone number" maxlength="10" style="width: 180px;">
+            </div>
+
+            <div class="left margin">
+                <label for="gender"><b>Gender : </b></label>
+                <input type="radio" name="gender" value="male" checked>Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="others">Others
+            </div>
+
+            <div class="left margin">
+                <label for="Address"><b> Address : </b></label>
+                <br>
+                <textarea rows="10" cols="30" style="width: 330px;height: 103px; margin-left: 80px;"></textarea>
+            </div>
+
+            <div class="left margin">
+                <label for="email"><b>Email : </b></label>
+                <input type="email" name="email" style="width: 250px; margin-left: 85px;">
+            </div>
+
+            <div class="left margin">
+                <label for="password"><b>Password : </b></label>
+                <input type="password" name="password" style="margin-left: 60px;">
+            </div>
+
+            <div class="left margin">
+                <label for="re-type password"><b> Re-Type Password : </b></label>
+                <input type="password" name="password">
+            </div>
+
+            <div>
+
+                <div class="left margin" style="margin-left: 200px;">
+                    <button type="submit"> <b>Register</b></button>
+                </div>
+                <div class=" left margin">
+                    <button type="reset"> <b> Reset</b></button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

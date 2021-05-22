@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3 Schools</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+</head>
+<style>
+body{
+	padding:0;
+	margin:0;
+}
+.container{
+	height:150%;
+	width:100%;
+	background: url('images/watercolor2.png');
+	background-size: cover;
+	background-position: cover;
+	position: relative;
+	box-sizing: border-box;
+	padding: 5px 0;
+}
+.navbar
+{
+	width:100%;
+	display: flex;	
+}
+.navbar .logo{
+    padding-left: 20px;
+	width: 70px;
+    height: 70px;
+	cursor: pointer;	
+}
+nav{
+	flex:1;
+	margin-left: 0px;
+}
+nav ul li{
+    padding-left: 20px;
+	display: inline-block;
+	list-style: none;
+	margin: 10px 0px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #333;
+	font-family:"Segoe UI";
+	font-weight: 600;
+	font-size: 17px;
+}
+.paid {
+margin-top: 27px;
+text-decoration: none;
+font-family:"Segoe UI";
+font-weight: 400;
+font-size: 18px;
+color:black;
+}
+.paid a{
+    padding-right: 20px;
+    color: black;
+}
+.login{
+    margin-right: 60px;
+    background-color: rgb(4, 170, 109);;
+    border-radius: 25px;
+}
+.login a{
+    margin-left: 20px;
+}
+.row2{
+    width: 100%;
+    background-color: #282A35;
+    height: 50px;
+    display: inline-block;
+}
+.row2 ul li{
+    margin: 0;
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 0px;
+}
+.row2 a{
+    color: white;
+    font-family:"Segoe UI";
+    font-weight: 600;
+}
+.row2 ul li:hover{
+    background-color:black;
+    margin-left:10px;
+}
+.font{
+    margin-left: 400px;
+    color: white;
+}
+.list{
+	display: flex;
+	position: relative;
+}
+.list .Sidebar{
+	width: 250px;
+	height: 60%;
+	position: fixed;
+	background-color:#e6e6e6;
+	padding: 30px 0px;
+}
+.list .Sidebar ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list .Sidebar ul li{
+    padding-left:20px;
+    padding-bottom: 7px;
+	
+}
+.list .Sidebar ul li a{
+	color: black;
+	text-decoration: none;
+}
+.list .Sidebar ul li:hover{
+	background-color: rgba(128, 128, 128, 0.452);
+}
+.container.cl2{
+    width:1000%;
+    margin-left: 600px;
+}
+</style>
+<body>
+    <div class="container">
+		<div class="navbar">
+			<img src="D:\KIRAN\html\HTML1\images\W3.jpg" class="logo" width="20" height="50">
+			<nav>
+				<ul>
+		            <li><a href="NEW" target="_blank" style="text-decoration: none">Tutorials<i class="fas fa-caret-down"></i></a></li>
+		            <li><a href="NEW" target="_blank" style="text-decoration: none">References<i class="fas fa-caret-down"></i></a></li>
+		            <li><a href="NEW" target="_blank" style="text-decoration: none">Execrises<i class="fas fa-caret-down"></i></a></li>
+	            </ul>
+			</nav>
+            <span class="paid">
+			    <a href="NEW" target="_blank" style="text-decoration: none">Paid Courses</a>
+                <span class="login">
+                <a href="NEW" target="_blank" style="text-decoration: none">Login</a></span>
+            </span>
+		</div>
+    
+    <div class="row2">
+        <ul>
+                <li><a href="" target="new" style="text-decoration: none"><i class="fas fa-home"></i></a></li>
+                <li><a href="" target="new" style="text-decoration: none">HTML</a></li>
+                <li><a href="" target="new" style="text-decoration: none">CSS</a></li>
+                <li><a href="" target="new" style="text-decoration: none">JAVASCRIPT</a></li>
+                <li><a href="" target="new" style="text-decoration: none">JQuery</a></li>
+                <li><a href="" target="new" style="text-decoration: none">PYTHON</a></li>
+                <li><a href="" target="new" style="text-decoration: none">PHP</a></li>
+                <li><a href="" target="new" style="text-decoration: none">BOOTSTRAP</a></li>
+                <li><a href="" target="new" style="text-decoration: none">HOW TO</a></li>
+                <li><a href="" target="new" style="text-decoration: none">W3.CSS</a></li>
+                <li><a href="" target="new" style="text-decoration: none">JAVA</a></li>
+                <li><a href="" target="new" style="text-decoration: none">C</a></li>
+                <li><a href="" target="new" style="text-decoration: none">C++</a></li>
+                <li><a href="" target="new" style="text-decoration: none">R</a></li>
+            <span class="font">
+                <li><a href="new" target="new"><i class="fas fa-adjust"></i></a></li>
+                <li><a href="new" target="new"><i class="fas fa-globe-asia"></i></a></li>
+                <li><a href="new" target="new"><i class="fas fa-search"></i></a></li>
+            </span>
+        </ul>
+        </div>
+        <div class="list">
+            <div class="Sidebar">
+                <ul>
+                        <li><b>HTML TUTORIAL</b></li>
+                        <li><a href="new" target="new">HTML HOME</a></li>
+                        <li><a href="new" target="new">HTML Introduction</a></li>
+                        <li><a href="new" target="new">HTML Editors</a></li>
+                        <li><a href="new" target="new">HTML Basic</a></li>
+                        <li><a href="new" target="new">HTML Elements</a></li>
+                        <li><a href="new" target="new">HTML Attributes</a></li>
+                        <li><a href="new" target="new">HTML Headings</a></li>
+                        <li><a href="new" target="new">HTML Paragraphs</a></li>
+                        <li><a href="new" target="new">HTML Styles</a></li>
+                        <li><a href="new" target="new">HTML Formattings</a></li>
+                        <li><a href="new" target="new">HTML Quotations</a></li>
+                        <li><a href="new" target="new">HTML Comments</a></li>
+                        <li><a href="new" target="new">HTML Colors</a></li>
+                        <li><a href="new" target="new">HTML CSS</a></li>
+                        <li><a href="new" target="new">HTML Links</a></li>
+                        <li><a href="new" target="new">HTML Images</a></li>
+                        <li><a href="new" target="new">HTML Tables</a></li>
+                        <li><a href="new" target="new">HTML Lists</a></li>
+                        <!--<li><a href="new" target="new">HTML Block & Inline</a></li>
+                        <li><a href="new" target="new">HTML Classes</a></li>
+                        <li><a href="new" target="new">HTML Id</a></li>
+                        <li><a href="new" target="new">HTML JavaScript</a></li>
+                        <!--<li><a href="new" target="new">HTML File Paths</a></li>
+                        <li><a href="new" target="new">HTML Head</a></li>
+                        <li><a href="new" target="new">HTML Layout</a></li>
+                        <li><a href="new" target="new">HTML Responsive</a></li>
+                        <li><a href="new" target="new">HTML Computercode</a></li>
+                        <li><a href="new" target="new">HTML Semantics</a></li>
+                        <li><a href="new" target="new">HTML Style Guide</a></li>
+                        <li><a href="new" target="new">HTML Entites</a></li>
+                        <li><a href="new" target="new">HTML Symbols</a></li>
+                        <li><a href="new" target="new">HTML Emojis</a></li>
+                        <li><a href="new" target="new">HTML Charset</a></li>
+                        <li><a href="new" target="new">HTML URL Encode</a></li>
+                        <li><a href="new" target="new">HTML vs. XHTML</a></li>
+                        <li><a href="new" target="new"><b>HTML Forms</b></a></li>
+                        <li><a href="new" target="new">HTML Forms</a></li>
+                        <li><a href="new" target="new">HTML Form Attributes</a></li>
+                        <li><a href="new" target="new">HTML Form Elements</a></li>
+                        <li><a href="new" target="new">HTML Input Types</a></li>
+                        <li><a href="new" target="new">HTML Input Attributes</a></li>
+                        <li><a href="new" target="new">HTML Input Form Attributes</a></li>
+                        <li><a href="new" target="new"><b>HTML Graphics</b></a></li>
+                        <li><a href="new" target="new">HTML Canvas</a></li>
+                        <li><a href="new" target="new">HTML SVG</a></li>
+                        <li><a href="new" target="new"><b>HTML Media</b>></a></li>
+                        <li><a href="new" target="new">HTML Media</a></li>
+                        <li> <a href="new" target="new">HTML Video</a></li>
+                        <li><a href="new" target="new">HTML Audio</a></li>
+                        <li><a href="new" target="new">HTML Plug-ins</a></li>
+                        <li><a href="new" target="new">HTML YouTube</a></li>
+                        <li><a href="new" target="new"><b>HTML APis</b></a></li>
+                        <li><a href="new" target="new">HTML Geolocation</a></li>
+                        <li><a href="new" target="new">HTML Drag/Drop</a></li>
+                        <li><a href="new" target="new">HTML Web Storage</a></li>
+                        <li><a href="new" target="new">HTML Web Workers</a></li>
+                        <li><a href="new" target="new">HTML SSE</a></li>
+                        <li><a href="new" target="new"><b>HTML Examples</b></a></li>
+                        <li><a href="new" target="new">HTML Examples</a></li>
+                        <li><a href="new" target="new">HTML Quiz</a></li>
+                        <li><a href="new" target="new">HTML Exercises</a></li>
+                        <li><a href="new" target="new">HTML Certificate</a></li>
+                        <li><a href="new" target="new">HTML Summary</a></li>
+                        <li><a href="new" target="new">HTML Accessibility</a></li>-->
+                    </ul>
+            </div>
+        <div class="cl2">
+            <div>HTML Tutorial</div>
+        </div>
+    </div>
+    html
+</body>
+</html>

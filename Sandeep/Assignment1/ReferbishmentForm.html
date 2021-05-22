@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refurbishment Application</title>
+    <style>
+        .left{
+            float: left;
+        }
+        .margin{
+            margin-top: 30px;
+        }
+        .marginin{
+            margin-top: 10px;
+        }
+        .marginleft{
+            margin-left: 100px;
+        }
+        .size{
+            width: 70px;
+            
+        }
+        .labmargin{
+            margin-left: 12px;
+        }
+        .labbottom{
+            margin-bottom: 10px;
+        }
+        .list{
+            margin-bottom: 12px;
+        }
+        body{
+            background-image: url("D:\\Classes\\Web Technologies\\HTML\\Images\\image4.jpg");
+             background-size: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <legend>
+                    <center>x
+                        <h1 style="color: yellow;">Returned Inventory </h1>
+                    </center>
+                </legend>
+            </div>
+        </div>
+        <hr>
+        <form action="/Respond.php" id="form1" autocomplete="on">
+            <div>
+                <div>
+                    <div class="left marginleft">
+                        <div class="margin"><label for="date"><b>Today's Date </b></label></div>
+                        <div class="margin"><label for="name"><b>Name</b> </label></div>
+                        <div style="margin-top: 40px;"><label for="Company name"><b>Comapany Name</b></label></div>
+                        <div class="margin"><label for="Address"><b>Address</b></label></div>
+                        <div style="margin-top:130px;"><label for="pnumber"><b>Phone number</b></label></div>
+                        <div style="margin-top: 50px;"><label for="part id">
+                                <h4>Part Id</h4>
+                            </label></div>
+                        <div><input class="labbottom" type="text"></div>
+                        <div><input class="labbottom" type="text"></div>
+                        <div><input class="labbottom" type="text"></div>
+                        <div><input class="labbottom" type="text"></div>
+                        <div><input class="labbottom" type="text"></div>
+                        <div style="margin-top: 50px;"><label class="margin" for="email"><b>Email</b></label></div>
+                        <div style="margin-top:50px;"><label class="margin" for="signature"><b>signature</b></label></div>
+                    </div>
+        
+                    <div class="left" style="margin-left: 30px;">
+                        <div class="margin"><input type="date" name="date" id="date" required autofocus ></div>
+                        <div class="margin">
+                            <input type="text" name="fname" id="fname" placeholder="First Name" required >
+                            <input style="margin-left: 5px;" type="text" name="lname" id="lname" placeholder="Last Name">
+                        </div>
+                        <div class="margin"><input type="text" name="compnay name" id="company name" required></div>
+        
+                        <div class="margin">
+                            <input type="text" name="Street Name" id="Street Name" placeholder="Street Name" maxlength="50"><br>
+                            <input class="marginin" type="text" name="Land Mark" id="Land Mark" placeholder="Land Mark"
+                                maxlength="50"><br>
+                            <input class="marginin" type="text" name="City" id="City" placeholder="City" maxlength="25">
+                            <input style="margin-left: 5px;" type="text" name="State" id="State" placeholder="State"
+                                maxlength="25"><br>
+                            <input class="marginin" type="text" name="Zip Code" id="Zip Code" placeholder="Zip Code"
+                                maxlength="6">
+                        </div>
+                        <div class="margin">
+                            <input type="text" name="Areacode" id="Areacode" placeholder="Areacode" maxlength="3" pattern="+[91]*" required>
+                            <input style="margin-left: 5px;" type="tel" name="Pnumber" id="Pnumber"
+                                placeholder="123-456-7890" maxlength="13"  pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" required >
+                        </div>
+                        <div class="left" style="margin-top: 30px;">
+                            <div>
+                                <label for="part id">
+                                    <h4>weight</h4>
+                                </label>
+                                <input class="labbottom" type="text"><br>
+                                <input class="labbottom" type="text"><br>
+                                <input class="labbottom" type="text"><br>
+                                <input class="labbottom" type="text"><br>
+                                <input class="labbottom" type="text"><br>
+        
+                            </div>
+                        </div>
+                        <div class="left labmargin" style="margin-top: 30px;">
+                            <label for="part id">
+                                <h4>Quantity</h4>
+                            </label>
+                            <input class="size labbottom" type="number"><br>
+                            <input class="size labbottom" type="number"><br>
+                            <input class="size labbottom" type="number"><br>
+                            <input class="size labbottom" type="number"><br>
+                            <input class="size labbottom" type="number"><br>
+                        </div>
+                        <div class="left labmargin" style="margin-top: 30px;">
+                            <label for="Condition">
+                                <h4>Condition</h4>
+                            </label>
+                            <select class="list" name="condition" id="condition">
+                                <option value="Brand New">Brand New</option>
+                                <option value="Used">Used</option>
+                                <option value="Refurbished">Refurbished</option>
+                            </select><br>
+                            <select class="list" name="condition" id="condition1">
+                                <option value="Brand New">Brand New</option>
+                                <option value="Used">Used</option>
+                                <option value="Refurbished">Refurbished</option>
+                            </select><br>
+                            <select class="list" name="condition" id="condition2">
+                                <option value="Brand New">Brand New</option>
+                                <option value="Used">Used</option>
+                                <option value="Refurbished">Refurbished</option>
+                            </select><br>
+                            <select class="list" name="condition" id="condition3">
+                                <option value="Brand New">Brand New</option>
+                                <option value="Used">Used</option>
+                                <option value="Refurbished">Refurbished</option>
+                            </select><br>
+                            <select class="list" name="condition" id="condition4">
+                                <option value="Brand New">Brand New</option>
+                                <option value="Used">Used</option>
+                                <option value="Refurbished">Refurbished</option>
+                            </select>
+                        </div>
+                        <div class="left labmargin" style="margin-top: 30px;">
+                            <label for="iteamPrice">
+                                <h4>Item Price</h4>
+                            </label>
+                            <input class="size labbottom" type="number" step="3"><br>
+                            <input class="size labbottom" type="number"><br>
+                            <input class="size labbottom" type="number"><br>
+                            <input class="size labbottom" type="number"><br>
+                            <input class="size labbottom" type="number"><br>
+                        </div>
+                        <div><input style="margin-top: 50px;" type="email" name="email" id="email"
+                                placeholder="example@gmail.com" required formnovalidate="formnovalidate"></div>
+                        <div style="margin-top: 30px;"><textarea rows="10" cols="50" name="signature" id="signature"
+                                required></textarea></div>
+                        <div style="margin-top:30px;padding-bottom: 30px;">
+                            <input type="submit" value="Submit" formaction="/action_page2.php" formtarget="_blank">
+                            <input style="margin-left: 20px;" type="submit" value="Print" formaction="/print.php">
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+        
+            </div>
+        
+        </form>
+    </div>
+    <!-- comments data -->
+    
+</body>
+</html>
