@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+</head>
+<style>
+ body
+    {
+      margin-top:-20px;
+    }
+.main
+{
+ width:100%;
+ height:1300px;
+ background-color: rgb(237, 241, 248);
+ 
+}
+.col1
+{   
+    margin-top: -30px;
+    width:100%;
+    height:150px;
+    background-color: rgb(234, 243, 240);
+}
+.col2
+{    
+    
+    margin-top:-150px;
+    margin-right: -10px;
+    float:right;
+    width:60%;
+    height:200px;
+    
+}
+.headr1
+{
+    color: rgb(53, 77, 145);
+    font-size: 40px;
+    
+    margin-left: 380px;
+}
+.right
+{
+    float: right;
+    width:30%;
+    height:100px;
+}
+.company
+{
+    margin-top:30px;
+    margin-left:70px;
+}
+.r2
+{
+    width:100%;
+    height:150px;
+}
+.colr21
+{   
+    width:50%;
+    height:150px;
+    background-color: rgb(237, 241, 248);
+}
+.colr22
+{    
+    float:right;
+    width:50%;
+    height:150px;
+    background-color: rgb(237, 241, 248);
+    margin-top:-150px;
+}
+.vender
+{   
+    color:white;
+    background-color: rgb(53, 77, 145);
+    text-align: left;
+    margin-top:0px;
+    margin-left:50px;
+}
+.vendership
+{
+    color:white;
+    background-color: rgb(53, 77, 145);
+    text-align: left;
+    margin-top:0px;
+    margin-left:200px;
+}
+.colr21
+{
+    text-align: left;
+}
+
+ .input2
+ {
+     width:150px;
+ }
+ nav ul 
+{
+    display: inline-block;
+    
+}
+.Menu
+{
+    
+    height:40px;
+    background-color: rgb(53, 77, 145);
+}
+.Menu1
+{
+    width:100%;
+    display: inline-block;
+    height:40px;
+    background-color:rgb(53, 77, 145);
+}
+
+ul li
+
+{
+
+    display: inline-block;
+
+    margin-right: 160px;
+
+    margin-top: 0px;
+
+}
+
+.MenuItems ul li
+{
+display: inline-block;
+
+margin-right: 0px;
+
+margin-top: 0px;
+
+}
+nav ul li a
+
+{
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    color: white;
+
+    font-family: sans-serif;
+
+}
+.TABLE
+{
+    background-color:rgb(237, 241, 248) ;
+    width:100%;
+    height:20px;
+}
+
+.input11
+{
+  width:20%;
+}
+.input12
+{
+  width:20%;
+}
+
+.input13
+{
+  width:265px;
+}
+.input14
+{
+  
+  width:450px;
+}
+
+.input21
+{
+    width: 30%;
+}
+.input22
+{
+    width: 40%;
+}
+.input23
+{
+    width: 10%;
+}
+.input24
+{
+    width: 10%;
+}
+.input25
+{
+    width:5%;
+}
+.last
+{
+    background-color: rgb(237, 241, 248);
+    height:200px;
+    width:100%;
+}
+.lastmain1
+{
+   background-color: rgb(237, 241, 248);
+   width:50%;
+   height:200px;
+   margin-top:20px;
+   border-color: rgb(115, 117, 115);
+   border-style: solid;
+}
+.lastmain2
+{
+    float:right;
+    margin-top:-225px;
+    background-color: rgb(237, 241, 248);
+   width:40%;
+   height:200px;
+
+
+}
+.comment
+{
+    color:white;
+    background-color: rgb(53, 77, 145);
+    text-align: left;
+    margin-top:0px;
+    
+}
+.lastright
+{   
+    background-color:rgb(237, 241, 248);
+
+    float: right;
+    width:40%;
+    height:300px;
+    
+}
+.input31
+{
+    width:100px;
+    float:right;
+}
+.lasttext
+{
+    width:100%;
+    height: 100px;
+    margin-top:-10px;
+   background-color: (237, 241, 248);
+}
+.head4
+{
+    position:relative;
+}
+.input50
+{
+    width:99%;
+    height:175px;
+    margin-top:-20px;
+    
+    
+}
+
+</style>
+<div>
+    <div class="main" >
+        <div class="col1">
+                        <h2 class="company">[Company Name]</h2>
+                <pre>         [street Address] 
+         [City,ST ZIP]
+         Phone:(000) 000-0000
+         Fax:(000) 000-0000
+         Website:</pre>   
+                            
+        
+
+               <div class="col2">
+                    <h1 class="headr1">PURCHASE ORDER</h1>
+                   <div class="right"> 
+                        <lable>DATE</lable><input type=date name="dt"class="input1"><br>
+                        <lable>PO#</lable><input type=text name="PO#"class="input2">
+                    </div>
+                </div>
+        </div>
+          <div class="r2">
+                <div class="colr21">
+                        <h3 class="vender">VENDER</h3>
+            <pre>       [Company Name] 
+       [Contact or Department]           
+       [street Address]
+       Phone:(000) 000-0000
+       Fax:(000) 000-0000
+       Website:</pre>
+                </div>
+                   <div class="colr22">
+                        <h3 class="vendership">SHIPTO</h3>
+                        <pre>                            [Name]
+                            [Company Name] 
+                            [street Address] 
+                            [City,ST ZIP]
+                            [Phone]</pre>
+                               
+                    </div>
+                </div>
+      
+                       <div class="Menu">
+                            <nav>
+                                <ul id='MenuItems1'>
+                                    <li><a href='#'>REQUISITIONER</a></li>
+                                    <li><a href='#'>SHIP VIA</a></li>
+                                    <li><a href='#'>F.O.B</a></li>
+                                    <li><a href='#'>SHIPPING TERMS</a></li>
+                                    
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input11">
+                            <lable></lable><input type=text name="PO#"class="input12">
+                            <lable></lable><input type=text name="dt"class="input13">
+                            <lable></lable><input type=text name="PO#"class="input14">
+                        </div>
+
+
+                        <div class="Menu1">
+                            <nav>
+                                <ul >
+                                    <li class="elements"><a href='#'>ITEAM#</a></li>
+                                    <li class="elements"><a href='#'>DESCRIPTION</a></li>
+                                    <li class="elements"><a href='#'>QTY</a></li>
+                                    <li class="elements"><a href='#'>UNIT PRICE</a></li>
+                                    <li class="elements"><a href='#'>TOTAL</a></li>
+                                    
+                                </ul>
+                           
+                            </nav>
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21" placeholder="[123423423]">
+                            <lable></lable><input type=text name="PO#"class="input22" placeholder="ProductXYZ">
+                            <lable></lable><input type=text name="dt"class="input23"placeholder="15">
+                            <lable></lable><input type=text name="PO#"class="input24"placeholder="150.00">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="2,250.00">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21"placeholder="[45645645]">
+                            <lable></lable><input type=text name="PO#"class="input22"placeholder="ProductABC">
+                            <lable></lable><input type=text name="dt"class="input23"placeholder="1">
+                            <lable></lable><input type=text name="PO#"class="input24"placeholder="75.00">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="75.00">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+                        <div class="TABLE"> 
+                            <lable></lable><input type=text name="dt"class="input21">
+                            <lable></lable><input type=text name="PO#"class="input22">
+                            <lable></lable><input type=text name="dt"class="input23">
+                            <lable></lable><input type=text name="PO#"class="input24">
+                            <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
+                        </div>
+
+                     <div class="last">
+                         <div class="lastmain1">
+                            
+                            <h3 class="comment">Comments or special instruction</h3>
+                            <input type=text name="dt"class="input50">
+                               
+                        </div>
+                                <div class="lastmain2">
+                                    <div class="lastright">
+                                        
+                                         <lable>SUBTotal</lable><input type=text name="dt"class="input31"placeholder="$2,325.00">
+                                         <input type=text name="dt"class="input31"placeholder="-"><br><lable>TAX</lable>
+                                         <input type=text name="dt"class="input31"placeholder="-"><br><lable>SHIPPING</lable>
+                                         <input type=text name="dt"class="input31"placeholder="-"><br><lable>OTHER</lable>
+                                         <lable>TOTAL</lable><input type=text name="dt"class="input31"placeholder="$2,325.00"><br>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="lasttext">
+                                                                    <center> <h4 class="head4">if you have any questions about this purchase order,please contact </h4>
+                                 <h4 class="head4">[Name,Phone#,E-mail]</h4></center>
+                                </div>
+
+                      </div>
+
+
+
+            </div>
+    </div>    
+</body>
+</html>
