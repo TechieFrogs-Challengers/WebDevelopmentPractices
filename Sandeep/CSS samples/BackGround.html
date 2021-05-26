@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #example1 {
+            border: 10px solid yellow;
+            padding: 35px;
+            background: url(flower.jpg);
+            background-repeat: no-repeat;
+            color: blue;
+        }
+
+        #example2 {
+            border: 10px solid red;
+            padding: 35px;
+            background: url(flower.jpg);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            color: orangered;
+        }
+
+        #example3 {
+            border: 10px solid greenyellow;
+            padding: 35px;
+            background: url(flower.jpg);
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            color: crimson;
+        }
+        #example6 {
+            border: 10px dotted black;
+            padding: 35px;
+            background: yellow;
+            background-repeat: no-repeat;
+        }
+
+        #example4 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url(paper.jpg);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+
+        #example5 {
+            border: 10px dotted black;
+            padding: 35px;
+            background: url(paper.jpg);
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+        body{
+            background-color: orangered;
+            opacity: 80%;
+            color: white;
+        }
+        h2{
+            background-color: bisque;
+        }
+        p{
+            background-color: red;
+            opacity: 0.5;
+        }
+        div{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The background-origin Property</h1>
+
+    <p>No background-origin (padding-box is default):</p>
+    <div id="example1">
+        <h2>CSS</h2>
+        <p>CSS is the language we use to style a Web page..</p>
+        <p> CSS is the language we use to style a Web page..</p>
+    </div>
+
+    <p>background-origin: border-box:</p>
+    <div id="example2">
+        <h2>CSS</h2>
+        <p>CSS is the language we use to style a Web page..</p>
+        <p>CSS is the language we use to style a Web page..</p>
+    </div>
+
+    <p>background-origin: content-box:</p>
+    <div id="example3">
+        <h2>CSS</h2>
+        <p>CSS is the language we use to style a Web page..</p>
+        <p>CSS is the language we use to style a Web page..</p>
+    </div>
+    
+    <h1>The background-origin Property</h1>
+    
+    <p>No background-origin (padding-box is default):</p>
+    <div id="example6">
+        <h2>CSS</h2>
+        <p>CSS is the language we use to style a Web page..</p>
+        <p>CSS is the language we use to style a Web page..</p>
+    </div>
+    
+    <p>background-origin: border-box:</p>
+    <div id="example4">
+        <h2>CSS</h2>
+        <p>CSS is the language we use to style a Web page..</p>
+        <p>CSS is the language we use to style a Web page..</p>
+    </div>
+    
+    <p>background-origin: content-box:</p>
+    <div id="example5">
+        <h2>CSS</h2>
+        <p>CSS is the language we use to style a Web page..</p>
+        <p>CSS is the language we use to style a Web page..</p>
+    </div>
+
+</body>
+
+</html>

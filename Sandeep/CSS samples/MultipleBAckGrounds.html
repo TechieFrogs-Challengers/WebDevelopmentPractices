@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #example1 {
+            background-image: url(flower.jpg), url(paper.jpg);
+            background-position: right bottom , left top;
+            background-repeat: no-repeat, repeat;
+            padding: 15px;
+        }
+        #example2 {
+            background: url(flower.jpg) right center no-repeat, url(paper.jpg) left top repeat;
+            padding: 15px;
+        }
+        #example3 {
+            border: 1px solid black;
+            background: url(flower.jpg);
+            background-size: 100px 80px;
+            background-repeat: no-repeat;
+            padding: 15px;
+        }
+
+        #example4 {
+            border: 1px solid black;
+            background: url(flower.jpg);
+            background-repeat: no-repeat;
+            padding: 15px;
+        }
+        #example5 {
+            background: url(flower.jpg) left top no-repeat, url(flower.jpg) right bottom no-repeat, url(paper.jpg) left top repeat;
+            padding: 15px;
+            background-size: 50px, 130px, auto;
+        }
+        html { 
+            background: url(flower.jpg) no-repeat center fixed; 
+            background-size: cover;
+            
+        }
+        body{
+            color: solid 3px black;
+            
+        }
+        .hero-image {
+            background: url(flower.jpg) no-repeat center; 
+            background-size: cover;
+            height: 500px;
+            position: relative;
+        }
+
+.hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Multiple Backgrounds</h1>
+    <p>The following div element has two background images:</p>
+
+    <div id="example1">
+        <h1>CSS</h1>
+        <p>CSS is the language we use to style a Web page..</p>
+        <p> CSS is the language we use to style a Web page..</p>
+    </div>
+    <br><br><br>
+
+    <div id="example2">
+        <h1>CSS</h1>
+        <p>CSS is the language we use to style a Web page..</p>
+        <p> CSS is the language we use to style a Web page..</p>
+    </div>
+    <br><br><br>
+
+    <p>Resized background-image:</p>
+    <div id="example3">
+        <h1>CSS</h1>
+        <p>CSS is the language we use to style a Web page..</p>
+        <p> CSS is the language we use to style a Web page..</p>
+    </div>
+    
+    <p>Original size of the background-image:</p>
+    <div id="example4">
+        <h1>CSS</h1>
+        <p>CSS is the language we use to style a Web page..</p>
+        <p> CSS is the language we use to style a Web page..</p>
+    </div>
+    <br><br><br>
+    <div id="example5">
+    <h1>CSS</h1>
+    <p>CSS is the language we use to style a Web page..</p>
+    <p> CSS is the language we use to style a Web page..</p>
+    </div>
+    <br><br><br><br>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">I am John Doe</h1>
+            <h3>And I'm a Photographer</h3>
+            <button>Hire me</button>
+        </div>
+    </div>
+</body>
+
+</html>
