@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <Registration form>
+        </title>
+        <style>
+
+            .header
+            {
+               background-color: indigo;
+                color: dimgrey;
+                text-align: center;
+               
+            }
+            .pd
+            {
+                 background-color: lightslategray;
+                 color: black;
+                 margin-left: 370px;
+                 padding-top: 3px;
+                 width: 680px;
+                 height: 500px;   
+                 text-align: center;
+            }
+            .pd1
+            {
+                margin-left: 190px;
+                float: left;
+            }
+            .pd2
+            {
+                margin-right: 190px;
+                float: right;
+            }
+            .ld
+            {
+                background-color: lightslategray;
+                color: black;
+                margin-left: 370px;
+                padding-top: 5px;
+                width: 680px;
+                height: 140px;
+                text-align: center;
+            }
+            .ld1
+            {
+                margin-left: 185px;
+                float: left;
+            }
+            .ld2
+            {
+                margin-right: 190px;
+                float: right;
+            }
+            .q
+            {
+                background-color: lightslategray;
+                color: black;
+                margin-left: 370px;
+                padding-top: 5px;
+                width: 680px;
+                height: 215px;
+                text-align: center;
+            }
+            .q1
+            {
+                margin-left: 300px;
+                float: left;
+            }
+            .q1
+            {
+                width: 5000px;
+                margin-left: 1px;
+                height: 200px;
+            }
+
+            table, th, tr, td{
+                border:2px solid black;
+                border-collapse: collapse;
+                margin-left: 20px;
+            }
+            .pl
+            {
+                background-color: lightslategray;
+                color: black;
+                margin-left: 370px;
+                padding-top: 10px;
+                width: 680px;
+                height: 330px;
+                text-align: center;
+            }
+            .pl1
+            {
+                margin-left: 180px;
+                float: left;
+            }
+            .pl2
+            {
+                margin-right: 275px;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form>
+                 <div class="header">
+                    <h1>Registration Form</h1>
+                 </div>
+        
+                  <div class="pd">
+                    <h2><b>Personal Details : </b></h2>
+                         <div class="pd1">
+                            <label for="fname"><b>First name : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="text" name="fname" placeholder="Enter your first name">
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="lanme"><b>Last name : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="text" name="lname" maxlength="20" placeholder="Enter your last name">
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="Date of Birth" ><b>Date of Birth : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="date" name="date of birth" style="margin-right: 33px;">
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="email"><b>Email : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="email" name="email">
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="Mobile Number"><b>Mobile Number : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="tel" pattern="[0-9]{10}" name="Mobile Number">
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="Address"><b>Address Line 1: </b></label>
+                         </div>
+                         <div class="pd2">
+                            <textarea rows="1" cols="2" style="width: 170px;"></textarea>
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="Address"><b>Address Line 2: </b></label>
+                         </div>
+                         <div class="pd2">
+                            <textarea rows="1" cols="2" style="width: 170px;"></textarea>
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="City"><b>City : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="text" name="city">
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="State"><b>State : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="text" name="State">
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="Zip Code"><b>Zip Code : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="text" name="Zip Code" maxlength="6">
+                         </div>
+                         <br>
+                         <br>
+                        
+                         <div class="pd1">
+                            <label for="Photo"><b>Upload Photo : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="file" name="Upload Photo">
+                         </div>
+                    </div>   
+                    <br>
+                     
+                    <div class="ld">
+                        <h2><b>Login Details : </b></h2>
+                        <div class="ld1">
+                            <label for="username"><b>Username : </b></label>
+                        </div>
+                        <div class="ld2">
+                            <input type="text" name="username">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="ld1">
+                            <label for="password"><b>Password : </b></label>
+                        </div>
+                        <div class="ld2">
+                            <input type="password" name="password">
+                        </div>
+                    </div>
+                    <br>
+                <div class="q">
+                        <div class="qi"></div>
+                            <h2><b>Qualification details : </b></h2>
+                            <div class="q1">
+                               <table>
+                                  <tr>
+                                     <th>Qualification</th>
+                                     <th>Specialization</th>
+                                      <th>Passout Year</th>
+                                      <th>College Name</th>
+                               </tr>
+                               <tr>
+                                   <th>
+                                    <select name="Qualification">
+                                      <option value="M.tech">M.tech</option>
+                                       <option value="B.tech">B.tech</option>
+                                       <option value="M.B.A">M.B.A</option>
+                                       <option value="Class 12">Class 12</option>
+                                       <option value="Class 10">Class 10</option>
+                                     </th>
+                                     <th>
+                                     <input type="text" name="Specialization">
+                                     </th>
+                                     <th>
+                                     <input type="year" name="Passout year">
+                                     </th>
+                                     <th>
+                                        <input type="text" name="College name">
+                                     </th>
+                                     <tr>
+                                   <th>
+                                    <select name="Qualification">
+                                      <option value="M.tech">M.tech</option>
+                                       <option value="B.tech">B.tech</option>
+                                       <option value="M.B.A">M.B.A</option>
+                                       <option value="Class 12">Class 12</option>
+                                       <option value="Class 10">Class 10</option>
+                                     </th>
+                                     <th>
+                                     <input type="text" name="Specialization">
+                                     </th>
+                                     <th>
+                                     <input type="year" name="Passout year">
+                                     </th>
+                                     <th>
+                                        <input type="text" name="College name">
+                                     </th>
+                                     <tr>
+                                   <th>
+                                    <select name="Qualification">
+                                      <option value="M.tech">M.tech</option>
+                                       <option value="B.tech">B.tech</option>
+                                       <option value="M.B.A">M.B.A</option>
+                                       <option value="Class 12">Class 12</option>
+                                       <option value="Class 10">Class 10</option>
+                                     </th>
+                                     <th>
+                                     <input type="text" name="Specialization">
+                                     </th>
+                                     <th>
+                                     <input type="year" name="Passout year">
+                                     </th>
+                                     <th>
+                                        <input type="text" name="College name">
+                                     </th>
+                                     <tr>
+                                   <th>
+                                    <select name="Qualification">
+                                      <option value="M.tech">M.tech</option>
+                                       <option value="B.tech">B.tech</option>
+                                       <option value="M.B.A">M.B.A</option>
+                                       <option value="Class 12">Class 12</option>
+                                       <option value="Class 10">Class 10</option>
+                                     </th>
+                                     <th>
+                                     <input type="text" name="Specialization">
+                                     </th>
+                                     <th>
+                                     <input type="year" name="Passout year">
+                                     </th>
+                                     <th>
+                                        <input type="text" name="College name">
+                                     </th>
+                                   </select>
+                               </tr>
+                               </table>                         
+                            </div>
+                        </div>    
+                </div> 
+                <br>
+
+                <div class="pl">
+                    <h2><b>Professional Details : </b></h2>
+                    <div class="pl1">
+                        <label for="Technical Skills"><b>Technical Skills : </b></label>
+                    </div>
+                    <div class="pl2">
+                        <select name="Technical Skills" multiple>
+                            <option value="HTML" id="Technical Skills">HTML</option>
+                            <option value="CSS" id="Technical Skills">CSS</option>
+                            <option value="JavaScript" id="Technical Skills">JavaScript</option>
+                            <option value="PHP" id="Technical Skills">PHP</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+
+
+
+                    <div></div>
+                    <div class="pl1">
+                        <label for="Interested technologies"><b>Interested Technologies : </b></label>
+                    </div>
+                    <div class="pl2">
+                        
+                    </div>
+                    <div class="pl1">
+                        <label for="Interested technologies">Robotics</label>
+                    </div>
+                    <div class="pl2">
+<input type="checkbox" name="Interested technologies">
+                    </div>
+                </div>
+               
+
+
+
+                     
+                             <div>
+                                 
+                                 
+                             </div>
+                             <br>
+                             <div>
+                                 
+                                 
+                                
+                                 
+                                 <label for="Interested technologies">Internet of Things(IOT)</label>
+                                 <input type="checkbox" name="Interested technologies">
+                                 <label for="Interested technologies">Machine Learning</label>
+                                 <input type="checkbox" name="Interested technologies">
+                                 <label for="Interested technologies">Virtual Reality</label>
+                             </div>
+                             <br>
+                             <div>
+                                 <label for="Linkedin"><b>Linkedin Profile : </b></label>
+                                 <button>
+                                     <a href="https://www.linkedin.com/in/pusuluri-chandu-031a86190/">Linkedin Profile</a></button>
+                             </div>
+                             <br>
+                             <div>
+                                 <label for="Upload Profile"><b>Upload Profile : </b></label>
+                                 <input type="file" name="Upload Profile">
+                             </div>
+                             <br>
+                             <div>
+                                 <button type="submit">Submit</button>
+                                 <button type="reset">Reset</button>
+                             </div>
+                         </div>
+                     </div>
+            </form>
+        </div>
+    </body>
+</html>
