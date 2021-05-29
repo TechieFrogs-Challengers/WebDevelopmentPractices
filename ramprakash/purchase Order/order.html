@@ -14,12 +14,13 @@
 .main
 {
  width:100%;
- height:1300px;
+ height:1200px;
  background-color: rgb(237, 241, 248);
  
 }
 .col1
 {   
+    
     margin-top: -30px;
     width:100%;
     height:150px;
@@ -39,7 +40,7 @@
 {
     color: rgb(53, 77, 145);
     font-size: 40px;
-    
+    margin-top:7px;
     margin-left: 380px;
 }
 .right
@@ -122,7 +123,7 @@ ul li
 
     display: inline-block;
 
-    margin-right: 160px;
+    margin-right: 180px;
 
     margin-top: 0px;
 
@@ -173,16 +174,16 @@ nav ul li a
 .input14
 {
   
-  width:450px;
+  width:490px;
 }
 
 .input21
 {
-    width: 30%;
+    width: 20%;
 }
 .input22
 {
-    width: 40%;
+    width: 50%;
 }
 .input23
 {
@@ -190,11 +191,13 @@ nav ul li a
 }
 .input24
 {
-    width: 10%;
+    width:8%;
 }
 .input25
 {
-    width:5%;
+    background-color: rgb(245, 245, 245);
+    width:100px;
+    margin-right:1px;
 }
 .last
 {
@@ -218,15 +221,17 @@ nav ul li a
     background-color: rgb(237, 241, 248);
    width:40%;
    height:200px;
+   
 
 
 }
 .comment
 {
     color:white;
-    background-color: rgb(53, 77, 145);
+    background-color:rgb(145, 144, 144);
     text-align: left;
     margin-top:0px;
+    color: black;
     
 }
 .lastright
@@ -235,14 +240,32 @@ nav ul li a
 
     float: right;
     width:40%;
-    height:300px;
+    height:250px;
     
 }
 .input31
 {
     width:100px;
     float:right;
+    margin-top:-16px;
+    margin-right:5px;
 }
+.input32
+{
+    background-color: rgb(189, 244, 253);
+    width:100px;
+    float:right;
+    margin-top:-16px;
+    margin-right:5px;
+}
+.input30
+{
+    width:100px;
+    float:right;
+    margin-right:5px;
+    background-color: rgb(245, 245, 245);
+}
+
 .lasttext
 {
     width:100%;
@@ -262,9 +285,14 @@ nav ul li a
     
     
 }
+.input2
+{
+  width:140px;
+  margin-left:10px;
+}
 
 </style>
-<div>
+<body>
     <div class="main" >
         <div class="col1">
                         <h2 class="company">[Company Name]</h2>
@@ -312,30 +340,24 @@ nav ul li a
                                     <li><a href='#'>SHIP VIA</a></li>
                                     <li><a href='#'>F.O.B</a></li>
                                     <li><a href='#'>SHIPPING TERMS</a></li>
-                                    
                                 </ul>
                             </nav>
-
                         </div>
                         <div class="TABLE"> 
                             <lable></lable><input type=text name="dt"class="input11">
                             <lable></lable><input type=text name="PO#"class="input12">
                             <lable></lable><input type=text name="dt"class="input13">
                             <lable></lable><input type=text name="PO#"class="input14">
-                        </div>
-
-
-                        <div class="Menu1">
+                        </div><br>
+                     <div class="Menu1">
                             <nav>
                                 <ul >
-                                    <li class="elements"><a href='#'>ITEAM#</a></li>
-                                    <li class="elements"><a href='#'>DESCRIPTION</a></li>
-                                    <li class="elements"><a href='#'>QTY</a></li>
-                                    <li class="elements"><a href='#'>UNIT PRICE</a></li>
-                                    <li class="elements"><a href='#'>TOTAL</a></li>
-                                    
-                                </ul>
-                           
+                                    <li style=margin-left:50px;><a href='#'>ITEAM#</a></li>
+                                    <li style=margin-left:300px;><a href='#'>DESCRIPTION</a></li>
+                                    <li style=margin-right:90px;><a href='#'>QTY</a></li>
+                                    <li style=margin-right:10px;margin-left:5px;><a href='#'>UNIT PRICE</a></li>
+                                    <li style=margin-right:20px;><a href='#'>TOTAL</a></li>          
+                                </ul>   
                             </nav>
                         </div>
                         <div class="TABLE"> 
@@ -451,35 +473,29 @@ nav ul li a
                             <lable></lable><input type=text name="PO#"class="input25"placeholder="-">
                         </div>
 
-                     <div class="last">
-                         <div class="lastmain1">
+                 <div class="last">
+                        <div class="lastmain1">
                             
-                            <h3 class="comment">Comments or special instruction</h3>
+                            <h3 class="comment">Comments or special instructions</h3>
                             <input type=text name="dt"class="input50">
                                
                         </div>
                                 <div class="lastmain2">
                                     <div class="lastright">
                                         
-                                         <lable>SUBTotal</lable><input type=text name="dt"class="input31"placeholder="$2,325.00">
-                                         <input type=text name="dt"class="input31"placeholder="-"><br><lable>TAX</lable>
-                                         <input type=text name="dt"class="input31"placeholder="-"><br><lable>SHIPPING</lable>
-                                         <input type=text name="dt"class="input31"placeholder="-"><br><lable>OTHER</lable>
-                                         <lable>TOTAL</lable><input type=text name="dt"class="input31"placeholder="$2,325.00"><br>
+                                         <lable>SUBTotal<input type=text name="dt"class="input30"placeholder="$2,325.00"></lable>
+                                         <br><lable>TAX</lable><input type=text name="dt"class="input31"placeholder="-">
+                                         <br><lable>SHIPPING</lable><input type=text name="dt"class="input31"placeholder="-">
+                                         <br><lable>OTHER</lable><input type=text name="dt"class="input31"placeholder="-">
+                                         <br><lable>TOTAL</lable><input type=text name="dt"class="input32"placeholder="$2,325.00">
                                         
                                     </div>
-                                </div>
-
+                                </div><br><br><br>
                                 <div class="lasttext">
-                                                                    <center> <h4 class="head4">if you have any questions about this purchase order,please contact </h4>
-                                 <h4 class="head4">[Name,Phone#,E-mail]</h4></center>
+                                     <center> <h4 class="head4">if you have any questions about this purchase order,please contact </h4>
+                                               <h4 class="head4">[Name,Phone#,E-mail]</h4></center>
                                 </div>
-
-                      </div>
-
-
-
-            </div>
+                     </div>
     </div>    
 </body>
 </html>

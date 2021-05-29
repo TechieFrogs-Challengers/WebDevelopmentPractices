@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child Selector</title>
+    <style>
+        /*
+        p:nth-child(3)
+        {
+            background-color: blue;
+            color: whitesmoke;
+        }
+        */
+        p:nth-child(odd) {
+            background: yellow;
+            color: orangered;
+        }
+
+        p:nth-child(even) {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>para1</p>
+    <p>para2</p>
+    <p>para3</p>
+    <div>
+        <p>para4</p>
+        <div>
+            <p>para5</p>
+            <p>para6</p>
+            <p>para6a</p>
+        </div>
+        <p>para7</p>
+        <p>pra8</p>
+    </div>
+    <p>para9</p>
+    <p>para10</p>
+    <p>para11</p>
+</body>
+</html>
