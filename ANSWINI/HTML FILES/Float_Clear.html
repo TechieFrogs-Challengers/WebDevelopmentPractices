@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float and clear</title>
+    <style>
+      /*float decides the position where content should be: .
+        clear(both) cleans/avoids the remaining previous line spaces if left and gives position control to next new line*/
+      #first {
+        background-color: blue;
+        width: 500px;
+        height: 200px;
+        float: left;
+      }
+      #second {
+        background-color: yellow;
+        width: 500px;
+        height: 200px;
+        float: right;
+      }
+      #third {
+        background-color: red;
+        width: 400px;
+        height: 200px;
+        clear: both;
+        float: right;
+      }
+      #fourth {
+        background-color: tomato;
+        width: 200px;
+        height: 400px;
+        clear: both;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first"></div>
+    <div id="second"></div>
+    <div id="third"></div>
+    <div id="fourth"></div>
+  </body>
+</html>

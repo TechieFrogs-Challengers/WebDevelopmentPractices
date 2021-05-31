@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+    <style>
+      p[id="abc"] {
+        color: purple;
+      }
+      a[target] {
+        background-color: chartreuse;
+      }
+      a[target="_blank"] {
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      My world is my kids
+      <p id="abc">Iam lucky to have you guys in my life..only hope to live</p>
+    </h1>
+    <p>bye..bye</p>
+    <a href="www.w3schools.com">www.w3schools.com</a><br /><br />
+    <a href="www.w3schools.com" target="_blank">www.w3schools.com</a
+    ><br /><br />
+    <a href="www.w3schools.com" target="_self">www.w3schools.com</a>
+  </body>
+</html>

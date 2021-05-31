@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-class selectors</title>
+    <style>
+      /* any list element (first/last/nth/multiple of n)*/
+      li:first-child {
+        color: blue;
+        font: bold;
+      }
+      li:last-child {
+        color: green;
+        font: bold;
+      }
+      li:nth-child(3) {
+        color: cyan;
+        font: bold;
+      }
+      li:nth-child(2n) {
+        color: red;
+        font: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>E</li>
+      <li>F</li>
+      <li>G</li>
+    </ol>
+    <ul>
+      <li>Z</li>
+      <li>Y</li>
+      <li>X</li>
+      <li>W</li>
+      <li>V</li>
+      <li>U</li>
+      <li>T</li>
+    </ul>
+  </body>
+</html>

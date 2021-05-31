@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Project1.css" />
+  </head>
+
+  <body>
+    <form
+      action="https://www.enago.com/publication-support-services/images/submission-support-img.png"
+    >
+      <div>
+        <!--main div-->
+        <div>
+          <!--page heading-->
+          <center>
+            <h1>REGISTRATION FORM</h1>
+          </center>
+        </div>
+        <!--page heading-->
+        <div>
+          <!--section1-->
+
+          <table class="table1">
+            <tr class="personaldetails">
+              <td colspan="2">
+                <center>
+                  <h2>PERSONAL DETAILS</h2>
+                </center>
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft">
+                <label for="fname">First Name</label
+                ><span class="required">*</span>
+              </td>
+              <td class="padleft">
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  required
+                  maxlength="20"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft">
+                <label for="lname">Last Name</label
+                ><span class="required">*</span>
+              </td>
+              <td class="padleft">
+                <input
+                  class="mtop1"
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  required
+                  maxlength="20"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft"><label for="Gender">Gender</label></td>
+              <td class="padleft">
+                <input
+                  class="mtop1"
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  checked
+                />Male
+                <input
+                  class="mtop1"
+                  type="radio"
+                  name="gender"
+                  id="female"
+                />Female
+                <input
+                  class="mtop1"
+                  type="radio"
+                  name="gender"
+                  id="others"
+                />Others
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft"><label for="Dob">DOB</label></td>
+              <td class="padleft">
+                <input
+                  class="mtop1"
+                  type="date"
+                  name="dob"
+                  id="dob"
+                  style="width: 171px"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft">
+                <label for="email">Email</label><span class="required">*</span>
+              </td>
+              <td class="padleft">
+                <input
+                  class="mtop1"
+                  type="email"
+                  name="mailid"
+                  id="mailid"
+                  required
+                  placeholder="example@gmail.com"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft">
+                <label for="number">Mobile Number</label
+                ><span class="required">*</span>
+              </td>
+              <td class="padleft">
+                <input
+                  class="mtop1"
+                  type="tel"
+                  name="phonenumber"
+                  id="phonenumber"
+                  required
+                  pattern="[0-9]{10}"
+                  maxlength="10"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft"><label for="Address">Address</label></td>
+              <td class="padleft">
+                <textarea
+                  class="mtop1"
+                  name="Address"
+                  id="Address"
+                  cols="50"
+                  rows="8"
+                  style="width: 171px"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft">
+                <label for="city">City</label><span class="required">*</span>
+              </td>
+              <td class="padleft">
+                <input
+                  class="mtop1"
+                  type="text"
+                  name="city"
+                  id="city"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft">
+                <label for="city">City</label><span class="required">*</span>
+              </td>
+              <td class="padleft">
+                <input
+                  class="mtop1"
+                  type="text"
+                  name="state"
+                  id="state"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft">
+                <label for="state">State</label><span class="required">*</span>
+              </td>
+              <td class="padleft">
+                <input
+                  class="mtop1"
+                  type="text"
+                  name="state"
+                  id="state"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft">
+                <label for="zipcode">Zip Code</label
+                ><span class="required">*</span>
+              </td>
+              <td class="padleft">
+                <input
+                  class="mtop1"
+                  type="text"
+                  name="zipcode"
+                  id="zipcode"
+                  required
+                  pattern="[0-9]{6}"
+                  maxlength="6"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft"><label for="photo">Photo</label></td>
+              <td class="padleft">
+                <img
+                  src="E:\Web Designing\WebDevelopmentPractices\ANSWINI\CSS FILES\webdesigncontent\Education.jpg"
+                  width="350px"
+                  height="200px"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!--section1-->
+
+        <!--section2-->
+        <br />
+        <div>
+          <table class="table2">
+            <tr class="LoginDetails">
+              <td colspan="2">
+                <center>
+                  <h2>LOGIN DETAILS</h2>
+                </center>
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft"><label for="username">User Name</label></td>
+              <td class="padleft" style="padding-left: 110px">
+                <input
+                  class="margin"
+                  type="text"
+                  name="uname"
+                  id="uname"
+                  maxlength="20"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft"><label for="password">Password</label></td>
+              <td class="padleft" style="padding-left: 110px">
+                <input
+                  class="margin"
+                  type="password"
+                  name="pwd"
+                  id="pwd"
+                  minlength="8"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!--section2-->
+
+        <!--section3-->
+        <br />
+        <div>
+          <table class="table3">
+            <tr class="QualificationDetails">
+              <td colspan="4">
+                <center>
+                  <h2>QUALIFICATION DETAILS</h2>
+                </center>
+              </td>
+            </tr>
+            <tr>
+              <td>Qualification</td>
+              <td>Specialization</td>
+              <td>Year Of Pass</td>
+              <td>Institute Name</td>
+            </tr>
+            <tr>
+              <td>
+                <select name="qualify" id="qualify" style="width: 176px">
+                  <option value="select">--select--</option>
+                  <option value="post">Post Graduation</option>
+                  <option value="grad">Graduation</option>
+                  <option value="board">Plus Two</option>
+                  <option value="sboard">SSC</option>
+                </select>
+              </td>
+              <td><input type="text" name="special" id="special" /></td>
+              <td><input type="year" name="year" id="year" /></td>
+              <td><input type="text" name="colname" id="colname" /></td>
+            </tr>
+            <tr>
+              <td>
+                <select name="qualify" id="qualify1" style="width: 176px">
+                  <option value="select">--select--</option>
+                  <option value="post">Post Graduation</option>
+                  <option value="grad">Graduation</option>
+                  <option value="board">Plus Two</option>
+                  <option value="sboard">SSC</option>
+                </select>
+              </td>
+              <td><input type="text" name="special" id="special1" /></td>
+              <td><input type="year" name="year" id="year1" /></td>
+              <td><input type="text" name="colname1" id="colname1" /></td>
+            </tr>
+            <tr>
+              <td>
+                <select name="qualify" id="qualify2" style="width: 176px">
+                  <option value="select">--select--</option>
+                  <option value="post">Post Graduation</option>
+                  <option value="grad">Graduation</option>
+                  <option value="board">Plus Two</option>
+                  <option value="sboard">SSC</option>
+                </select>
+              </td>
+              <td><input type="text" name="special" id="special2" /></td>
+              <td><input type="year" name="year" id="year2" /></td>
+              <td><input type="text" name="colname2" id="colname2" /></td>
+            </tr>
+            <tr>
+              <td>
+                <select name="qualify" id="qualify3" style="width: 176px">
+                  <option value="select">--select--</option>
+                  <option value="post">Post Graduation</option>
+                  <option value="grad">Graduation</option>
+                  <option value="board">Plus Two</option>
+                  <option value="sboard">SSC</option>
+                </select>
+              </td>
+              <td><input type="text" name="special" id="special3" /></td>
+              <td><input type="year" name="year" id="year3" /></td>
+              <td><input type="text" name="colname2" id="colname3" /></td>
+            </tr>
+          </table>
+        </div>
+        <!--section3-->
+        <br />
+
+        <!--section4-->
+        <div>
+          <table class="table4">
+            <tr class="TechnicalSkills">
+              <td colspan="2">
+                <center>
+                  <h2>TECHNICAL SKILLS</h2>
+                </center>
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft">
+                <label for="skills">Technical Skills</label>
+              </td>
+              <td
+                class="padleft4"
+                style="padding-top: 10px; padding-left: 60px"
+              >
+                <select
+                  name="tehnicalskills"
+                  id="tehnicalskills"
+                  multiple
+                  style="width: 176px"
+                >
+                  <option value="select">--select--</option>
+                  <option value="Java">Java</option>
+                  <option value="c">C</option>
+                  <option value="C++">C++</option>
+                  <option value="Sql">SQL</option>
+                  <option value="Php">PHP</option>
+                  <option value=".net">.Net</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft">
+                <label for="technologies">Interested Technologies</label>
+              </td>
+              <td
+                class="padleft4"
+                style="padding-top: 20px; padding-left: 60px"
+              >
+                <input type="checkbox" value="AWS" />AWS <br />
+                <input type="checkbox" value="Devops" />Devops <br />
+                <input type="checkbox" value="Data Science" />Data Science
+                <br />
+                <input type="checkbox" value="Python" />Python <br />
+                <input type="checkbox" value="Java" />Java
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft">
+                <label for="linkedin">LinkedIn Profile</label>
+              </td>
+              <td class="padleft4" style="padding-left: 60px">
+                <a href="https://www.linkedin.com/"
+                  >https://www.linkedin.com/</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft"><label for="resume">Upload Resume</label></td>
+              <td class="padleft4" style="padding-left: 60px">
+                <input
+                  type="file"
+                  name="resume"
+                  id="resume"
+                  accept=".doc/.pdf/"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="padleft"><label for="note">Note</label></td>
+              <td class="padleft4" style="padding-left: 60px">
+                <textarea
+                  name="note"
+                  id="note"
+                  cols="50"
+                  rows="8"
+                  placeholder="write here.."
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!--section4-->
+        <br />
+        <div>
+          <table class="table5">
+            <tr>
+              <center>
+                <input class="mtop1" type="submit" value="Submit" />
+                <input class="mtop1" type="reset" value="Reset" />
+              </center>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!--main div-->
+    </form>
+  </body>
+</html>
