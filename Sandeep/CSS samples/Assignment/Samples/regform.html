@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="RegForm.css" />
+</head>
+
+<body>
+    <form action="https://www.enago.com/publication-support-services/images/submission-support-img.png">
+        <div>
+            <div>
+                <center>
+                    <h1>REGISTRATION FORM</h1>
+                </center>
+            </div>
+            <hr>
+            <div>
+                <div class="left margleft1">
+                    <div><label for="fname">First Name</label><span class="required">*</span></div>
+                    <div style="margin-top: 22px">
+                        <label for="lname">Last Name</label><span class="required">*</span>
+                    </div>
+                    <div style="margin-top: 22px">
+                        <label for="Gender">Gender</label>
+                    </div>
+                    <div style="margin-top: 22px"><label for="Dob">DOB</label></div>
+                    <div style="margin-top: 23px"><label for="email">Email</label><span class="required">*</span></div>
+                    <div style="margin-top: 23px">
+                        <label for="number">Mobile Number</label><span class="required">*</span>
+                    </div>
+                    <div style="margin-top: 24px">
+                        <label for="Address">Address</label>
+                    </div>
+                    <div style="margin-top: 135px"><label for="city">City</label><span class="required">*</span></div>
+                    <div style="margin-top: 23px"><label for="state">State</label><span class="required">*</span></div>
+                    <div style="margin-top: 23px">
+                        <label for="zipcode">Zip Code</label><span class="required">*</span>
+                    </div>
+                    <div style="margin-top: 23px"><label for="photo">Photo</label></div>
+                    <div style="margin-top: 23px">
+                        <label for="username">User Name</label>
+                    </div>
+                    <div style="margin-top: 23px">
+                        <label for="password">Password</label>
+                    </div>
+                    <div style="margin-top: 23px">
+                        <label for="qualify">Qualification</label>
+                    </div>
+                    <div style="margin-top: 23px">
+                        <label for="special">Specialization</label>
+                    </div>
+                    <div style="margin-top: 23px">
+                        <label for="pass">Year Of Pass</label>
+                    </div>
+                    <div style="margin-top: 23px">
+                        <label for="cname">College Name</label>
+                    </div>
+                    <div style="margin-top: 23px">
+                        <label for="skills">Technical Skills</label>
+                    </div>
+                    <div style="margin-top: 64px">
+                        <label for="technologies">Interested Technologies</label>
+                    </div>
+                    <div style="margin-top: 23px">
+                        <label for="link">LinkeIn Profile</label>
+                    </div>
+                    <div style="margin-top: 23px">
+                        <label for="resume">Upload Resume</label>
+                    </div>
+                    <div style="margin-top: 23px">
+                        <label for="note">Note</label>
+                    </div>
+                </div>
+                <div class="left margleft2 ">
+                    <input type="text" name="fname" id="fname" required maxlength="20">
+                    <br>
+                    <input class="mtop1" type="text" name="lname" id="lname" required maxlength="20">
+                    <br>
+                    <input class="mtop1" type="radio" name="gender" id="male">Male
+                    <input class="mtop1" type="radio" name="gender" id="female">Female
+                    <br>
+                    <input class="mtop1" type="date" name="dob" id="dob"> <br>
+                    <input class="mtop1" type="email" name="mailid" id="mailid" required
+                        placeholder="example@gmail.com"><br>
+                    <input class="mtop1" type="tel" name="phonenumber" id="phonenumber" required pattern="[0-9]{10}">
+                    <br>
+                    <textarea class="mtop1" name="Address" id="Address" cols="50" rows="8"></textarea>
+                    <br>
+                    <input class="mtop1" type="text" name="city" id="city" required>
+                    <br>
+                    <input class="mtop1" type="text" name="state" id="state" required>
+                    <br>
+                    <input class="mtop1" type="text" name="zipcode" id="zipcode" required pattern="[0-9]{6}">
+                    <br>
+                    <input class="mtop1" type="file" name="photo" id="photo" accept="image/*">
+                    <br>
+                    <input class="mtop1" type="text" name="uname" id="uname" maxlength="20">
+                    <br>
+                    <input class="mtop1" type="password" name="pwd" id="pwd" minlength="8">
+                    <br>
+                    <select class="mtop1" name="qualify" id="qualify" style="width: 178px;">
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="B.sc">B.Sc</option>
+                        <option value="MBA">MBA</option>
+                    </select>
+                    <br>
+                    <input class="mtop1" type="text" name="special" id="special">
+                    <br>
+                    <input class="mtop1" type="year" name="year" id="year">
+                    <br>
+                    <input class="mtop1" type="text" name="colname" id="colname">
+                    <br>
+                    <select class="mtop1" name="tehnicalskills" id="tehnicalskills" multiple style="width: 178px;">
+                        <option value=""></option>
+                        <option value="Java">Java</option>
+                        <option value="c">C</option>
+                        <option value="C++">C++</option>
+                        <option value="Sql">SQL</option>
+                        <option value="Php">PHP</option>
+                        <option value=".net">.Net</option>
+                    </select>
+                    <br>
+                    <input class="mtop1" type="checkbox" value="AWS">AWS
+                    <input class="mtop1" type="checkbox" value="Devops">Devops
+                    <input class="mtop1" type="checkbox" value="Datascience">DataScience
+                    <input class="mtop1" type="checkbox" value="Python">Python
+                    <br>
+                    <input class="mtop1" type="url" name="linkedin" id="linkedin"
+                        placeholder="http://linkedin.com/username">
+                    <br>
+                    <input class="mtop1" type="file" name="resume" id="resume" accept=".doc/.pdf/">
+                    <br>
+                    <textarea class="mtop1" name="note" id="note" cols="50" rows="8"
+                        placeholder="write here.."></textarea>
+                    <br>
+                    <input class="mtop1" type="submit" value="Submit">
+                    <input class="mtop1" type="reset" value="Reset">
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

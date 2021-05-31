@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First-Child Pseudo-class</title>
+    <style>
+        p:first-child{
+            color: whitesmoke;
+            background-color: orangered;
+            border: double 1px black;
+        }
+    </style>
+</head>
+<body>
+    <p>para1</p>
+    <p>para2</p>
+    <div>
+        <p>para3</p>
+        <p>para4</p>
+        <div>
+            <p>para5</p>
+        </div>
+    </div>
+    <p>para6</p>
+</body>
+</html>

@@ -1,0 +1,281 @@
+*{
+    margin:0%;
+    padding: 0%;
+  }
+  .personalHead
+  {
+    margin-left: 40px;
+    font-family:'Times New Roman';
+    text-shadow:0px 0px 3px rgb(248, 30, 201);
+    padding: 10px; 
+  }
+  input:hover
+  {
+     background-color: rgb(228, 228, 228);
+  }
+  .qualifyhead,.techhead
+  {
+    margin-left: 300px;
+    font-style: normal;
+    text-shadow:0px 0px 1px rgb(17, 17, 17) ;
+  }
+  .loginhead
+  {
+    margin-left: 400px;
+  }
+  
+  .techhead
+  {
+     margin-top: 10px;
+  }
+  .lab
+  {
+    margin-left:300px;
+  }
+  .reg
+  {
+    background-color: rgb(43, 41, 41);
+    font-size:50px;
+    color:white;
+  }
+  #nameline2
+  {
+     margin-left:110px ;
+     margin-top:10px;
+     width:300px;
+    height:30px;
+  }
+  #email{
+     margin-left: 40px;
+     width:300px;
+    height:30px;
+    font-size: 18px;
+  }
+  #emails{
+     margin-left: 50px;
+     width:300px;
+    height:30px;
+  }
+  #ul
+  {
+    margin-left: 550px;
+    margin-top:-20px;
+  }
+  .personaldetails
+  {
+    
+    background-color: rgb(187, 228, 255);
+    width:70%;
+    height:950px;
+    margin:0px 0px 0px 200px;
+    color:rgb(0, 0, 0);
+    font-size: 20px; 
+  }
+  .personaldetails:hover
+  {
+    width: 70%;
+    height:950px;
+    background-color: rgb(121, 187, 241);
+    box-shadow: 10px 8px 26px rgb(12, 12, 12);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .loginm
+  {
+    background-color: rgb(125, 177, 177);
+    width:100%;
+    height:330px;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  .loginm:hover
+  {
+    width: 100%;
+    height:330px;
+    background-color:rgb(44, 205, 216) ;
+    box-shadow: 10px 8px 26px rgb(12, 12, 12);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .qual
+  {
+    background-color: rgb(231, 231, 231);
+    width:100%;
+    height:400px;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  .qual:hover
+  {
+    width: 100%;
+    height:400px;
+    background-color: rgb(171, 172, 171);
+    box-shadow: 10px 8px 26px rgb(12, 12, 12);
+    transition: 0.5s;
+  }
+  .multi
+  {
+    background-color: rgb(177, 204, 134);
+    width:100%;
+    height:400px;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  .multi:hover
+  {
+    width: 100%;
+    height:400px;
+    background-color: rgb(162, 219, 71);
+    box-shadow: 10px 8px 26px rgb(12, 12, 12);
+    transition: 0.5s;
+  }
+  .tech
+  {
+    background-color: rgb(238, 232, 155);
+    width:100%;
+    height:500px;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  .tech:hover
+  {
+    width: 100%;
+    height:500px;
+    background-color: rgb(250, 216, 62);
+    box-shadow: 10px 8px 26px rgb(12, 12, 12);
+    transition: 0.5s;
+  }
+#linkedin
+{
+  text-decoration: none;
+  display:inline-block;
+  background-color: rgb(98, 98, 245);
+  color:white;
+  padding:12px 20px;
+  margin-left:90px;
+}
+#linkedin:hover
+{
+  background-color: blue;
+  padding: 12px 30px;
+  box-shadow: 10px 8px 26px rgb(12, 12, 12);
+}
+
+th
+  {
+    background-color: rgb(85, 85, 253);
+  }
+.tablediv
+{
+  background-color: rgb(184, 184, 184);
+}
+#zip
+{
+  margin-left:23px;
+  width:300px;
+  height:30px;
+  font-size: 18px;
+}
+#tleft
+{
+  margin-left:300px;
+}
+ 
+  .required
+  {
+    color:red;
+  }
+
+  #name
+  {
+    width:300px;
+    height:30px;
+    font-size: 18px;
+  }
+  #e
+  {
+    width:205px;
+    height:30px;
+  }
+
+  .multihead
+  {
+    margin-top:10px;
+    margin-left: 60px;
+    text-shadow:0px 0px 3px rgb(20, 20, 20) ;
+  }
+  #submit:hover
+  {
+    width: 20%;
+    height:30px;
+    background-color: rgb(72, 245, 72);
+    box-shadow: 0 8px 16px rgb(13, 14, 13);
+  }
+  #submit
+  {
+    width: 20%;
+    height:30px;
+    background-color:rgb(85, 252, 160) ;
+    border-radius: 8px;
+  }
+  #reset
+  {
+    width:20%;
+    height:30px; 
+    margin-right: 50px;
+    background-color: rgb(224, 253, 55);
+    border-radius: 8px;
+  }
+  #reset:hover
+  {
+    background-color: rgb(253, 67, 67);
+  }
+  input[type=text],select
+  {  
+     color:darkblue;
+     border-radius: 4px;
+     border:1px solid rgb(158, 158, 158);
+     font-size: 18px;
+  }
+ li
+ {
+    text-decoration: none;
+ }
+  .main
+  {
+    height: 2800px;
+    background-color: rgb(221, 251, 253);
+  }
+  #address
+  {
+    width:300px;
+    height:100px;
+  }
+  #nam
+  {
+    margin-left:12px;
+  }
+  #tskills
+  {
+    width:300px;
+    height:85px;
+    margin-left:90px;
+    background-color: rgb(219, 212, 212);
+  }
+  option
+  {
+    text-align:center;
+  }
+  #note
+  {
+    width:80%;
+    height:200px;
+    margin-left:150px;
+    font-size: 18px;
+    color:blue;
+    font-family:sans-serif;
+  }
+  .multihead
+  {
+    margin-left:400px;
+  }

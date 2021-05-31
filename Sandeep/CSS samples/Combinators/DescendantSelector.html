@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector</title>
+    <style>
+        div p{
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>para0</p>
+    <div>
+        <p>paragraph1</p>
+        <p>paragraph2</p>
+        <div><div><p>para3 <div>para4</div></p></div></div>
+        <p>para5</p>
+        <div>
+            <p>para6</p>
+            <div>
+                <p>para7</p>
+            </div>
+            <p>para8</p>
+        </div>
+    </div>
+    <p>para9</p>
+    <p>para10</p>
+</body>
+</html>

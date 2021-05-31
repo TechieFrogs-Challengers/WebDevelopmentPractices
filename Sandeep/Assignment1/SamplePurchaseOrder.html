@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purchase order</title>
+    <title>PurchaseOrder</title>
     <style>
         .left{
             float: left;
@@ -14,53 +14,246 @@
         }
         .boxed {
             border: 1px solid green ;
+            padding-left: 5px;
+            padding-right: 5px;
         }
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .info{
+            margin-top: 30px;
+            margin-right: 300px;
+            margin-left: -180px;
+            padding-bottom: 30px;
+        }
+        .shipto{
+            background-color:rgba(3, 2, 87, 0.945);
+            color: white;
+            margin-top: 40px;
+            width: 300px;
+        }
+        .purchaseorder{
+            height: 50px;width: 300px;
+            margin-right: 80px;
+            color: blueviolet;
+        }
+        .blueclr{
+            background-color:rgba(3, 2, 87, 0.945);
+            color: white;
+        }
+        .colcolor{
+            background-color: rgb(219, 219, 231);
+        }
+       
     </style>
 </head>
+
 <body>
-    <div>
+
+    <form action="">
+
         <div>
-            <div >
-                <div><h3>[Company Name]</h3></div>
-                <div><ui>[Street Address]</ui></div>
-                <div><ui>[City,ST,Zip]</ui></div>
-                <div><ui>Phone:7893421117</ui></div>
-                <div><ui>Fax:8332092349</ui></div>
-                <div><ui>WebSite:www.company.com</ui></div>
-            </div>
-            <div >
-                <div class="right">
-                    <div><h2>PURCHASE ORDER</h2></div>
-                <div><ui>Date: <ui class="boxed">9/17/2020</ui></ui></div>
-                <div> <ui>PO# <ui class="boxed">[123456]</ui></ui> </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-    </div>
-    <div>
-        <div >
+
             <div>
-                    <div><h2>VENDOR</h2></div>
-                    <div><ui>[Company Name]</ui></div>
-                    <div><ui>[Contact or Department]</ui></div>
-                    <div><ui>[Street Address]</ui></div>
-                    <div><ui>[City,ST,ZIP]</ui></div>
-                    <div><ui>Fax:8332092349</ui></div>
-                    <div><ui>WebSite:www.company.com</ui></div>
+                <div class="left" style="width: 30%;margin-left: 200px;">
+                    <ui><h3>[Company Name]</h3></ui>
+                    <ui>[Street Address]</ui><br>
+                    <ui>[City,ST,Zip]</ui><br>
+                    <ui>Phone:7893421117</ui><br>
+                    <ui>Fax:8332092349</ui><br>
+                    <ui>Website:www.abcd.com</ui><br><br>
+
+                    <ui ><h4 class="blueclr" style="width: 300px; height: 30px;padding-top: 8px; padding-left: 10px;">VENDOR</h4></ui>
+                    <ui>[Company Name]</ui><br>
+                    <ui>[Contact or Department]</ui><br>
+                    <ui>[Street Address]</ui><br>
+                    <ui>[City,ST,Zip]</ui><br>
+                    <ui>Phone:9948141932</ui><br>
+                    <ui>Fax:8332832655</ui><br>
+                    
+                </div>
+
+                <div class="right" style="width: 30%;margin-right: 180px;">
+                    <ui><h1 class="purchaseorder">PURCHASE ORDER</h1></ui>
+                    <ui style="margin-left: 160px;">DATE <ui class="boxed">21/05/2021</ui></ui><br>
+                    <ui style="margin-left: 172px;">PO# <ui class="boxed">[63258740]</ui></ui><br><br>
+
+                    <ui ><h4 class="shipto" style="height: 30px;padding-top: 8px;padding-left: 10px;">SHIP TO</h4></ui>
+                    <ui>[Name]</ui><br>
+                    <ui>[Company Name]</ui><br>
+                    <ui>[Street Address]</ui><br>
+                    <ui>[City,ST,Zip]</ui><br>
+                    <ui>[Phone]</ui><br>
+                </div>
             </div>
-            <div class="right" >
-                    <div><h2>VENDOR</h2></div>
-                    <div><ui>[Company Name]</ui></div>
-                    <div><ui>[Contact or Department]</ui></div>
-                    <div><ui>[Street Address]</ui></div>
-                    <div><ui>[City,ST,ZIP]</ui></div>
-                    <div><ui>Fax:8332092349</ui></div>
-                    <div><ui>WebSite:www.company.com</ui></div>
+
+            <div class="left" style="margin-top: 80px;">
+
+                <table style="width: 870px;margin-left: 200px;">
+                    <tr class="blueclr" > 
+                        <th>REQUISITIONER</th>
+                        <th>SHIP VIA</th>
+                        <th>F.O.B</th>
+                        <th>SHIPPING TERMS</th>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <table style="width: 870px;margin-left: 200px;">
+                    <tr class="blueclr" > 
+                        <th>ITEM #</th>
+                        <th>DESCRIPTION</th>
+                        <th>QTY</th>
+                        <th style="width: 95px;">UNIT PRICE</th>
+                        <th>TOTAL</th>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td>100</td>
+                        <td>laptop</td>
+                        <td> <center>1</center> </td>
+                        <td><center>80,000</center></td>
+                        <td class="colcolor">80,000</td>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td>105</td>
+                        <td>iphone 10xr</td>
+                        <td><center>1</center></td>
+                        <td><center>80,500</center></td>
+                        <td class="colcolor">80,500</td>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="colcolor"></td>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="colcolor"></td>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="colcolor"></td>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="colcolor"></td>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="colcolor"></td>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="colcolor"></td>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="colcolor"></td>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="colcolor"></td>
+                    </tr>
+                    <tr style="height: 25px;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="colcolor"></td>
+                    </tr>
+                </table>
             </div>
-        </div>        
-    </div>
+
+            <div >
+                <div class="left" style="width: 30%;margin-left: 200px;margin-top: 20px;">
+                    <table style="width: 500px;">
+                        <tr class="colcolor">
+                            <th>Comments or Special Instructions</th>
+                        </tr>
+                        <tr style="height: 80px;">
+                            <td ></td>
+                        
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="right" style="margin-right: 261px;">
+                    <table style="width: 269px;">
+                        <tr>
+                            <td style="width: 95px;">SUBTOTAL</td>
+                            
+                            <td class="colcolor">1,60,500</td>
+                        </tr>
+                        <tr>
+                            <td>TAX</td>
+                            <td>-</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>SHIPPING</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>OTHERS</td>
+                            <td>-</td>
+                        </tr>
+                        <tr style="height: 3px;"></tr>
+                        <tr >
+                            <td>TOTAL</td>
+                            <td class="colcolor">1,60,500</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="left info">
+                <center>
+                    <p>If you have any questions about this purchase order,please contact</p>
+                    <p>[Name,Phone#,Email]</p>
+                    <br>
+                    <input type="submit" value="Submit">
+                    <input type="submit" value="Print">
+                    <input type="reset" value="Cancel">
+                </center>
+            </div>
+            
+
+        </div>
+
+    </form>
+
 </body>
+
 </html>

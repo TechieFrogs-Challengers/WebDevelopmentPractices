@@ -1,0 +1,114 @@
+body {
+  background-color: peru;
+}
+
+input:invalid {
+  background-color: rgb(189, 235, 99);
+  color: black;
+}
+
+input:focus {
+  background-color: plum;
+  color: black;
+}
+input[type="text"] {
+  width: 169px;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+input[type="text"]:focus {
+  width: 250px;
+}
+.required {
+  color: red;
+}
+hr {
+  margin-bottom: 35px;
+  margin-top: 5px;
+  border: 1px outset white;
+}
+select option:hover {
+  background-color: darkcyan;
+  color: white;
+}
+.qualify:hover {
+  background-color: darkcyan;
+  color: white;
+}
+h1 {
+  background-color: rgb(231, 216, 197);
+  color: brown;
+}
+input:checked {
+  height: 15px;
+  width: 15px;
+}
+.mtop1[type="submit"]:hover {
+  background-color: yellow;
+  color: blue;
+  margin-right: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.mtop1[type="reset"]:hover {
+  background-color: crimson;
+  color: yellow;
+  margin-left: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+div label {
+  font-weight: bolder;
+}
+
+table {
+  width: 800px;
+  font-size: large;
+  margin-left: 250px;
+}
+/*Section 1 */
+.personaldetails {
+  background-color: darksalmon;
+}
+.table1 {
+  background-color: skyblue;
+}
+textarea {
+  width: 180px;
+  height: 50px;
+}
+
+/*Section2*/
+.LoginDetails {
+  background-color: blue;
+  color: white;
+}
+.table2 {
+  background-color: cornflowerblue;
+}
+.margin {
+  margin-right: 40px;
+}
+/*Section3*/
+.QualificationDetails {
+  background-color: crimson;
+  color: white;
+}
+.table3 {
+  background-color: indianred;
+}
+/* Section4*/
+.TechnicalSkills {
+  background-color: darkgreen;
+  color: white;
+}
+.table4 {
+  background-color: chartreuse;
+}
+.table5 {
+  padding-bottom: 50px;
+}
+
+tr {
+  height: 50px;
+}
