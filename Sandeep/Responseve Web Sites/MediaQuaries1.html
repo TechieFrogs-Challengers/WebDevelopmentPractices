@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: orangered;
+            color: wheat;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .menu li:hover {
+            background-color:black;
+        }
+
+        .aside {
+            background-color: yellow;
+            padding: 15px;
+            color: red;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .footer {
+            background-color: green;
+            color: wheat;
+            text-align: center;
+            font-size: large;
+            padding: 15px;
+        }
+
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+            .aside {
+                background-color: black;
+                padding: 15px;
+                color: white;
+                text-align: center;
+                font-size: 14px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            }
+            p{
+                color: crimson;
+                font-weight: bolder;
+                font-size: xx-large;
+            }
+            .footer {
+                background-color: yellowgreen;
+                color: black;
+                text-align: center;
+                font-size: large;
+                padding: 15px;
+            }
+            .menu li {
+                padding: 8px;
+                margin-bottom: 7px;
+                background-color:darkmagenta;
+                color: white;
+                font-weight: bold;
+            }
+            .header {
+                background-color: yellow;
+                color: red;
+                padding: 15px;
+            }
+            h1{
+                font-size: xx-large;
+                color:brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sandeep</h1>
+    </div>
+    
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>Address</li>
+                <li>Mobile Number</li>
+                <li>Job</li>
+                <li>Status</li>
+            </ul>
+        </div>
+    
+        <div class="col-6">
+            <h1>Sandeep</h1>
+            <p>Iam MAddipati S V K Sandeep,Iam From tadepalligudem,West godavari. my number is 7893421117</p>
+            <p>Iam a inter trinee and iam un maried</p>
+        </div>
+    
+        <div class="col-3 right">
+            <div class="aside">
+                <h2>Name?</h2>
+                <p>Maddipati Sai Venkata Krishna Sandeep </p>
+                <h2>Address?</h2>
+                <p>My Home town is Tadeppaligudem west godavari andhrapradesh</p>
+                <h2>Mobile number?</h2>
+                <p>My contact Number is 7893421117</p>
+                <h2>Job?</h2>
+                <p>Currently working as Inter Trinne in techi frogs</p>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Above all are my details declared is geniune</p>
+    </div>
+
+</body>
+</html>
