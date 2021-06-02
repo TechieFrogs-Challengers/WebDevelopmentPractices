@@ -1,0 +1,161 @@
+.Section1{
+    background-color: rgb(0, 162, 255);
+    border: 2px solid rgb(8, 147, 240);
+    border-radius: 1px;
+    height: 60px;
+}
+.Sub-1{
+    float: left;
+    color: white;
+    padding-top: 10px;
+    padding-left: 70px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.Sub-2{
+    color: white;
+    cursor: pointer;
+    float: right;
+    padding-top: 20px;
+    padding-right: 90px;
+}
+.Sub-2:hover{
+    color: #000;
+}
+.Sub-2 a{
+    color: white;
+    text-decoration: none;
+}
+.Sub-2 a:hover{
+    color:#000;
+}
+.Sub-3{
+    float: right;
+    cursor: pointer;
+    color: white;
+    padding-top: 20px;
+    padding-right: 70px;    
+}
+.Sub-3 a{
+    color: white;
+    text-decoration: none;
+}
+.Sub-3 a:hover{
+    color:#000;
+}
+.Se2-1{
+    border: 0px solid beige;
+    border-radius: 0px;
+    border-bottom: 3px solid rgb(91, 172, 248);
+}
+.Se2-1 ul li{
+    display: inline-block;
+    margin-left: 100px;
+    padding-left: 50px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.Se2-1 ul li:hover{
+    color: rgb(5, 108, 204);
+}
+.profile a{
+    text-decoration: none;
+    color: black;
+}
+.profile a:hover{
+    color: rgb(5, 108, 204);
+}
+.plan a{
+    text-decoration: none;
+    color: black;
+}
+.plan a:hover{
+    color: rgb(5, 108, 204);
+}
+.Contact a{
+    text-decoration: none;
+    color: black;
+}
+.Contact a:hover{
+    color: rgb(5, 108, 204);
+}
+.Join a{
+    text-decoration: none;
+    color: black;
+}
+.Join a:hover{
+    color: rgb(5, 108, 204);
+}
+.Support a{
+    text-decoration: none;
+    color: black;
+}
+.Support a:hover{
+    color: rgb(5, 108, 204);
+}
+.img1{
+    margin-top: -5%;
+    width: 700px;
+    margin-right: 100px;
+    float: right;
+}
+.Section3 h1{
+    font-family: cursive;
+    font-weight: bolder;
+    margin-top: 10%;
+    margin-left: 115px;
+    color: rgb(42, 154, 245);
+}
+.Section3 a{
+    text-decoration: none;
+   color: black;
+}
+.Section3 a i{
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size:10px;
+}
+.Section3 a:hover{
+    color:rgb(30, 139, 240);
+}
+.Section3 p{
+    margin-top: -1%;
+    font-family: cursive;
+    text-align: justify;
+    margin-left: 115px;
+}
+.Section3::after{
+    content: "";
+    clear: both;
+    display:table; 
+}
+.meet{ 
+    width: 15%;
+    height: 3%;
+    margin-left: 250px;
+    border: 1px solid rgb(52, 150, 241);
+    border-radius: 10px;
+    background-color: rgb(52, 150, 241);
+}
+.meet h3{
+    margin-left: 50px;
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+}
+.meet a:hover{
+    color: white;
+    text-decoration: none;
+}
+hr{
+   
+    width: 1200px;
+    height: 5px;
+}
+.foot{
+    border: 1px solid gray;
+    background-color: gray;
+}
+.foot p{
+    text-align: center;
+}
