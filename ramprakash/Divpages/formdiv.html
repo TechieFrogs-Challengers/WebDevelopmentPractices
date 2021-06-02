@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormUsingdivs</title>
+</head>
+<style>
+    body
+    {
+      margin: 0%;
+    }
+    .container {
+  width: 100%;
+  height:600px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+   
+    label
+    { 
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+  .row1
+ {
+   width:12%;
+  background-color: blue;
+  float: left;
+  margin-top: 12px;
+}
+    .col1 
+    {
+     float:left;
+     width: 75%;
+     margin-top: 6px;
+     padding-top: 6px;
+    }
+
+    input[type=text], select, textarea 
+    {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+.row:after
+ {
+  content: "";
+  display: table;
+  clear: both;
+}
+.submit
+        { 
+            
+          float:left;
+          width:10%;
+          height:22px;
+          border:none;
+          color:rgb(20, 19, 19);
+          margin-left: 40px;
+          text-align: center;
+          display:block;
+          font-size:16px;
+          margin:4px 300px;
+          border: 2PX solid #949794;
+          transition-duration: 0.4s;
+          cursor:pointer;
+          
+
+          }
+          .submit a{
+            text-decoration: none;
+            color:black;
+          }
+          .submit:hover
+          {
+            background-color: rgb(70, 201, 18);
+            color: rgb(247, 255, 247);
+            box-shadow: 0 8px 16px rgb(13, 14, 13);
+          }
+        
+
+</style>
+<body>
+     <div class="container">
+        <form action="/action_page.php">
+         <div class="row">
+            <div class="row1">
+                <label id="name">firstName:</label> 
+            </div>
+        
+            <div class="col1">
+             <input type="text" id="fname"Name="firstname" placeholder="Enter a firstname">
+            </div>
+        </div>
+        <div class="row">
+            <div class="row1">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col1">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+
+
+          <div class="row">
+               <div class="row1">
+                   <label id="name">lastName:</label> 
+                </div>
+        
+                  <div class="col1">
+                        <input type="text" id="lname"Name="lastname" placeholder="Enter a lastname">
+                   </div>
+           </div>      
+           <div class="row">
+            <div class="row1">
+              <label for="country">Country</label>
+            </div>
+            <div class="col1">
+              <select id="country" name="country">
+                <option value="usa">India</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+              <div class="row1">
+                  <lable id="rbutton">Gender :</lable>
+              </div>
+              <div class="col1">
+                <input type="radio" name="gender" class="login-input" required>Male
+                <input type="radio" name="gender" class="login-input" required>Female
+               
+              </div>
+          </div>
+          <div class="row">
+            <div class="row1">
+                <lable id="date">Date of Birth</lable>
+            </div>
+            <div class="col1">
+                <input type="date" name="gender" class="login-input" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row1">
+                <lable id="">FEEDBACK of this page</lable>
+            </div>
+            <div class="col1">
+                <input type="checkbox" name="webpage" class="login-input" required>Good
+                <input type="checkbox" name="webpage" class="login-input" required>verygood
+            </div>
+        </div>
+        <div class="row">
+            <div class="row1">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col1">
+              <textarea id="subject" name="subject" placeholder="Write something .." style="height:200px"></textarea>
+            </div>
+          </div>
+              <div class="submit">
+                    <center><a href="#">Submit</a></center>
+                </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>
