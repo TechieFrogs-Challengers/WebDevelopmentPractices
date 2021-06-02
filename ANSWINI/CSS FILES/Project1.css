@@ -1,0 +1,140 @@
+body {
+  background-color: rgb(122, 171, 204);
+}
+
+input:invalid {
+  background-color: rgb(189, 235, 99);
+  color: black;
+}
+
+input:focus {
+  background-color: plum;
+  color: black;
+}
+input[type="text"] {
+  width: 169px;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+input[type="text"]:focus {
+  width: 250px;
+}
+.required {
+  color: cyan;
+}
+hr {
+  margin-bottom: 35px;
+  margin-top: 5px;
+  border: 1px outset white;
+}
+select option:hover {
+  background-color: darkcyan;
+  color: white;
+}
+.qualify:hover {
+  background-color: darkcyan;
+  color: white;
+}
+h1 {
+  background-color: rgb(231, 216, 197);
+  color: brown;
+}
+input:checked {
+  height: 15px;
+  width: 15px;
+}
+.mtop1[type="submit"]:hover {
+  background-color: yellow;
+  color: blue;
+  margin-right: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.mtop1[type="reset"]:hover {
+  background-color: crimson;
+  color: yellow;
+  margin-left: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+div label {
+  font-weight: bolder;
+}
+
+table {
+  width: 800px;
+  font-size: large;
+  margin-left: 250px;
+}
+/*Section 1 */
+.personaldetails {
+  background-color: navy;
+  color: white;
+}
+.table1 {
+  background-color: indianred;
+}
+textarea {
+  width: 180px;
+  height: 50px;
+}
+
+/*Section2*/
+.LoginDetails {
+  background-color: rgb(19, 116, 19);
+  color: white;
+}
+.table2 {
+  background-color: indianred;
+}
+.margin {
+  margin-right: 40px;
+}
+/*Section3*/
+.QualificationDetails {
+  background-color: navy;
+  color: white;
+}
+.table3 {
+  background-color: indianred;
+}
+/* Section4*/
+.TechnicalSkills {
+  background-color: rgb(19, 116, 19);
+  color: white;
+}
+.table4 {
+  background-color: indianred;
+}
+.table5 {
+  padding-bottom: 50px;
+}
+
+tr {
+  height: 50px;
+}
+.padleft {
+  padding-left: 155px;
+}
+.padleft4 {
+  padding-left: 90px;
+}
+table {
+  margin-top: -15px;
+}
+h2 {
+  margin-top: -2px;
+  margin-bottom: -2px;
+  text-align: left;
+  padding-left: 5px;
+}
+a {
+  color: cyan;
+}
+a:hover {
+  background-color: navy;
+  color: yellow;
+}
+.table3 td {
+  text-align: center;
+}

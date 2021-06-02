@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position practice</title>
+    <style>
+      .position1 {
+        position: static;
+        background-color: seagreen;
+      }
+      .position2 {
+        position: relative;
+        background-color: blueviolet;
+        left: 150px;
+      }
+      .position3 {
+        position: fixed;
+        background-color: palevioletred;
+        bottom: 0;
+        right: 0;
+      }
+      .position4 {
+        position: absolute;
+        background-color: yellowgreen;
+        top: 180px;
+        right: 0;
+      }
+      .position5 {
+        position: -webkit-sticky;
+        position: sticky;
+        background-color: rgb(214, 99, 99);
+        top: 0;
+      }
+      img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 120px;
+        width: 100%;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="position1">
+        <p>Hello..Iam in static position</p>
+      </div>
+      <div class="position2">
+        <p>Hello..Iam in relative position</p>
+      </div>
+      <div class="position3">
+        <p>Hello..Iam in fixed position</p>
+      </div>
+      <div class="position4">
+        <p>Hello..Iam in absolute position</p>
+      </div>
+      <div class="position5">
+        <p>Hello..Iam in sticky position</p>
+      </div>
+      <div>
+        <img
+          src="E:\Web Designing\WebDevelopmentPractices\ANSWINI\CSS FILES\webdesigncontent\image7.jpg"
+        />
+      </div>
+      !--to understand whether sticky and fixed are working or not when
+      scrolled. !--padding-bottom increases page length from bottom ...so we get
+      scroll bar
+      <div style="padding-bottom: 1000px"></div>
+    </div>
+  </body>
+</html>

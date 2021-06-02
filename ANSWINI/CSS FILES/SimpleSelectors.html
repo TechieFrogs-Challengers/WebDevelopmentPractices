@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple selectors</title>
+    <style>
+        /* Tag/Element selectors*/
+        h1{
+            color:cyan;
+            background-color:black;
+        }
+        /* Id selectors*/
+        #myid{
+            font-style: italic;
+            color: snow;
+        }
+        /* Class selectors*/
+        .myclass{
+            color: seagreen;
+            font-family: fantasy;
+        }
+        /* Group selectors*/
+       h5, p{
+            text-indent: 70%;
+            font-size: x-large;
+        }
+        span{
+            color:rgb(255, 0, 170);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 'h1' is a Tag/Element-->
+    <h1>Hello Iam <span>h1</span> having <span>Tag</span> selector style</h1>
+    <!-- 'h1' Tag/Element with 'id' .Here inline style overriding internal css style -->
+    <h1 id="myid">Hello Iam <span style="color: red;">h1</span> having <span style="color: red;">Id</span> selector style</h1>
+    <!-- 'h1' Tag/Element with 'class'  -->
+    <h1 class="myclass">Hello Iam <span >h1</span> having <span>Class</span> selector style</h1>
+    <!-- 'p' Tag/Element with group selector css -->
+    <p>hello...Iam in paragraph</p>
+    <!-- 'h5' Tag/Element with with group selector css  -->
+    <h5>Iam <span>tag</span>  grouped with <span>p</span> tag</h5>
+
+</body>
+</html>

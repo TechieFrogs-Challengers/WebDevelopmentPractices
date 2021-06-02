@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selectors</title>
+    <style>
+        /*Descendent selector*/
+        div[id=a] p{
+            color: violet;
+            background-color: black;
+        }
+        /*Child selector*/
+        div[id=b] > p{
+            color: violet;
+            background-color: black;
+        }
+        /*Adjacent selector*/
+        div[id=c] + p{
+            color: violet;
+            background-color: black;
+        }
+        /*General selector*/
+        div[id=d] ~ p{
+            color: violet;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="a">
+            <h1>Hello...welcome</h1>
+            <h2>Division one</h2>
+            <p>This is direct paragraph</p>
+            <h3>
+                <p>This is inner paragraph in div 1</p>
+            </h3>
+            <h3>
+                <p>This second inner paragraph in div 1</p>
+            </h3>
+            <p>This second direct paragraph in div 1</p>
+        </div>
+        
+        <pre>=======================================================================================</pre>
+
+        <div id="b">
+            <h1>Hello...welcome</h1>
+            <h2>Division two</h2>
+            <p>This is direct paragraph</p>
+            <h3>
+                <p>This is inner paragraph in div 2</p>
+            </h3>
+            <h3>
+                <p>This second inner paragraph in div 2</p>
+            </h3>
+            <p>This second direct paragraph in div 2</p>
+        </div>
+
+        <pre>========================================================================================</pre>
+
+        <div id="c">
+            <h1>Hello...welcome</h1>
+            <h2>Division three</h2>
+            <p>This is direct paragraph</p>
+        </div>
+            <p>TThis first direct paragraph outside div 3</p>
+            <h3>welcome..
+                <p>This is inner paragraph in div 3</p>
+            </h3>
+            <h3>welcome..
+                <p>This second inner paragraph in div 3</p>
+            </h3>
+            <p>This second direct paragraph outside div 3</p>
+        
+            <pre>=====================================================================================</pre>
+            
+        <div id="d">
+            <h1>Hello...welcome</h1>
+            <h2>Division four</h2>
+            <p>This is direct paragraph</p>
+        </div>
+            <p>This first direct paragraph outside div 4</p>
+            <h3>welcome..
+                <p>This is inner paragraph in div 4</p>
+            </h3>
+            <h3>welcome..
+                <p>This second inner paragraph in div 4</p>
+            </h3>
+            <p>This second direct paragraph outside div 4</p>
+        
+    </div>
+    
+</body>
+</html>
