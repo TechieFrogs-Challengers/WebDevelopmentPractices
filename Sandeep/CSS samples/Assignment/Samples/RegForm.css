@@ -1,0 +1,56 @@
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+hr {
+  margin-bottom: 30px;
+}
+
+.mtop1 {
+  margin-top: 20px;
+}
+.margleft1 {
+  margin-left: 440px;
+}
+.margleft2 {
+  margin-left: 80px;
+}
+
+body {
+  bg-color: aquamarine;
+}
+
+input:invalid {
+  background-color: yellow;
+  color: white;
+}
+/*
+input:required {
+  border-color: red;
+}*/
+input:focus {
+  background-color: orange;
+  color: white;
+}
+input[type="text"] {
+  width: 169px;
+  -webkit-transition: width 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
+}
+input[type="text"]:focus {
+  width: 300px;
+}
+.required {
+  color: red;
+}
+option:hover {
+  background-color: coral;
+}
+.div1 {
+  background-color: coral;
+}
+h3 {
+  margin-left: 200px;
+}

@@ -1,0 +1,90 @@
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+.mtop1 {
+  margin-top: 20px;
+}
+.margleft {
+  margin-left: 450px;
+  padding-left: 50px;
+}
+.margright {
+  margin-right: 250px;
+  padding-right: 50px;
+}
+/* body {
+  background-image: url("E:\\Web Designing\\WebDevelopmentPractices\\ANSWINI\\CSS FILES\\webdesigncontent\\form.jpg");
+  opacity: 1.5;
+  background-size: cover;
+  padding-bottom: 1200px;
+} */
+
+input:invalid {
+  background-color: rgb(189, 235, 99);
+  color: black;
+}
+
+input:focus {
+  background-color: plum;
+  color: black;
+}
+input[type="text"] {
+  width: 169px;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+input[type="text"]:focus {
+  width: 250px;
+}
+.required {
+  color: red;
+}
+hr {
+  margin-bottom: 35px;
+  margin-top: 5px;
+  border: 1px outset white;
+}
+select option:hover {
+  background-color: darkcyan;
+  color: white;
+}
+.qualify:hover {
+  background-color: darkcyan;
+  color: white;
+}
+h1 {
+  background-color: rgb(231, 216, 197);
+  color: brown;
+}
+input:checked {
+  height: 15px;
+  width: 15px;
+}
+.mtop1[type="submit"]:hover {
+  background-color: yellow;
+  color: blue;
+  margin-right: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.mtop1[type="reset"]:hover {
+  background-color: crimson;
+  color: yellow;
+  margin-left: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+div label {
+  font-weight: bolder;
+}
+.table1 {
+  background-color: darksalmon;
+}
+table {
+  width: 500px;
+  border: 2px solid black;
+}

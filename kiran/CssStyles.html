@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applying Styles to html</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #css1{
+            color: white;
+        }
+        #css2{
+            float: left;   
+            border: 3px solid Violet;
+        }
+        div#css2{
+            margin-left: 150px;
+            margin-top: 100px;
+        }
+        .p1 {
+            float: right;
+            width: 28%;
+            font-size: 28px;
+            border-left: 40px solid red;
+            border-right: 40px solid red;
+            border-top: 35px solid red;
+            border-bottom: 30px solid red;
+            background-color: lightgrey;
+}
+
+.para{
+    
+    float: left;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+.para1{
+    width: 300px;
+    height: 70px;
+    background-color: silver;
+    border-top: 3px solid green;
+    border-bottom: 3px dotted blue;
+    border-left: 3px inset  black;
+    border-right:3px outset red;
+    overflow:scroll;/* visible, hidden, auto*/
+}
+.divv{
+    margin-top: 39%;
+}
+.div1 {
+    text-align: cenetr;
+    width: 35%;
+    float:left;
+    background: red;
+}
+.div2 { 
+    width: 35%;
+float:left;
+
+  background: yellow;
+}
+.div3 {
+    width: 30%;
+float:right;
+  background: green;
+}
+.img1{
+    margin-top: -3%;
+    float: right;
+}
+.clearfix{
+    border: 2px solid blue;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display:table; 
+}
+.list1{
+    background-color: slategrey;  
+    text-align: center;
+}
+.list1 li{
+   
+    padding: 2%;
+    list-style: none;
+    display: inline-block;
+    font-size: xx-large;
+}
+.list1 li a:hover{
+    color: blue;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <center>
+        <h2  style="background-color: royalblue;">This is heading</h2>
+        <p  style="background-color: red;">I Used background color for this paragraph as a red.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+             quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </center>
+    </div>
+    <div style="float: left;">
+        <h1 style="background-color:red;">This is red color</h1>
+        <h1 style="background-color:green;">This is green color</h1>
+        <h1 style="background-color:yellow;">This is yellow color</h1>
+        <h1 style="background-color:orange;">This is orange color</h1>
+        <h1 style="background-color:gray;">This is gray color</h1>
+        <h1 style="background-color:violet;">This is violet color</h1>
+        <h1 id="css1" style="background-color:black;">This is black color</h1>
+    </div>
+    <div id="css2">
+        <p style="color: rgb(235, 22, 22);">This is first paragraph.>This is first paragraph.>This is first paragraph.</p>
+        <p style="color:rgb(16, 236, 64);">This is Second paragraph.>This is Second paragraph.>This is Second paragraph.</p>
+        <p style="color: rgb(226, 250, 12);">This is Third paragraph.>This is Third paragraph.>This is Third paragraph.</p>
+        <p style="color: rgb(201, 95, 9);">This is fourth paragraph.>This is fourth paragraph.>This is fourth paragraph.</p>
+        <p style="color: rgb(85, 83, 84);">This is five paragraph.>This is five paragraph.>This is five paragraph.</p>
+        <p style="color:rgb(226, 21, 165);">This is six paragraph.>This is six paragraph.>This is six paragraph.</p>
+        <p style="color:rgb(19, 14, 17);">This is Seven paragraph.>This is Seven paragraph.>This is Seven paragraph.</p>
+    </div><br><br>
+    <div class="p1">
+        <h2>The border-left Property</h2>
+<p>This property is a shorthand property for border-left-width, border-left-style, and border-left-color.</p>
+    </div><br>
+    <div class="para">
+        <h2 style="text-align: center;">
+            CSS overflow
+        </h2>
+        <div class="para1">In this paragraph some text to be overflow. Based on the attribute value we can give the styles in 
+            this paragraph  used attribute value as a visible. we can write in many attribute values like hidden, scroll, auto</div>
+    </div>
+    <div class="divv">
+        <div class="div1">Div 1</div>
+<div class="div2">Div 2</div>
+<div class="div3">Div 3</div>
+    </div><br><br>
+    <div class="clearfix">
+       <h2>This is clearfix</h2>
+            <img  class="img1" src="D:\KIRAN\html\HTML1\images\logo2.png" width="150" height="150">
+            this is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraph
+            this is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraph
+            this is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraph
+            this is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraph
+            this is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraph
+            this is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraph
+            this is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraph
+            this is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraphthis is an paragraph
+    </div>
+    <div class="list1">
+        <ul>
+            <li><a herf="new" target="-blank">Home</a></li>
+            <li><a herf="new" target="-blank">about us</a></li>
+            <li><a herf="new" target="-blank">contact us</a></li>
+            <li><a herf="new" target="-blank">settings</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="ass.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="personaldetails">
+            <form action="" id="register">
+                <h1 class="personalHead"> Personal Details</h1>
+                <lable>First Name:<span class="required">*</span></lable>
+                <input type="text" name="Firstname" placeholder="Firstname" id="name" required maxlength="20">&nbsp;
+                <lable>Last Name:<span class="required">*</span></lable>
+                <input type="text" name="Lasttname" placeholder="Lasttname" id="name" required maxlength="20"><br><br>
+                <lable>Gender:</lable>&nbsp;
+                <input type="radio" name="gender">Male&nbsp;
+                <input type="radio" name="gender">Female&nbsp;
+                <input type="radio" name="gender">Others<br><br>
+                <lable>Date of Birth:</lable><br>
+                <input type="date" name="date" id="name"><br><br>
+                <lable>Email:<span class="required">*</span></lable><br>
+                <input type="email" name="email" id="name" placeholder="Enter your Email " required><br><br>
+                <lable>Phone No:</lable><br>
+                <input type="tel" name="phone number" id="name" placeholder="+91" maxlength="10"><br><br>
+                <lable>Address:<span class="required">*</span></lable><br>
+                <input type="text" id="name" placeholder="Address line1" required><br><br>
+                <input type="text" id="name" placeholder="Address line2">
+                <br><br>
+                <lable> City:<span class="required">*</span></lable><br>
+                <input type="text" id="name" placeholder="Enter City" required><br><br>
+                <lable> State:<span class="required">*</span></lable><br>
+                <input type="text" id="name" placeholder="Enter State" required> <br><br>
+                <lable>ZIP Code:</lable><br>
+                <input type="tel" name="zip" id="name" placeholder="Enter Zip Code:" maxlength="6"><br><br>
+                <lable>UploadPhoto:</lable><br>
+                <input type="file" accept=".jpeg" size="250*350"><br><br>
+                <h1 class="loginhead">Login Details </h1><br><br>
+                <lable>User Name:<span class="required">*</span></lable>&nbsp;
+                <input type="text" name="Username" placeholder="Username" id="name" required maxlength="20"><br><br>
+                <lable id="passwordbox">Password:<span class="required">*</span></lable>
+                <input type="password" name="password" placeholder="Password" id="name" required pattern=.{8,}>&nbsp;
+                <br><br>
+                <h1 class="qualifyhead">Qualification Details</h1><br>
+                <lable>Qualification:</lable>&nbsp;&nbsp;
+                <select id="name" name="qualification">
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="Degree">Degree</option>
+                    <option value="PHD">PHD</option>
+                </select><br><br><br>
+                <lable>specialization:</lable>&nbsp;
+                <input type="text" id="name" name="specialization" required placeholder="Enter specialization"><br><br>
+                <lable>Year:<span class="required">*</span></lable>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="year" id="name" name="year" required placeholder="Enter Year" required>
+                <br><br><br>
+                <lable>College Name:<span class="required">*</span></lable>
+                <input type="text" name="college" placeholder="Enter College name" id="name" required>&nbsp;
+                <br><br>
+                <h1 class="techhead">Technical skills</h1><br>
+                <lable>Technical Skills:</lable>&nbsp;
+                <select id="tskills" name="Technical Skils:" multiple>
+                    <option value="cyber security">Cyber security</option>
+                    <option value="Hacking">Hacking</option>
+                    <option value="coding">Coding</option>
+                    <option value=">web developer">web developer</option>
+                </select><br><br>
+                <lable>Interested Technologies:</lable>
+                <input type="checkbox" id="nam">C
+                <input type="checkbox" id="nam">C++
+                <input type="checkbox" id="nam">JAVA
+                <input type="checkbox" id="nam">PYTHON
+                <input type="checkbox" id="nam">HTML
+                <input type="checkbox" id="nam">CSS
+                <br><br>
+                <lable> LinkedIn profile:</lable>
+                <input type="url" id="name" placeholder="Enter Url LinkedIn Profile"><br><br><br>
+                <lable>Upload Resume</lable>
+                <input type="file" id="name" accept=".pdf">
+                <br><br>
+                <h1 class="multihead"> Multiple lines content</h1><br><br>
+                <textarea placeholder="Enter Some description" name="note" id="note">
+                        </textarea>
+                <br><br><br>
+                <center>
+                    <input type="submit" value="Submit" id="submit">
+                    <input type="reset" value="Reset" id="reset">
+                </center>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

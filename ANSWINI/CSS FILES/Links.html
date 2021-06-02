@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links practice</title>
+    <style>
+      /* unvisited link */
+      a.one:link {
+        color: rgb(70, 10, 10);
+      }
+
+      /* visited link */
+      a.one:visited {
+        color: brown;
+      }
+
+      /* mouse over link */
+      a.one:hover {
+        color: green;
+        background-color: turquoise;
+      }
+
+      /* selected link */
+      a.one:active {
+        color: green;
+      }
+
+      a.two:link,
+      a.two:visited {
+        background-color: white;
+        color: black;
+        border: 2px solid green;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: overline underline;
+        display: inline-block;
+      }
+
+      a.two:hover,
+      a.two:active {
+        background-color: green;
+        color: white;
+      }
+
+      a.three:link,
+      a.three:visited {
+        background-color: pink;
+        color: black;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      a.three:hover,
+      a.three:active {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div><a class="one" href="HomePage.html">HomePage.html</a></div>
+    <br />
+    <div><a class="two" href="HomePage.html">HomePage.html</a></div>
+    <br />
+    <div><a class="three" href="HomePage.html">HomePage.html</a></div>
+  </body>
+</html>

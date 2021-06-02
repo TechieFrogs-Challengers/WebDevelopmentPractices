@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>optional and Required Selector </title>
+    <style>
+        input:optional{
+            background-color: red;
+            color: white;
+        }
+        input:required{
+            background-color: brown;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        First name: <input type="text" required><br>
+        Last name: <input type="text" ><br>
+    
+        <input type="radio">
+        <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+        <input type="radio" value="female" name="gender"> Female<br>
+    
+        <input type="checkbox" checked="checked" value="java"> JAVA<br>
+        <input type="checkbox" value="web design" disabled> WEB DESIGN <br>
+        <input type="submit" value="submit">
+        <input type="reset" value="cancel">
+    </form>
+</body>
+</html>

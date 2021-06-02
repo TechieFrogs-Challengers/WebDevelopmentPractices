@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postion's</title>
+    <style>
+        .container {
+                position: relative;
+        }
+
+        .topleft {
+                position: absolute;
+                top: 8px;
+                left: 16px;
+                font-size: 18px;
+        }
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;    
+        }
+
+
+        .bottomleft {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+
+        .bottomright {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+
+        img { 
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Image Text</h2>
+    
+    <div class="container">
+        <img src="D:\Classes\Web Technologies\HTML\Images\image1.jpeg" alt="Cinque Terre" width="1000" height="300">
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="topleft">Top Left</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="bottomright">Bottom Right</div>
+        <div class="center">Center</div>
+
+    </div>
+</body>
+</html>

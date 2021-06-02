@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus Selector</title>
+    <style>
+        input:focus{
+            background-color: orange;
+            color: white;
+        }
+        input[type=text] {
+            width: 100px;
+            -webkit-transition: width .35s ease-in-out;
+            transition: width .35s ease-in-out;
+        }
+        input[type=text]:focus {
+            width: 300px;
+        }
+        input:in-range {
+            border: 5px double blue;
+        }
+        input:out-of-range{
+            border: 5px solid yellow ;
+        }
+        input:invalid{
+            border: 5px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        First name: <input type="text"><br>
+        Last name: <input type="text" ><br>
+    
+        <input type="radio">
+        <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+        <input type="radio" value="female" name="gender"> Female<br>
+    
+        <input type="checkbox" checked="checked" value="java"> JAVA<br>
+        <input type="checkbox" value="web design" > WEB DESIGN <br>
+        Experience : <input type="number" min="3" max="6" placeholder="3-6"><br>
+        Email : <input type="email" name="email" id="email" placeholder="abc@gmail.com"><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="cancel">
+    </form>
+</body>
+</html>

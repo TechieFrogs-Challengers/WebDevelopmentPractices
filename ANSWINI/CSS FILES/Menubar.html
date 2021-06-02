@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style>
+      /*removes default margin and paddind spaces*/
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      /*styles applied to total screen*/
+      body {
+        background-color: violet;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      ul {
+        /*Erases bullets of unordered list*/
+        list-style-type: none;
+      }
+      ul li {
+        /*Aligns the unordered list in horizontal way*/
+        float: left;
+        /*gives the equal width and height for each list item*/
+        width: 150px;
+        height: 40px;
+        /*Aligns the list items in the center of width mentioned*/
+        text-align: center;
+        /*to adjust text to center of height mentioned(should be same as height given)*/
+        line-height: 40px;
+        /*gives colour to width and height mentioned for each list item*/
+        background-color: white;
+        /*gives rounded edges left and right sides*/
+        border-radius: 20px;
+      }
+      ul li:hover {
+        background-color: yellow;
+      }
+      ul li a {
+        text-decoration: none;
+      }
+      ul li ul {
+        display: none;
+      }
+      /*to display when any list item from unordred list is hovered*/
+      ul li:hover > ul {
+        display: block;
+      }
+      /*to display when any list item from sub unordred list's is hovered*/
+      ul li ul li {
+        position: relative;
+      }
+      ul li ul li ul {
+        position: absolute;
+        /*to display to right side of any list item from sub unordred list's is hovered*/
+        /*margin left should be same as width of parent list item(since position is given use onlt left)*/
+        left: 150px;
+        /*to adjust default margin top space(since position is given use onlt top)*/
+        top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#"> HOME </a></li>
+      <li>
+        <a href="#"> COURSES </a>
+        <ul>
+          <li>
+            <a href="#">Java</a>
+            <ul>
+              <li><a href="#">OOPS</a></li>
+              <li><a href="#">SPRING</a></li>
+              <li><a href="#">SERVLETS</a></li>
+            </ul>
+          </li>
+          <li><a href="#">PHP</a></li>
+          <li><a href="#">Devops</a></li>
+          <li>
+            <a href="#">Web Development</a>
+            <ul>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#"> CAREERS </a></li>
+      <li><a href="#"> CONTACT </a></li>
+      <li><a href="#"> ABOUT US </a></li>
+    </ul>
+  </body>
+</html>

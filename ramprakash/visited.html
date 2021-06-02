@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+div {
+      background-color: #eee;
+      width: 200px;
+      height: 50px;
+      border: 1px dotted black;
+      overflow: visible;
+    }
+    </style>
+</style>
+</head>
+<body>
+
+<h2>CSS Links</h2>
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+<!--overFlow visible ,hidden,none-->
+
+<h2>CSS Overflow</h2>
+   <p>With the hidden value, the overflow is clipped, and the rest of the content is hidden:</p>
+ <p>Try to remove the overflow property to understand how it works.</p>
+<div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+   
+</body>
+</html>

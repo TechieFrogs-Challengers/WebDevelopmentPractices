@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Details</title>
+</head>
+<style>
+        body {
+          background-image: url("emp.png");
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          background-position:10% 30%
+        }
+        .submit
+        { 
+          background-color: rgb(253, 253, 253);
+          border:none;
+          color:rgb(20, 19, 19);
+          padding:10px 20px;
+          text-align: center;
+          display:block;
+          font-size:16px;
+          margin:4px 2px;
+          border: 2PX solid #949794;
+          transition-duration: 0.4s;
+          cursor:pointer;
+          
+
+          }
+          .submit a{
+            text-decoration: none;
+            color:black;
+          }
+          .submit:hover
+          {
+            background-color: rgb(70, 201, 18);
+            color: rgb(247, 255, 247);
+            box-shadow: 0 8px 16px rgb(13, 14, 13);
+          }
+         
+    
+        </style>
+<body bgcolor="#cdf3f7">
+
+     <h1 class="login-title"align="center">Employee information</h1>
+     
+    <table border="0" align="center">
+
+   <tr>
+       <td>Employee id:<td><input type="number" name="id" class="login-input" placeholder="Employee ID"></td>
+   </tr>
+    <tr>
+      <td> FirstName:<td><input type="text" name="FirstName" class="login-input" required placeholder="First Name"></td>
+    </tr>
+    <tr>
+        <td> LastName:<td><input type="text" name="LastName" class="login-input" required placeholder="Last Name"></td>
+    </tr>
+    <tr>
+        <td>Gender:<td><input type="radio" name="gender" class="login-input" required>Male
+     <input type="radio" name="gender" class="login-input" required>Female</td>
+    </tr>
+    <tr>
+          <td> Date of Birth:<td> <input type="date" name="dob" class="login-input" required placeholder=""></td>
+    </tr>
+    <tr>
+          <td>Position:<td><input type="text" name="position" class="login-input" required placeholder="Position"></td>
+    </tr>
+       <tr>
+           <td> Experience:<td><input type="number" name="experience" class="login-input" required placeholder="Experience in Years"></td>
+        </tr>
+      <tr>
+          <td> Skills<td><input type="text" name="skills" class="login-input" required placeholder="Skills"></td>
+        </tr>
+   <tr>
+       <td> Salary:<td><input type="number" name="salary" class="login-input" required placeholder="Salary"></td>
+    </tr>
+  <tr>
+      <td> Joining date:<td><input type="date" name="doj" class="login-input" required placeholder="Joining Date"></td>
+    </tr>
+    <tr>
+        <td>Phone no: <td><input type="number" name="phone" class="login-input" required placeholder="Phone"></td>
+    </tr>
+   <tr>
+       <td>  Address:<td><input type="text" name="address" class="login-input"  required placeholder="Address"></td>
+    </tr>
+    
+</form>
+</table>&nbsp;
+<center><button class="submit"><a href="#" >Submit</a></button></center>
+<label name="lable" class="up" > <center>click on update</center></label>
+   
+</body>
+</html>
