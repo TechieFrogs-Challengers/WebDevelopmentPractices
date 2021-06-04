@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>For in</h1>
+        <p id="demo"></p>
+        <script>
+            var details = {fname : "Pusuluri",lname : "Chandu",age : 22}
+            var x;
+            var text = ""
+            for(x in details)
+            {
+                text = text + details[x] + " ";
+            }
+            document.getElementById("demo").innerHTML="My name is " + text ;
+        </script>
+    </body>
+</html>
