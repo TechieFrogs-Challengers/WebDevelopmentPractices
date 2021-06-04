@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorial program</title>
+</head>
+<style>
+    *{
+        margin:0%;     
+    }
+   </style>
+<script>
+    function fact()
+    {
+        var fact;
+        fact=Number(document.getElementById("num").value);
+        var result=1,i=0;
+       if(fact>0)
+       {
+         for(i=1;i<=fact;i++)
+            {
+                result*=i;
+            }
+            document.getElementById("answer").value=result;
+        }
+        else
+       {
+         document.getElementById("answer").value=0;
+       }
+       
+    }
+</script>
+<body>
+    <div class="labs">
+        <lable id="lab1">Enter Number:</lable><br><br>
+        <lable id="lab1">Result:</lable>
+    </div>
+    <div class="io">
+      
+            <input id="num" type="number" placeholder=" enter a value"><br><br>
+            <input id="answer"><br><br><br>
+            <button onclick="fact()"> Result</button>
+       
+    </div>
+    
+
+</body>
+</html>
