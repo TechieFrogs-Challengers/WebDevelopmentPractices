@@ -1,0 +1,210 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica sans-serif;
+}
+body
+{
+    width: 80%;
+    margin-left: 10%;
+}
+ul li 
+{
+    list-style: none;
+    line-height: 1.3rem;
+}
+table
+{
+   width: 100%; 
+   border: 2px solid #000; 
+}
+table, th, td
+{
+    
+    border-collapse: collapse;
+}
+
+
+th, td
+{
+    padding: 4px 8px;
+}
+th
+{
+    color: #fff;
+    background-color: navy;
+    
+}
+td
+{
+   text-align: center;
+}
+.pt-1
+{
+padding-top: 2rem;
+}
+.mt-1
+{
+    margin-top: 1rem;
+}
+.mt-2
+{
+    margin-top: 2rem;
+}
+.d-flex
+{
+    display: flex;
+    
+}
+.first-container
+{
+    justify-content: space-between;
+}
+.company-details h3
+{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.company-details ul li
+{
+    
+    font-weight: 500;
+    
+}
+
+.purchase-order h2
+{
+    font-size: 34px;
+   color: lightskyblue;
+}
+.date-box {
+    gap: 2rem;
+    float: right;
+    
+}
+.second-date
+{
+    border: 1px solid black;
+}
+.second-date p:first-of-type
+{
+    border-bottom: 1px solid black;
+}
+.second-date p
+{
+  
+   padding: 2px 18px;
+}
+.first-date p:first-of-type
+{
+    padding-bottom: 8px;
+}
+
+
+/************SECOND CONTAINER************/
+.second-container 
+{
+     justify-content: space-between;
+     gap: 6rem;
+}
+.second-container h4
+{
+    color: white;
+    background-color: navy;
+    padding: 4px 8px;
+}
+.vendor, .shipto {
+    flex: 0 0 30rem;
+}
+/*************THIRD CONTAINER**********/
+ .third-container td
+{
+     border: 2px solid #000; 
+}
+/************FOURTH CONTAINER************/
+/* .fourth-container tr
+ {
+   border-bottom: 1px solid grey !important;
+} */
+
+.fourth-container table td:last-of-type
+{
+    background-color: rgba(128, 128, 128, 0.151);
+    
+}
+.fourth-container tr.border_bottom td{
+    border-bottom: 1px solid gray;
+    border-right: 2px solid black;
+}
+
+/************FIFTH CONTAINER************/
+.fifth-container 
+{
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.comment-box
+{
+    border: 2px solid gray;
+    width: 53.4rem;
+    height: 10rem;
+}
+.comment-title
+{
+    background-color: gray;
+    padding: 4px 8px;
+}
+.total-box
+{
+   /*  gap: 2rem; */
+  
+}
+.left-box{
+    width: 7.5rem;
+}
+
+/*************SIXTH SECTION******************/
+.sixth-section
+{
+    padding-bottom: 4rem;
+}
+.sixth-section p
+{
+    text-align: center;
+    font-size: 18px;
+}
+.left-box ul li {
+    padding: 4px 0px;
+    line-height: 1.39rem;
+}
+.right-box ul li
+{
+    border: 2px solid rgba(128, 128, 128, 0.151);
+    border-top: none;
+    padding: 4px 33px;
+    
+}
+.right-box ul li:first-of-type
+{
+    border: none !important;
+    background-color: rgba(128, 128, 128, 0.151);
+}
+ .left-box ul li:last-of-type
+{
+    
+    border-top: 2px solid #000;
+}
+.right-box ul li:nth-child(4)
+{
+    border-bottom: none !important;
+    
+}
+.right-box ul li:last-of-type
+{
+    border: none;
+    background-color: skyblue;
+    border-top: 2px solid #000;
+}
