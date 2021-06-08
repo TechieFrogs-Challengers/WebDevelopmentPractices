@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h2>Assending order</h2>
+    <p id="demo1"></p>
+
+    <h2>Decending order</h2>
+    <p id="demo2"></p>
+
+    <h2>finding min value using math.min()</h2>
+    <p id="demo3"></p>
+
+    <h2>finding max value using math.max()</h2>
+    <p id="demo4"></p>
+    
+    <script>
+        var names, text, fLen, i;
+        names = ["Sai", "Sandeep", "Krishna", "Venkata"];
+        names[6] = "Maddipati";
+        var numbers=[5,66,99,88,22,57,54,64,64,685,684,684,2]
+
+        text = "";
+        for (i = 0; i < names.length; i++) {
+            text += names[i] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+
+        names.sort();
+        document.getElementById("demo1").innerHTML=names
+
+        names.sort();
+        names.reverse();
+        document.getElementById("demo2").innerHTML = names
+
+        //finding min value 
+        document.getElementById("demo3").innerHTML = myArrayMin(numbers);
+        function myArrayMin(num) {
+                return Math.min.apply(null, num);
+            }
+        
+        //finding max value
+        document.getElementById("demo4").innerHTML = myArrayMax(numbers);
+        function myArrayMax(num1) {
+            return Math.max.apply(null, num1);
+        }
+    </script>
+
+</body>
+</html>

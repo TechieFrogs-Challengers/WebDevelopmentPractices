@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nested objects and arrays</h1>
+        <p id="demo"></p>
+        <script>
+            let text = "";
+            let i;
+            let j;
+            const name = {fname:"Pusuluri",lname:"Chandu",age:22,
+                cars:[
+                    {
+                        carname:"Safari",models:["2017","2019","2021"]
+                    },
+                    {
+                        carname:"Innova",models:["2012","2015","2018"]
+                    },
+                    {
+                        carname:"Scorpio",models:["2010","2014","2017"]
+                    }  
+                ]  
+        }
+        for(i in name.cars)
+        {
+            text = text + name.cars[i].carname+"<br>";
+        
+            for(j in name.cars[i].models)
+            {
+                text = text + name.cars[i].models[j] + "<br>" ;
+            }
+        }
+        document.getElementById("demo").innerHTML=text;
+        </script>
+</body>
+</html>

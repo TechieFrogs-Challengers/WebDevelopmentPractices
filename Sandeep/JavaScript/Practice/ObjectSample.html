@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects</title>
+</head>
+<body>
+    <h2>JavaScript Objects</h2>
+    <p id="demo"></p><br><br>
+    <p id="demo2"></p><br><br>
+    <p id="demo3"></p><br><br>
+    <p id="demo4"></p><br><br>
+    <p id="demo5"></p>
+    <script>
+        // Creating a variable and displaying the variablle
+        var name = "Sandeep";
+        document.getElementById("demo").innerHTML = name;
+
+        // Create an object for 2 or more variables
+        var details = { name: "Sandeep", age: "26", city: "tadepalligudem" };
+
+        // Displaying the data by using the  object
+        document.getElementById("demo2").innerHTML = "Name :: " + details.name+"<br>City :: "+details.city;
+
+        // Create an object:
+        var details1 = {
+            firstName: "Sai",
+            lastName: "Maddipati",
+            id: 9999,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        // Display data from the object:
+        document.getElementById("demo3").innerHTML = details1.fullName();
+
+        //this 
+        document.getElementById("demo4").innerHTML = myFunction();
+        function myFunction() {
+            return this;
+        }
+
+        //refers to person2, even if it is a method of person1
+        var person1 = {
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        var person2 = {
+            firstName: "Sandeep",
+            lastName: "Maddipati",
+        }
+        var x = person1.fullName.call(person2);
+        document.getElementById("demo5").innerHTML = x;
+    </script>
+</body>
+</html>
