@@ -1,0 +1,178 @@
+<html>
+<head>
+	<title>holi</title>
+	<!--External css file --->
+	<!-- font awsome css for icons --->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<style type="text/css">
+body{
+	padding:0;
+	margin:0;
+}
+.container{
+	height:100vh;
+	width:100%;
+	background: url('images/watercolor2.png');
+	background-size: cover;
+	background-position: cover;
+	position: relative;
+	box-sizing: border-box;
+	padding: 20px 0;
+}
+.navbar
+{
+	width:90%;
+	height: 12vh;
+	display: flex;
+	align-items: center;
+	border-radius: 8px;
+	background: rgba(255,255,255,0.2);
+	margin: 0 auto;
+	border:1px solid rgba(255,255,255,0.2);
+	border-top:1px solid rgba(255,255,255,0.3);
+	border-left:1px solid rgba(255,255,255,0.3);
+	box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+	/*glassmorphism effect */
+	backdrop-filter:blur(15px);
+}
+.navbar .logo{
+	width: 110px;
+	cursor: pointer;
+	margin-left:15px;
+}
+nav{
+	flex:1;
+	margin-left: 50px;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #333;
+	font-family: 'raleway';
+	font-weight: 400;
+	font-size: 18px;
+}
+.cart{
+	width:40px;
+	margin-right: 40px; 
+}
+.cart i{
+	font-size: 22px;
+	color:#222;
+}
+.content{
+	margin-left: 10%;
+	margin-top: 10%;
+	display: flex;
+}
+.para{
+	width: 50%;
+}
+.autoplay{
+	width: 50%;
+}
+.content h1{
+	font-size: 48px;
+	font-weight: 400;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	color: #fff;
+	font-family: 'Raleway';
+	text-decoration: Capitalize;	 
+}
+.content p{
+	font-size: 20px;
+	font-family: 'Raleway';
+	color:  #cc0000;
+	font-weight: 500;
+}
+.content .btn{
+	display: inline-block;
+	background: linear-gradient(45deg, #87adfe, #ff77cd);
+	border-radius: 8px;
+	padding:18px;
+	box-sizing: border-box;
+	color: #222;
+	font-size: 1.5em;
+	box-shadow: 0px 15px 28px rgba(0,0,0,0.2);
+	text-decoration: none;
+	font-weight: 600;
+	font-family: 'Raleway';
+}
+.feature-img{
+	height: 85%;
+	position: absolute;
+	bottom: 0;
+	right: 50px;
+}
+.social{
+	margin-top: 40px;
+}
+.social i{
+	font-size: 24px;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	line-height: 28px;
+	margin: 0 3px;
+	color: red;
+	margin-left: 10%;
+}
+.small-images img {
+      width: 35%;
+      height: 400px;
+      position: absolute;
+      cursor: pointer;
+    }
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="D:\KIRAN\html\HTML1\images\logo2.png" class="logo">
+			<nav>
+				<ul>
+		            <li><a href="https://www.facebook.com/" target="_blank" style="text-decoration: none">Home</a></li>
+		            <li><a href="NEW" target="_blank" style="text-decoration: none">Product</a></li>
+		            <li><a href="NEW" target="_blank" style="text-decoration: none">About</a></li>
+		            <li><a href="NEW" target="_blank" style="text-decoration: none">Contact</a></li>
+	            </ul>
+			</nav>
+			<a href="#" class="cart"><i class="fas fa-shopping-bag"></i></a>
+		</div>
+		<div class="content">
+			<div class="para">
+			<a href="NEW" target="blank" class="btn">Biggest Holi Offer</a>
+			<h1>Chance that you never get again!</h1>
+			<p>Get flat 50% discount on Leading brand - Get now</p>
+			</div>
+				<div class="autoplay">
+                 <div class="small-images"><img src="D:\KIRAN\html\HTML1\images\holig1.png">
+                 </div>
+                 <div class="small-images"><img src="D:\KIRAN\html\HTML1\images\holig1.png">
+                 </div>
+                 <div class="small-images"><img src="D:\KIRAN\html\HTML1\images\holig1.png">
+                 </div>
+			</div>
+		</div>
+		<div class="social">
+			<a href="NEW" target="_blank"><i class="fab fa-facebook"></i></a>
+			<a href="NEW" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="NEW" target="_blank"><i class="fab fa-pinterest"></i></a>
+		</div>
+             
+		</div>
+    </div>
+</body>
+</html>

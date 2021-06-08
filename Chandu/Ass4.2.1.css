@@ -1,0 +1,107 @@
+.header
+{
+   background-color: royalblue;
+    color: black;
+    text-align: center;
+   
+}
+.pd
+{
+     background-color: lightslategray;
+     color: black;
+     margin-left: 370px;
+     padding-top: 3px;
+     width: 680px;
+     height: 850px;   
+     text-align: center;
+}
+.pd1
+{
+    margin-left: 190px;
+    float: left;
+}
+.pd2
+{
+    margin-right: 190px;
+    float: right;
+}
+.ld
+{
+    background-color: lightslategray;
+    color: black;
+    margin-left: 370px;
+    padding-top: 5px;
+    width: 680px;
+    height: 140px;
+    text-align: center;
+}
+.ld1
+{
+    margin-left: 185px;
+    float: left;
+}
+.ld2
+{
+    margin-right: 190px;
+    float: right;
+}
+.q
+{
+    background-color: lightslategray;
+    color: black;
+    margin-left: 370px;
+    padding-top: 5px;
+    width: 680px;
+    height: 215px;
+    text-align: center;
+}
+.q1
+{
+    margin-left: 300px;
+    float: left;
+}
+.q1
+{
+    width: 5000px;
+    margin-left: 1px;
+    height: 200px;
+}
+
+table, th, tr, td{
+    border: 0px solid black;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+.pl
+{
+    background-color: lightslategray;
+    color: black;
+    margin-left: 370px;
+    padding-top: 10px;
+    width: 680px;
+    height: 470px;
+    text-align: center;
+}
+.pl1
+{
+    margin-left: 150px;
+    float: left;
+}
+.pl2
+{
+    margin-right: 260px;
+    float: right;
+}
+#submitt:hover
+{
+    background-color: chartreuse;
+}
+#link
+{
+    text-decoration: none;
+   background-color: blueviolet;
+}
+#resett:hover
+{
+    background-color: greenyellow;
+}

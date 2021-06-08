@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Menu List</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            font-size: 18px;
+            font-family: cursive;
+            padding: 20px 50px 150px 0;
+        }
+        ul{
+            list-style: none;
+            background: rgb(161, 161, 161);
+            border: 1px solid gray;
+            border-radius: 15px;
+            box-shadow: rgb(226, 158, 158);
+            display: inline;
+           padding: 15px 5px 15px 0; 
+            text-align: left;
+        }
+        ul li{
+            display: inline-block;
+            margin-right: -4px;
+            position: relative;
+            padding: 15px 20px;
+            color: black;
+            cursor: pointer;
+        }
+        ul li:hover{
+            background: #555;
+            border-radius: 15px;
+            color: #fff;
+        }
+        ul li ul{
+            padding: 0;
+            position: absolute;
+            top: 48px;
+            left: 0;
+            width: 150px;
+            box-shadow: none;
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+        ul li ul li{
+            border-radius: 15px;
+            background: #555;
+            display: block;
+            color: #fff;
+            text-shadow: 0 -1px 0 #000;
+        }
+        ul li ul li:hover{
+            color: black;
+            background: #666;
+        }
+        ul li:hover ul{
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+        .Sidenav a {
+            margin-top: 150px;
+            position: absolute;
+            left: -100px;
+            transition: 0.3s;
+            padding: 15px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            border-radius: 15px;
+        }
+        .Sidenav a:hover {
+            left: 0;
+        }
+        #about {
+           top: 20px;
+           background-color:#555
+        }
+        #blog {
+           top: 80px;
+           background-color: #555
+        }
+        #projects {
+           top: 140px;
+           background-color: #555;
+        }
+        #contact {
+           top: 200px;
+           background-color: #555
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>About us   
+        </li>
+        <li>Profile
+            <ul>
+                <li>Menu Bar</li>
+                <li>Menu Icon</li>
+                <li>Menu List</li>
+            </ul>
+        </li>
+        <li>settings</li>
+        <li>Contact us</li>
+        <li><input type="text" placeholder="Search.." name="search">
+            <button type="submit">
+            <a href="https://www.w3schools.com/html/default.asp"><i class="fa fa-search"></i></a></button></li>
+    </ul>
+    <div class="Sidenav" class="sidenav">
+        <a href="#" id="about">About</a>
+        <a href="#" id="blog">Blog</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+      </div>
+</body>
+</html>

@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .entire-section{
     border: 0px outset;
     border-radius: 25px;

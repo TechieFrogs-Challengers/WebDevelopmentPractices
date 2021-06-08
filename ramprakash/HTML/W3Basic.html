@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    .divTable
+    {
+        display:box;
+        width:auto;
+        background-color:#eee;
+        border:1px solid  #666666;
+        border-spacing:5px;/*cellspacing:poor IE support for  this*/
+       /* border-collapse:separate;*/
+    }
+
+    .divRow
+    {
+       display:table-row;
+       width:auto;
+    }
+
+    .divCell
+    {
+        float:left;/*fix for  buggy browsers*/
+        display:table-column;
+        width:200px;
+        background-color:#ccc;
+    }
+</style>
+    <body>
+            <div class="divTable">
+                   <div class="headRow">
+                      <div class="divCell" align="center">W3</div>
+                      <div  class="divCell">Tutorial</div>
+                      <div  class="divCell">References</div>
+                      <div  class="divCell">Exercises</div>
+                      <div  class="divCell">PaidCourse</div>
+                      <div  class="divCell">Login</div>
+                   </div>
+                  <div class="divRow1">
+                        <div class="divCell2">HTML INTRODUCTION</div>
+                      <div class="divCell2">HTML TUTORIAL</div>
+                      <div class="divCell2">003</div>
+                  </div>
+                  <div class="divRow">
+                      <div class="divCell3">xxx</div>
+                      <div class="divCell3">yyy</div>
+                      <div class="divCell3">www</div>
+                 </div>
+      
+            </div>
+      
+    
+</body>
+</html>
