@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swith</title>
+</head>
+<body>
+    <p id="demo"></p>
+    
+    <script>
+        var Month=1;
+        switch (Month) {
+            case 1:
+                Month="january"
+                break;
+            case 2:
+                Month="February"
+                break;
+            case 3:
+                Month="March"
+                break;
+            case 4:
+                Month="April"
+                break;
+            case 5:
+                Month="May"
+                break;
+            case 6:
+                Month="June"
+                break;
+            case 7:
+                Month="July"
+                break;
+            case 8:
+                Month="August"
+                break;
+            case 9:
+                Month = "September"
+                break;
+            case 10:
+                Month = "October"
+                break;
+            case 11:
+                Month = "November"
+                break;
+            case 12:
+                Month = "December"
+                break;
+            default:
+                document.write("Invalid month")
+            
+        }
+        document.getElementById("demo").innerHTML = "month is " + Month;
+    </script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <Registration form>
+        </title>
+        <link rel="stylesheet" href="Ass4.2.1.css">
+    </head>
+    <body>
+        <div>
+            <form action="wwww.gmail.com">
+                 <div class="header">
+                    <h1>Registration Form</h1>
+                 </div>
+        
+                  <div class="pd">
+                    <h2><b>Personal Details : </b></h2>
+                         <div class="pd1">
+                            <label for="fname"><b>First Name<span>*</span> : </b></label>
+                    
+                         </div>
+                         <div class="pd2">
+                            <input type="text" name="fname" id="fname" placeholder="Enter your first name" maxlength="20" required>
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="lanme"><b>Last Name<span>*</span> : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="text" name="lname" maxlength="20" placeholder="Enter your last name" required>
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                             <label for="gender"><b>Gender<span>*</span> : </b></label>
+                         </div>
+                         <div class="pl2" style="margin-right: 170px;">
+                             <input type="radio" name="gender">
+                             <label for="gender">Male</label>
+                             <input type="radio" name="gender">
+                             <label for="gender">Female</label>
+                             <input type="radio" name="gender">
+                             <label for="gender">Others</label>
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="Date of Birth" ><b>Date of Birth<span>*</span> : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="date" name="date of birth" style="margin-right: 3px; width: 170px;">
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="email"><b>Email<span>*</span> : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="email" name="email" required>
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="Mobile Number"><b>Mobile Number : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="tel" pattern="[6-9]{1}[0-9]{9}" name="Mobile Number" maxlength="10">
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="Address"><b>Address Line 1<span>*</span>: </b></label>
+                         </div>
+                         <div class="pd2">
+                            <textarea rows="1" cols="2" placeholder="D/no,Street" style="width: 170px;"></textarea>
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="Address"><b>Address Line 2<span>*</span>: </b></label>
+                         </div>
+                         <div class="pd2">
+                            <textarea rows="1" cols="2" placeholder="Landmark" style="width: 170px;"></textarea>
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="City"><b>City<span>*</span> : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="text" name="city" required>
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="State"><b>State<span>*</span> : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="text" name="State" required>
+                         </div>
+                         <br>
+                         <br>
+                         <div class="pd1">
+                            <label for="Zip Code"><b>Zip Code<span>*</span> : </b></label>
+                         </div>
+                         <div class="pd2">
+                            <input type="text" name="Zip Code" maxlength="6" required>
+                         </div>
+                         <br>
+                         <br>
+                        
+                         <div class="pd1">
+                            <label for="Photo" style="width: 250px; height: 350px;"><b>Upload Photo<span>*</span> : </b></label>
+                         </div>
+                         <div class="pd2" style="margin-right: 120px;">
+                           <img src="C:\Users\hp\Downloads\a.jpg">
+                         </div>
+                    </div>   
+                    <br>/
+                     
+                    <div class="ld">
+                        <h2><b>Login Details : </b></h2>
+                        <div class="ld1">
+                            <label for="username"><b>Username<span>*</span> : </b></label>
+                        </div>
+                        <div class="ld2">
+                            <input type="text" name="username" required>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="ld1">
+                            <label for="password"><b>Password<span>*</span> : </b></label>
+                        </div>
+                        <div class="ld2">
+                            <input type="password" name="password" required>
+                        </div>
+                    </div>
+                    <br>
+                <div class="q">
+                        <div class="qi"></div>
+                            <h2><b>Qualification details<span>*</span> : </b></h2>
+                            <div class="q1">
+                               <table>
+                                  <tr>
+                                     <th>Qualification<span>*</span></th>
+                                     <th>Specialization<span>*</span></th>
+                                      <th>Passout Year<span>*</span></th>
+                                      <th>College Name<span>*</span></th>
+                               </tr>
+                               <tr>
+                                   <th>
+                                    <select name="Qualification" required>
+                                        <option value="none">Select</option>
+                                      <option value="M.tech">M.tech</option>
+                                       <option value="B.tech">B.tech</option>
+                                       <option value="M.B.A">M.B.A</option>
+                                       <option value="Class 12">Class 12</option>
+                                       <option value="Class 10">Class 10</option>
+                                     </th>
+                                     <th>
+                                     <input type="text" name="Specialization" required>
+                                     </th>
+                                     <th>
+                                     <input type="year" name="Passout year" required>
+                                     </th>
+                                     <th>
+                                        <input type="text" name="College name" required>
+                                     </th>
+                                     <tr>
+                                   <th>
+                                    <select name="Qualification">
+                                        <option value="none">Select</option>
+                                      <option value="M.tech">M.tech</option>
+                                       <option value="B.tech">B.tech</option>
+                                       <option value="M.B.A">M.B.A</option>
+                                       <option value="Class 12">Class 12</option>
+                                       <option value="Class 10">Class 10</option>
+                                     </th>
+                                     <th>
+                                     <input type="text" name="Specialization" required>
+                                     </th>
+                                     <th>
+                                     <input type="year" name="Passout year" required>
+                                     </th>
+                                     <th>
+                                        <input type="text" name="College name" required>
+                                     </th>
+                                     <tr>
+                                   <th>
+                                    <select name="Qualification">
+                                        <option value="none">Select</option>
+                                      <option value="M.tech">M.tech</option>
+                                       <option value="B.tech">B.tech</option>
+                                       <option value="M.B.A">M.B.A</option>
+                                       <option value="Class 12">Class 12</option>
+                                       <option value="Class 10">Class 10</option>
+                                     </th>
+                                     <th>
+                                     <input type="text" name="Specialization" required>
+                                     </th>
+                                     <th>
+                                     <input type="year" name="Passout year" required>
+                                     </th>
+                                     <th>
+                                        <input type="text" name="College name" required>
+                                     </th>
+                                     <tr>
+                                   <th>
+                                    <select name="Qualification">
+                                        <option value="none">Select</option>/
+                                      <option value="M.tech">M.tech</option>
+                                       <option value="B.tech">B.tech</option>
+                                       <option value="M.B.A">M.B.A</option>
+                                       <option value="Class 12">Class 12</option>
+                                       <option value="Class 10">Class 10</option>
+                                     </th>
+                                     <th>
+                                     <input type="text" name="Specialization" required>
+                                     </th>
+                                     <th>
+                                     <input type="year" name="Passout year" required>
+                                     </th>
+                                     <th>
+                                        <input type="text" name="College name" required>
+                                     </th>
+                                   </select>
+                               </tr>
+                               </table>                         
+                            </div>
+                        </div>    
+                </div> 
+                <br>
+                
+                <div class="pl">
+                    <h2><b>Professional Details : </b></h2>
+                    <div class="pl1">
+                          <label for="Technical  Skills"><b>Technical Skills<span>*</span> : </b></label>
+                    </div>
+                    <div class="pl2">
+                        <select name="Technical Skills" multiple>
+                            <option value="HTML" id="Technical Skills">HTML</option>
+                            <option value="CSS" id="Technical Skills">CSS</option>
+                            <option value="PHP" id="Technical Skills">PHP</option>
+                            <option value="Java" id="Technical Skills">Java</option>
+                            <option value="JavaScript" id="Technical Skills">JavaScript</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="pl1">
+                        <label for="Interested technologies"><b>Interested Technologies<span>*</span> : </b></label>  
+                    </div>
+                    <div class="pl2" style="margin-right: 170px;">
+                               <input type="checkbox" name="Interested technologies" >
+                                <label for="Interested technologies" style="margin-right: 100px;">Robotics</label><br>
+                                <input type="checkbox" name="Interested technologies">
+                                 <label for="Interested technologies" style="margin-right: 5px;">Internet of Things(IOT)</label><br>
+                                 <input type="checkbox" name="Interested technologies">
+                                 <label for="Interested technologies" style="margin-right: 40px;">Machine Learning</label><br>
+                                 <input type="checkbox" name="Interested technologies">
+                                 <label for="Interested technologies" style="margin-right: 65px;">Virtual Reality</label>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                     <div class="pl1">
+                         <label for="Linkedn Profile"><b>Linkedin Profile<span>*</span> : </b></label>
+                     </div>
+                     <div class="pl2" style="margin-right: 285px;">
+                        
+                             <a id="link" href="https://www.linkedin.com/in/pusuluri-chandu-031a86190/">Linkedin</a>
+                       
+                     </div>
+                     <br>
+                     <br>
+                     <div class="pl1">
+                         <label for="Upload Profile"><b>Upload Profile<span>*</span> : </b></label>
+                     </div>
+                     <div class="pl2" style="margin-right: 100px;">
+                         <input type="file" name="Upload Profile" required>
+                     </div>
+                     <br>
+                     <br>
+
+                     <div class="pl1">
+                        <label for="Note"><b>Note<span>*</span> : </b></label>
+                    </div>
+                    <div class="pl2">
+                        <textarea rows="4" cols="20" style="margin-right: -70px;"></textarea>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                     <div class="pl1">
+                        <button type="submit" id="submitt" style="margin-left: 90px;">Submit</button>
+                        <button type="reset" id ="resett" style="margin-left: 20px;">Reset</button>
+                     </div>
+                     <br>
+                    
+                </div>
+                     
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Boolean() Function</title>
+</head>
+<body>
+    <h1>The Boolean Function</h1>
+
+    <p> Boolean(10 > 9):<ui id="demo"></ui></p>
+    
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo1"></p>
+    
+
+    
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = Boolean(10 > 9);
+        }
+
+        var b1 = Boolean(100);
+        var b2 = Boolean(3.14);
+        var b3 = Boolean(-15);
+        var b4 = Boolean("Hello");
+        var b5 = Boolean('false');
+        var b6 = Boolean(1 + 7 + 3.14);
+        var b7 = Boolean(11==20);
+        var x = 0;
+
+    document.getElementById("demo1").innerHTML =
+        "100 is :: " + b1 + "<br>" +
+        "3.14 is :: " + b2 + "<br>" +
+        "-15 is :: " + b3 + "<br>" +
+        "Not  Empty :: " + b4 + "<br>" +
+        "is String " + b5 + "<br>" +
+        "is Non Zero :: " + b6 + "<br>" +
+        "is (11==20) true :: "+b7+"<br>"+
+        "Bo0lean value of 0 :: "+x;
+        //with out inilizing the varable then the boolean value will be flase
+    </script>
+</body>
+</html>

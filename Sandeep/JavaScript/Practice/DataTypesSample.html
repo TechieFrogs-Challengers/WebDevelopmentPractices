@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+</head>
+<body>
+    <p id="demo"></p><br><br>
+    <p id="demo1"></p><br><br>
+    <p id="demo2"></p><br><br>
+    <p id="demo3"></p><br><br>
+    <p id="demo4"></p><br><br>
+    
+    <script>
+        var x = "Sandeep" + 16 + 4;
+        document.getElementById("demo").innerHTML = x;
+
+        //another type od declaring
+        var person = {
+                firstName: "Sai",
+                lastName: "Maddipati",
+                age: 26,
+                eyeColor: "brown"
+            };
+
+            document.getElementById("demo1").innerHTML =
+            person.firstName + " is " + person.age + " years old.";
+
+            //Type of
+            document.getElementById("demo2").innerHTML =
+                typeof 0 + "<br>" +
+                typeof 314 + "<br>" +
+                typeof 3.14 + "<br>" +
+                typeof (3) + "<br>" +
+                typeof "5" + "<br>"+
+                typeof "sandeep" + "<br>" +
+                typeof a + "<br>" +
+                typeof 'a' + "<br>" +   
+                typeof 23.2584684684 + "<br>" +
+                typeof { name: 'john', age: 34 } + "<br>" +
+                typeof [1, 2, 3, 4] + "<br>" +
+                typeof null + "<br>" +
+                typeof function myFunc() { };
+
+            //undifed type
+            var a;
+            document.getElementById("demo3").innerHTML =a + "<br>" + typeof a;
+
+            //how to make value undifined
+            var details = { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue" };
+            details = undefined;
+            document.getElementById("demo4").innerHTML = details;
+    </script>
+</body>
+</html>

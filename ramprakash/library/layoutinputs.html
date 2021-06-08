@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<style>
+    *{
+        margin:0%
+    }
+    .login{
+        width:50%;
+        height:200px;
+        float:left;
+        text-align:right;
+        background-color:darkolivegreen;
+    }
+
+    .loginright{
+        width:50%;
+        height:200px;
+        float:left;
+        text-align: center;
+        background-color:rgb(214, 255, 34);
+    }
+    h1{
+        text-align: center;
+        color:white;
+    }
+    .row{
+        box-sizing: border-box;
+    }
+    .row:after{
+        display:table;
+        content:"";
+        clear:both;
+    }
+    .header{
+        width: 100vw;
+        height:50px;
+        background-color: black;
+    }
+    input{
+       float:left;
+    }
+    .menus{
+        background-color: rgb(15, 15, 15);
+    }
+   .mainc{
+     width:100%;
+   }
+ /*    
+   a{
+    text-decoration: none;
+    color: blanchedalmond;
+    background-color: blueviolet;
+    text-align: center;
+    font-size:20px;
+   }
+
+{
+    flex: 1;
+    position: fixed;
+    right: 0;
+}*/
+.menus a{
+    display:block;
+    float:left;
+    text-decoration: none;
+    padding:15px 35px;
+    text-align: center;
+    font-size: 17px;
+    background-color:aqua;  
+}
+.topnav{
+    overflow: none;
+    background-color:burlywood;
+}
+.menusr a{
+    display:block;
+    float:right;
+    text-decoration: none;
+    padding:15px 35px;
+    text-align: center;
+    font-size: 17px;
+    background-color:aqua;  
+}
+</style>
+<body>
+    <div class="mainc">
+            <div class="header">
+        <h1>Header</h1>
+    </div>
+      <div class="row">
+            <div class="login">
+                <lable>Username:</lable><br><br><br>
+                <lable>Password:</lable>
+            </div>
+            <div class="loginright">
+            
+                <input type="text"><br><br><br>
+                <input type="text">
+            </div>
+        </div>
+        <div class="topnav">
+            <div class="menus">
+                <a href="#">Home</a>
+                <a href="#">Html</a>
+                <a href="#">Css</a>
+                <a href="#">Java</a>
+            </div>
+            <div class="menusr">
+                <a href="#">Home</a>
+                <a href="#">Html</a>
+                <a href="#">Css</a>
+                <a href="#">Java</a>
+            </div>
+        </div>
+</div>
+</body>
+</html>
