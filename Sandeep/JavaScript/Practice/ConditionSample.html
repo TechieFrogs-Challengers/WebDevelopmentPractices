@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <h2>Conditional Statements</h2>
+    <p id="demo"></p>
+    
+    <script>
+        fname();
+        function fname(){
+            var age=5;
+            if(age>=18 && age<=45)
+            {
+                document.getElementById("demo").innerHTML="3rd schedule of vaccinee " + " your age is"+age;
+            }
+            else if(age>=45&&age<=65)
+            {
+                document.getElementById("demo").innerHTML = "2nd schedule of vaccinee " + " your age is"+ age;
+            }
+            else if(age>65){
+                document.getElementById("demo").innerHTML = "1st schedule of vaccinee " +" your age is"+ age;
+
+            }
+            else{
+                document.getElementById("demo").innerHTML = "vaccinee drive not yet started" + " your age is" + age;
+            }
+        }
+    </script>
+</body>
+</html>

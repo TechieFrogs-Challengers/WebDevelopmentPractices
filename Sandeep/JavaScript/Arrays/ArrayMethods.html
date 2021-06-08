@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <h1>ToString()</h1>
+    <p id="demo"></p>
+    <h1>Join()</h1>
+    <p id="demo1"></p>
+    <h1>pop()</h1>
+
+    <p>Data After Pop()</p>
+    <p id="demo2"></p>
+    
+    <h1>Push()</h1>
+    <p>Data after push()</p>
+    <p id="demo3"></p>
+
+    <h1>Shift()</h1>
+    <p>Data after shift() removes 1st element</p>
+    <p id="demo4"></p>
+
+    <h1>UnShift()</h1>
+    <p>Data After unShift() Adds the element at 1st</p>
+    <p id="demo5"></p>
+    
+    <h1>Delete</h1>
+    <p>Data after delete deletes the elemnt at given index position</p>
+    <p id="demo6"></p>
+
+    <h1>splice</h1>
+    <p>Original data</p>
+    <p id="demo7"></p>
+    <p>Data after Splice() inserts elemnt at a given positions</p>
+    <p id="demo8"></p>
+    <p>bu using splice we can delete data also</p>
+    <p id="demo9"></p>
+
+    <h1>Concat()</h1>
+    <p>1st array</p>
+    <p id="demo10"></p>
+    <p>2nd array</p>
+    <p id="demo11"></p>
+    <p>After merging the 2 arrays</p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+
+    <h1>Reverse</h1>
+    <p>Actual data</p>
+    <p id="demo14"></p>
+    <p>Reversing data</p>
+    <p id="demo15"></p>
+
+    <h1>CopyWithIn()</h1>
+    <p>Actual data</p>
+    <p id="demo16"></p>
+    <p>after copywithin()</p>
+    <p id="demo17"></p>
+
+    <h1>entries()</h1>
+    <p>Original data</p>
+    <p id="demo18"></p>
+    <p>Entries</p>
+    <p id="demo19"></p>
+
+    <script>
+        var names = ["Sai", "Venkata", "Krishna", "Sandeep"];
+        document.getElementById("demo").innerHTML = names.toString();
+        document.getElementById("demo1").innerHTML = names.join(" - ");
+
+        names.pop();//delets the last element
+        document.getElementById("demo2").innerHTML = names.toString();
+
+        names.push("Maddipati");
+        document.getElementById("demo3").innerHTML = names.toString();
+
+        names.shift();
+        document.getElementById("demo4").innerHTML = names.toString();//removes first elemnt
+
+        names.unshift("Sandeep");
+        document.getElementById("demo5").innerHTML = names.toString();//removes first elemnt
+
+        delete names[3];
+        document.getElementById("demo6").innerHTML = names.toString();//removes first elemnt
+
+        document.getElementById("demo7").innerHTML = names.toString();//removes first elemnt
+        names.splice(2,0,"Prasad","hari");
+        document.getElementById("demo8").innerHTML = names.toString();//removes first elemnt
+
+        names.splice(0,1);
+        document.getElementById("demo9").innerHTML = names.toString();//removes first elemnt
+
+        var name=["chandra","uaday"]
+        var data=name.concat(names);
+        document.getElementById("demo10").innerHTML = names.toString();
+        document.getElementById("demo11").innerHTML = name.toString();
+        document.getElementById("demo12").innerHTML = data.toString();
+        
+        //anothert way is
+        var data1=names.concat(name);
+        document.getElementById("demo13").innerHTML = data1.toString();
+
+        document.getElementById("demo14").innerHTML = data1.toString();
+        data1.reverse()
+        document.getElementById("demo15").innerHTML = data1.toString();
+        
+        document.getElementById("demo16").innerHTML = data1.toString();
+        data1.copyWithin(3,1,3);
+        document.getElementById("demo17").innerHTML = data1.toString();
+        
+        var name1 = ["sai", "sid", "div", "anu"];
+        document.getElementById("demo18").innerHTML = name1.toString();
+        var i=name1.entries();
+        for (var x of i) {
+            document.getElementById("demo19").innerHTML += x + "<br>";
+        }
+    </script>
+
+</body>
+</html>
