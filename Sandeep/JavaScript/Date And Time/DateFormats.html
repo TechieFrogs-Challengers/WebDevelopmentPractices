@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO Dates</title>
+</head>
+<body>
+    <h1>ISO Dates</h1>
+
+    <h2>Complete date</h2>
+    <p id="demo"></p>
+
+    <h2>ISO Dates (Year and Month)</h2>
+    <p id="demo1"></p>
+
+    <h2>ISO Dates (Only Year)</h2>
+    <p id="demo2"></p>
+    
+    <h2>ISO Dates (Date-Time)</h2>
+    <p id="demo3"></p>
+
+    <h2>Short Dates</h2>
+    <p id="demo4"></p>
+
+    <h2>Parsing Dates</h2>
+    <p>returns the number of milliseconds between the date and January 1, 1970</p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        var d = new Date("2019-08-12");
+        document.getElementById("demo").innerHTML = d;
+
+        var d = new Date("2019-08");
+        document.getElementById("demo1").innerHTML = d;
+
+        var d = new Date("2019");
+        document.getElementById("demo2").innerHTML = d;
+
+        var d = new Date("2019-08-12T06:00:00Z");
+        document.getElementById("demo3").innerHTML = d;
+
+        var d = new Date("08/12/2019");
+        document.getElementById("demo4").innerHTML = d;//other than this format the bozer will though error i.e NaN
+        
+
+        var msec = Date.parse("March 21, 2012");
+        document.getElementById("demo5").innerHTML = msec;
+
+        var msec = Date.parse("March 21, 2012");
+        var d = new Date(msec);
+        document.getElementById("demo6").innerHTML = d;
+
+</script>
+</body>
+</html>

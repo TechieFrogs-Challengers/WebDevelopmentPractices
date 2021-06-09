@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Arrays</h2>
+<p id="demo"></p>
+<script>
+var cars = ["Saab", "Volvo", "BMW","Tesla","Alto 800"];
+document.getElementById("demo").innerHTML = cars;
+document.write(cars.sort());
+document.write("<br>"+"array lenght:"+cars.length);
+cars.push("Audi");
+document.write("<br>"+"After push:"+cars);
+document.write("<br>"+cars.join(" $ "));
+cars.shift();
+document.write("<br>"+" Shift:"+cars);
+cars.unshift("Tata Nano");
+document.write("<br>"+" unShift:"+cars);
+document.write("<br>"+" Before splice:"+cars);
+//cars.splice(0,2);
+//document.write("<br>"+" after: "+cars);
+//document.write("<br>"+"removed splice:"+ removed);
+var bikes=["Yamaha","Duke","scooty","tvs","ns200"];
+document.write("<br>"+"Bikes array:"+bikes);
+bikes.splice(2,2, "Java","Bullet");
+document.write("<br>"+"splice:"+ bikes);
+
+document.write("<br>"+"Cars:"+cars+"---bikes:"+bikes);
+var all=cars.concat(bikes);
+document.write("<br>"+"after conact both we get:"+all);
+//cars=cars.concat(bikes);
+document.write("<br>"+"we have in cars array:"+cars);
+var dupcars=cars.slice(3);
+document.write("<br>"+"after slice:"+dupcars);
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+document.write("<br>"+"Before slice:"+fruits);
+//var citrus = fruits.slice(1,3);
+//document.write("<br>"+"after slice:"+citrus);
+fruits.reverse();
+document.write("<br>"+"Before slice:"+fruits);
+
+var nums=[20,45,23,11,1,6,44];
+//nums.sort();
+document.write("<br>"+"numbers:"+nums);
+</script>
+</body>
+</html>

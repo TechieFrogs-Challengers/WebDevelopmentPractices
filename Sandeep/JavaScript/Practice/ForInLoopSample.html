@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For/In Loop</title>
+</head>
+<body>
+    <h1>For/In Loop</h1>
+    <p id="demo"></p><br><br>
+    <p id="demo1"></p><br><br>
+    <p id="demo2"></p>
+    
+    <script>
+        var data = "";
+        var details = { fname: "Sai", lname: "Maddipati", age: 26,city:"Tadepalligudem" };
+        var x;
+        for (x in details) {
+            data += details[x] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = data;
+
+        var num = "";
+        var numbers = [45, 4, 9, 16, 25];
+        var x;
+        for (x in numbers) {
+            num += numbers[x] + "<br>";
+        }
+        document.getElementById("demo1").innerHTML = num;
+
+        //Array.forEach()
+        var data1 = "";
+            var arr = [45, 4, 9, 16, 25];
+            arr.forEach(myFunction);
+            document.getElementById("demo2").innerHTML = data1;
+
+            function myFunction(value, index, array) {
+                data1 +=  value + "<br>";
+            }
+    </script>
+</body>
+</html>

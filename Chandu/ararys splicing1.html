@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Arrays Splicng</h1>
+        <p id="demo"></p>
+        <button type="button" onclick="chandu()">Click karo</button>
+        <p id="demo1"></p>
+        <script>
+            var fruits = ["Banana","Lemon","Custard Apple","Papaya"];
+            document.getElementById("demo").innerHTML=fruits;
+            function chandu()
+            {
+                fruits.splice(2,0,"Mango","Kiwi");
+                document.getElementById("demo1").innerHTML=fruits;
+            }
+           
+        </script>
+    </body>
+</html>

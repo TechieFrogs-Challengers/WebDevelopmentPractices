@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myfun()">array</button>
+    <p id="demo"></p>
+<script>
+function myfun()
+{
+    var array=["ram","prakash","good","boy"];
+    var text="<ul>";
+    for(var i=0;i<array.length;i++)
+    {
+       text+="<li>"+array[i]+"</li>";
+    }
+    text+="</ul>";
+    document.getElementById("demo").innerHTML= text;
+  // document.write(typeof array +"values:"+array);
+}
+</script>
+</body>
+</html>

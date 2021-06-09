@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For/Of Loop</title>
+</head>
+<body>
+    <h1>For/Of Loop</h1>
+    <p>lagrge</p><br>
+    <p id="demo"></p><br><br>
+    <p>small</p>
+    <p id="demo1"></p>
+    
+    <script>
+        //Looping over an Array
+        var names = ["Sai", "Sandeep", "Krishna","Venkta" ,"Maddipati","Eswar","Ram","Gana","Kiran"];
+        var data = "";
+        var data1 = "";
+/*
+        for (var i in names) {
+            if(i%2==0){
+                data += names[i] + "<br>";
+                document.getElementById("demo").innerHTML = data;
+            }else{
+                data1 += names[i] + "<br>";
+                document.getElementById("demo1").innerHTML = data1;
+            }
+            
+        }
+        */
+
+        
+
+
+        //Looping over a String
+        var numbers=[3200,89,1,5,8,3,2,5,88,22,44,77,22,99,0,1000];
+        var large=0;
+        var small=numbers[0];
+        
+        for(var i=0;i< numbers.length; i++)
+        {
+            if(numbers[i]>large )
+            {
+                large=numbers[i];
+                
+            }
+            //logic for small
+            if (numbers[i] < small) {
+                small = numbers[i];
+            }
+            document.getElementById("demo").innerHTML = large;
+            document.getElementById("demo1").innerHTML = small;
+        }
+        
+    </script>
+</body>
+</html>

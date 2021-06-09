@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registration Form
+        </title>
+        <style>
+               .b
+               {
+                  margin-left: 20px;
+                  padding-top: 20px;
+               }
+               body{
+                   background-color: lightsalmon;
+                   background-image: ;
+               }
+        </style>
+    </head>
+    <body>
+        <div>
+             <div>
+                <h1 style="text-align: center; font-style: oblique;">Registration Form</h1>
+             </div>
+
+             <div class="b">
+                <label for="fname"><b>First name : </b></label>
+                <input type="text" name="fname" placeholder="Enter your first name" maxlength="20">
+             </div>
+
+             <div class="b">
+                <label for="lname"><b>Last name : </b></label>
+                <input type="text" name="lname" placeholder="Enter your last name" maxlength="20">
+             </div>
+
+             <div class="b">
+                <label for="gender"><b>Gender : </b></label>
+                <input type="radio" name="male" value="gender">
+                <label for="gender">Male</label>
+                <input type="radio" name="female" value="gender">
+                <label for="gemder">Female</label>
+                <input type="radio" name="others" value="others">
+                <label for="gender">Others</label>
+             </div>
+
+             <div class="b">
+                <label for="date of birth"><b>Date of birth : </b></label>
+                <input type="date" name="date of birth">
+             </div>
+
+             <div class="b">
+                 <label for="email"><b>Email : </b></label>
+                 <input type="email" name="email" required>
+             </div>
+
+             <div class="b">
+                 <label for="Mobile number"><b>Mobile Number : </b></label>
+                 <input type="text" pattern="[7-9]{1}[0-9]{9}" name="Mobile number">
+             </div>
+
+             <div class="b">
+                 <label for="Address"><b>Address : </b></label>
+                 <textarea rows="4" cols="50" style="width: 250px; height: 80px; margin-left: 10px;"></textarea>
+             </div>
+             
+             <div class="b">
+                 <label for="Pin Code"><b>Pin Code : </b></label>
+                 <input type="text" name="Pin Code" maxlength="6">
+             </div>
+             
+             <div class="b">
+                 <label for="Username"><b>Username : </b></label>
+                 <input type="text" name="Username" maxlength="20">
+             </div>
+
+             <div class="b">
+                 <label for="password"><b>Password : </b></label>
+                 <input type="password" name="password" minlength="8">
+             </div>
+
+             <div class="b">
+                 <label for="Qualification"><b>Qualification : </b></label>
+                 <select name="Qualification">
+                     <option value="M.tech">M.tech</option>
+                     <option value="B.tech">B.tech</option>
+                     <option value="M.B.A">M.B.A</option>
+                     <option value="M.C.A">M.C.A</option>
+                 </select>
+             </div>
+
+             <div class="b">
+                 <label for="Specialization"><b>Specialization : </b></label>
+                 <select name="Specialization">
+                     <option value="Data Science">Data Science</option>
+                     <option value="Big data">Big data</option>
+                     <option value="Artificial Intelligence">Artificial Intelligence</option>
+                     <option value="Cyber Security">Cyber Security</option>
+                 </select>
+             </div>
+
+             <div class="b">
+                 <label for="year of pass"><b>Year of passout : </b></label>
+                 <select name="year of pass">
+                     <option value="2017">2017</option>
+                     <option value="2018">2018</option>
+                     <option value="2019">2019</option>
+                     <option value="2020">2020</option>
+                     <option value="2021">2021</option>
+                     <option value="2022">2022</option>
+                 </select>
+             </div>
+             
+             <div class="b">
+                 <label for="College name"><b>College Name : </b></label>
+                 <input type="text" name="College name">
+             </div>
+
+             <div class="b">
+                 <label for="Technical Skills"><b>Technical Skills : </b></label>
+                 <input type="checkbox" name="Technical Skills">
+                 <label for="Technical Skills">C</label>
+                 <input type="checkbox" name="Technical Skills">
+                 <label for="Technical Skills">C++</label>
+                 <input type="checkbox" name="Technical Skills">
+                 <label for="Technical Skills">HTML</label>
+                 <input type="checkbox" name="Technical Skills">
+                 <label for="Technical Skills">CSS</label>
+                 <input type="checkbox" name="Technical Skills">
+                 <label for="Technical Skills">JavaScript</label>
+                 <input type="checkbox" name="Technical Skills">
+                 <label for="Technical Skills">PHP</label>
+                 <input type="checkbox" name="Technical Skills">
+             </div>
+
+             <div class="b">
+                 <label for="Interested technologies"><b>Interested Technologies : </b></label>
+                 <input type="checkbox" name="Interested Technologies">
+                 <label for="Interested technologies"><b>Interenet of Things(IOT)</b></label>
+                 <input type="checkbox" name="Interested Technologies">
+                 <label for="Interested technologies"><b>Machine Learning</b></label>
+                 <input type="checkbox" name="Interested Technologies">
+                 <label for="Interested technologies"><b>Virtual Reality</b></label>
+                 <input type="checkbox" name="Interested Technologies">
+             </div>
+
+             <div class="b">
+                 <label for="Linkedin profile"><b>Linkedin Profile : </b></label>
+                 <button><a href="https://www.linkedin.com/in/pusuluri-chandu-031a86190/">
+                Linkedin</a></button>
+             </div>
+             <div class="b">
+                 <label for="Upload Profile"><b>Upload Profile : </b></label>
+                 <input type="file" name="Upload Profile" placeholder="Resume">
+             </div>
+             <br>
+             <div style="margin-left: 80px;">
+                 <button type="submit">Submit</button>
+                 <button type="reset">Reset</button>
+             </div>
+        </div>
+    </body>
+</html>
