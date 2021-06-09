@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparision operators</title>
+  </head>
+  <body>
+    <p id="assign"></p>
+    <p id="assign1"></p>
+    <p id="assign2"></p>
+    <p id="assign3"></p>
+    <p id="assign4"></p>
+    <p id="assign5"></p>
+    <p id="assign6"></p>
+    <p id="assign7"></p>
+    <script>
+      var num1 = 20,
+        num2 = 5;
+      document.getElementById("assign").innerHTML =
+        "Double equals: " + (num1 == num2);
+
+      document.getElementById("assign1").innerHTML =
+        "Greaterthan Equal: " + (num1 >= num2);
+
+      document.getElementById("assign2").innerHTML =
+        " Lessthan Equal: " + (num1 <= num2);
+
+      document.getElementById("assign3").innerHTML =
+        " Not Equal: " + (num1 != num2);
+
+      document.getElementById("assign4").innerHTML =
+        " Greaterthan: " + (num1 > num2);
+
+      document.getElementById("assign5").innerHTML =
+        " Lessthan: " + (num1 < num2);
+
+      document.getElementById("assign6").innerHTML =
+        "Triple equals: " + (num1 === num2);
+
+      document.getElementById("assign7").innerHTML =
+        "Triple Not equals: " + (num1 !== num2);
+    </script>
+  </body>
+</html>

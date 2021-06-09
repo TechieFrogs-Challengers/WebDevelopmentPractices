@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>operators</title>
+  </head>
+  <body>
+    <p id="add"></p>
+    <p id="subtract"></p>
+    <p id="divide"></p>
+    <p id="multiply"></p>
+    <p id="mod"></p>
+    <p id="exponent"></p>
+    <p id="increment"></p>
+    <p id="decrement"></p>
+
+    <p id="assign"></p>
+    <p id="assign1"></p>
+    <p id="assign2"></p>
+    <p id="assign3"></p>
+    <p id="assign4"></p>
+    <p id="assign5"></p>
+    <script>
+      var num1 = 20,
+        num2 = 5;
+      //Operators
+      document.getElementById("add").innerHTML = "Adddition: " + (num1 + num2);
+
+      document.getElementById("subtract").innerHTML =
+        "Subtraction: " + (num1 - num2);
+
+      document.getElementById("divide").innerHTML = " Division: " + num1 / num2;
+
+      document.getElementById("multiply").innerHTML =
+        " Multiplication: " + num1 * num2;
+
+      document.getElementById("mod").innerHTML = " Modulus: " + (num1 % num2);
+
+      document.getElementById("exponent").innerHTML =
+        " Exponent: " + num1 ** num2;
+
+      document.getElementById("increment").innerHTML = " Increment: " + num1++;
+
+      document.getElementById("decrement").innerHTML = " Decrement: " + num1--;
+
+      //Assignment operators
+      document.getElementById("assign").innerHTML =
+        "Adddition: " + (num1 += num2);
+
+      document.getElementById("assign1").innerHTML =
+        "Subtraction: " + (num1 -= num2);
+
+      document.getElementById("assign2").innerHTML =
+        " Division: " + (num1 /= num2);
+
+      document.getElementById("assign3").innerHTML =
+        " Multiplication: " + (num1 *= num2);
+
+      document.getElementById("assign4").innerHTML =
+        " Modulus: " + (num1 %= num2);
+
+      document.getElementById("assign5").innerHTML =
+        " Exponent: " + (num1 **= num2);
+    </script>
+  </body>
+</html>

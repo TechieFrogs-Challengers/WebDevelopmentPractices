@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function calling using On-Click Event</title>
+    <!--Script tag can be used in head section also-->
+    <script>
+      function firstFunction() {
+        document.getElementById("one").innerHTML = "Magic...";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>First script</h1>
+    <p id="one">wanna see some...</p>
+    <button type="button" onclick="firstFunction()">Try it</button>
+
+    <!--Script tag can be used in body section also-->
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+      }
+    </script>
+    <h1>Second script</h1>
+    <p id="demo">This Paragraph will change</p>
+    <!--calling function by using on-click event-->
+    <button type="button" onclick="myFunction()">Try it</button>
+  </body>
+</html>
