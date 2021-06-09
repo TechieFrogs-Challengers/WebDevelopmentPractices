@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Events</title>
+  </head>
+  <body>
+    <!--Method1: Event calling by using javascript code-->
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+
+    <button onmouseover="this.innerHTML=Date()">The time is?</button>
+
+    <button onmouseout="this.innerHTML='hello..dont know time'">
+      what time is now?
+    </button>
+
+    <!--Method1: Event calling by using function -->
+    <p>Click the button to display the date.</p>
+    <p id="demo"></p>
+
+    <!--Function-->
+    <script>
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    </script>
+    <!--calling function by onclick event-->
+    <button onclick="displayDate()">The time is?</button>
+  </body>
+</html>

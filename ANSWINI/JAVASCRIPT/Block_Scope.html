@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block scope</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <p id="message"></p>
+    <p id="output1"></p>
+    <p id="message1"></p>
+    <!--Block scope-->
+    <script>
+      //num variable value is 10 here
+      var num = 10;
+      {
+        //num variable value is reasssigned to 5 here(because var is used...it reassigns)
+        var num = 5;
+      }
+      //prints reassigned number for num variable
+      document.getElementById("message").innerHTML =
+        "USING 'var' BOTH INSIDE AND OUTSIDE A BLOCK";
+      document.getElementById("output").innerHTML = num;
+    </script>
+
+    <script>
+      //num variable value is 10 here
+      var num = 10;
+      {
+        //num variable value is not reasssigned to 5 here(because let dont reassign and 5 is only for this block{})
+        let num = 5;
+      }
+      //prints number for num variable
+      document.getElementById("message1").innerHTML =
+        "USING 'var'  INSIDE AND  'let' OUTSIDE the BLOCK";
+      document.getElementById("output1").innerHTML = num;
+    </script>
+  </body>
+</html>

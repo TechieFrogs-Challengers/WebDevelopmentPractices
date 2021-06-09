@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javacript practice</title>
+  </head>
+  <body>
+    <h1>Hello how are you?</h1>
+    <!--onclick event by using elementid (when clicked to display date,using inbuilt date() method)-->
+    <p id="oneP">change this</p>
+    <button
+      type="button"
+      onclick="document.getElementById('oneP').innerHTML= Date()"
+    >
+      click here
+    </button>
+
+    <!--onclick event by using elementid (when clicked to display normal text)-->
+    <p id="twoP">change this</p>
+    <button
+      type="button"
+      onclick="document.getElementById('twoP').innerHTML= 'hello...!!'"
+    >
+      click here
+    </button>
+
+    <br /><br />
+    <button onclick="document.getElementById('myImage').src='man-standing.png'">
+      stand
+    </button>
+
+    <img id="myImage" src="mansit.png" style="width: 100px; height: 100px" />
+
+    <button onclick="document.getElementById('myImage').src='mansit.png'">
+      sit
+    </button>
+
+    <!--Just to print a message/text using script tag-->
+    <p id="threeP">change this</p>
+    <p id="fourP">change this</p>
+    <script>
+      //Just to print any number of messages/texts using script tag using getelementid's
+      document.getElementById("threeP").innerHTML = "bye bye......";
+      document.getElementById("fourP").innerHTML = "Ta...ta.......";
+    </script>
+  </body>
+</html>

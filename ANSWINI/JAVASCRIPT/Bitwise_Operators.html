@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitwise operators</title>
+  </head>
+  <body>
+    <p id="assign"></p>
+    <p id="assign1"></p>
+    <p id="assign2"></p>
+    <p id="assign3"></p>
+    <p id="assign4"></p>
+    <p id="assign5"></p>
+    <p id="assign6"></p>
+    <script>
+      var num1 = 20,
+        num2 = 5;
+      document.getElementById("assign").innerHTML =
+        "BITWISE AND: " + (num1 & num2);
+
+      document.getElementById("assign1").innerHTML =
+        "BITWISE OR: " + (num1 | num2);
+
+      document.getElementById("assign2").innerHTML = " NOT: " + ~num2;
+
+      document.getElementById("assign3").innerHTML = " XOR: " + (num1 ^ num2);
+
+      document.getElementById("assign4").innerHTML =
+        "ZERO FILL LEFT SHIFT: " + (num1 << num2);
+
+      document.getElementById("assign5").innerHTML =
+        " SIGNED RIGHT SHIFT: " + (num1 >> num2);
+
+      document.getElementById("assign6").innerHTML =
+        " ZERO FILL RIGHT SHIFT: " + (num1 >>> num2);
+    </script>
+  </body>
+</html>

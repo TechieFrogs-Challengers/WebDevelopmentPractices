@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Inheritance</h2>
+
+    <p id="demo"></p><br>
+
+    <p id="demo1"></p><br>
+
+    <p id="demo2"></p>
+    
+    <script>
+        class Car {
+            constructor(brand) {
+                this.carname = brand;
+            }
+            present() {
+                return 'I have a Car of Brand is ' + this.carname;
+            }
+        }
+
+        class Model extends Car {
+            constructor(brand, mod) {
+                super(brand);
+                this.model = mod;
+            }
+            show() {
+                return this.present() + ',And  The Model  is  ' + this.model;
+            }
+        }
+
+        let myCar = new Model("TATA", "SAFARI");
+        document.getElementById("demo").innerHTML = myCar.show();
+
+        let myCar1 = new Model("TOYATO", "FORTUNER");
+        document.getElementById("demo1").innerHTML = myCar1.show();
+    
+        let myCar2 = new Model("TOYATO", "INNOVA");
+        document.getElementById("demo2").innerHTML = myCar2.show();
+    </script>
+</body>
+</html>

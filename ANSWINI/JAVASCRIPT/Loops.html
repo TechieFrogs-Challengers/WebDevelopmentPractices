@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Loops</title>
+  </head>
+  <body>
+    <!--While Loop-->
+    <h2>JavaScript While Loop</h2>
+    <p id="demo"></p>
+
+    <script>
+      var text = "";
+      //intialization
+      var i = 0;
+      //condition
+      while (i < 10) {
+        text += "<br>The number is " + i;
+        //iteration
+        i++;
+      }
+      document.getElementById("demo").innerHTML = text;
+    </script>
+
+    <!--Do-While Loop-->
+    <h2>JavaScript Do/While Loop</h2>
+    <p id="demo1"></p>
+
+    <script>
+      var text = "";
+      //intialization
+      var i = 0;
+
+      do {
+        text += "<br>The number is " + i;
+        //iteration
+        i++;
+      } while (i < 10); //condition
+
+      document.getElementById("demo1").innerHTML = text;
+    </script>
+
+    <!--Using while loop in Arrays-->
+    <h2>JavaScript While Loop with Arrays</h2>
+    <p id="demo2"></p>
+
+    <script>
+      var cars = ["BMW", "Volvo", "Saab", "Ford"];
+      var i = 0;
+      var text = "";
+      while (cars[i]) {
+        text += cars[i] + "<br>";
+        i++;
+      }
+      document.getElementById("demo2").innerHTML = text;
+    </script>
+  </body>
+</html>

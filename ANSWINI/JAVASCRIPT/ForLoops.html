@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Different for Loops</title>
+  </head>
+  <body>
+    <!--FOR LOOP-->
+    <h2>JavaScript For Loop</h2>
+    <p id="demo"></p>
+
+    <script>
+      var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+      var text = "";
+      var i;
+      for (i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br>";
+      }
+      document.getElementById("demo").innerHTML = text;
+    </script>
+
+    <!--FOR/IN LOOP-->
+    <h2>JavaScript For/In Loop</h2>
+
+    <p>The for/in statement loops through the properties of an object.</p>
+
+    <p id="demo1"></p>
+
+    <script>
+      var txt = "";
+      var person = { fname: "Answini", lname: "kk", age: 25 };
+      var x;
+      for (x in person) {
+        txt += person[x] + " - ";
+      }
+      document.getElementById("demo1").innerHTML = txt;
+    </script>
+
+    <!--FOR/IN LOOP OVER ARRAY-->
+    <p>The for/in statement can loops over Array values.</p>
+    <p id="demo2"></p>
+
+    <script>
+      var txt = "";
+      var numbers = [45, 4, 9, 16, 25];
+      var x;
+      for (x in numbers) {
+        txt += numbers[x] + "<br>";
+      }
+      document.getElementById("demo2").innerHTML = txt;
+    </script>
+
+    <!--FOR-EACH-->
+    <h2>JavaScript Array.forEach()</h2>
+
+    <p>Calls a function once for each array element.</p>
+
+    <p id="demo3"></p>
+
+    <script>
+      var txt = "";
+      var numbers = [45, 4, 9, 16, 25];
+      numbers.forEach(myFunction);
+      document.getElementById("demo3").innerHTML = txt;
+
+      function myFunction(value, index, array) {
+        txt = txt + value + "<br>";
+      }
+    </script>
+
+    <!--FOR/OF LOOP-->
+    <h2>JavaScript For/Of Loop</h2>
+    <p>The for/of statement loops through the values of an iterable object.</p>
+
+    <p id="demo4"></p>
+
+    <script>
+      let language = "JavaScript";
+      let text = "";
+
+      for (let x of language) {
+        text += x + "<br>";
+      }
+
+      document.getElementById("demo4").innerHTML = text;
+    </script>
+  </body>
+</html>
