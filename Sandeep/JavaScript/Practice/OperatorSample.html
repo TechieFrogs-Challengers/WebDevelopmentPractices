@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<body>
+    <h2>JavaScript Operators</h2>
+    
+    <p>Addition 2 + 5 :: <ui id="demo"></ui></p>
+    <br>
+    <p>multipication 2 * 5 :: <ui id="demo1"></ui></p><br>
+    <p>subtraction 2 - 5 :: <ui id="demo2"></ui></p><br>
+    
+    <p>exponitional 2 ** 5 :: <ui id="demo3"></ui></p><br>
+    
+    <p>division 2 / 5 :: <ui id="demo4"></ui></p><br>
+    <p>Modules 2 % 5 :: <ui id="demo5"></ui></p><br>
+
+    <p>Increment 5++ :: <ui id="demo6"></ui></p><br>
+
+    <p>decrement 5-- :: <ui id="demo7"></ui></p><br>
+
+    <p>joining Two Strings :: <ui id="demo8"></ui></p><br>
+
+
+    <script>
+        var x = 5;
+        var y = 2;
+        var z = x + y;
+        document.getElementById("demo").innerHTML = z;
+
+        //multipication
+        var z1 = x * y;
+        document.getElementById("demo1").innerHTML = z1;
+
+        //subtraction
+        var z2 = x - y;
+        document.getElementById("demo2").innerHTML = z2;
+
+        //exponitional
+        var z3 = x ** y;
+        document.getElementById("demo3").innerHTML = z3;
+
+        //division
+        var z4 = x / y;
+        document.getElementById("demo4").innerHTML = z4;
+
+        //Modules
+        var z5 = x % y;
+        document.getElementById("demo5").innerHTML = z5;
+
+        //Increment
+        x++;
+        var z6 = x;
+        document.getElementById("demo6").innerHTML = z6;
+
+        //decrement
+        x--;
+        var z7 = x;
+        document.getElementById("demo7").innerHTML = z7;
+        
+        //String operations
+        var txt1 = "Sai";
+        var txt2 = "Sandeep";
+        var txt3 = txt1 + " " + txt2;
+        document.getElementById("demo8").innerHTML = txt3;
+    </script>
+</body>
+</html>
