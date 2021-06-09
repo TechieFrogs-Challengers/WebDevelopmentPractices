@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    
+    <script>
+        class Car {
+            constructor(brand,model) {
+                this.brandname = brand;
+                this.modelname = model;
+            }
+            get cname() {
+                return this.brandname;
+            }
+            set cname(x) {
+                this.brandname = x;
+            }
+            get mname(){
+                return this.modelname;
+            }
+            set mname(y){
+                return this.modelname=y;
+            }
+
+        }
+
+        let myCar = new Car("TATA","SAFARI");
+
+        document.getElementById("demo").innerHTML = "My Car Brand is :: "+myCar.cname+"<br> The Model is :: "+myCar.mname;
+    </script>
+</body>
+</html>

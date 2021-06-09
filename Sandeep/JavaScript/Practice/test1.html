@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>For/Of Loop</h1>
+
+    <p id="demo"></p><br><br>
+
+    
+    <script>
+        
+        var numbers = [ 3,89, 1, 5, 8, 3, 2, 5, 88, 22, 44, 77, 22, 99, 0, 1000];
+        var data="";
+
+        for(var i=0;i<numbers.length; i++)
+        {
+            if(numbers[i]%2!=0)
+            {
+                data+=numbers[i]+"      "
+            }
+        }
+        document.getElementById("demo").innerHTML=data;
+        
+    </script>
+</body>
+</html>
