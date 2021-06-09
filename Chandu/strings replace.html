@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Strings Replace</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            var a = "Chandu,Vamsi,Deepu";
+            var b = a.replace("Chandu","Priya");
+            document.getElementById("demo").innerHTML=b;
+            var c = a.replace(/DEEPU/i,"Chintu");
+            document.getElementById("demo1").innerHTML=c;
+        </script>
+    </body>
+</html>
