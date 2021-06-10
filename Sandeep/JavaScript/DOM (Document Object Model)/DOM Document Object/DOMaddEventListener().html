@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The addEventListener() method is not supported Internet Explorer 8 and earlier versions.</p>
+    
+    <p>This example demonstrates a solution that will work for all browsers.</p>
+    
+    <p>Click anywhere in the document to alert some text.</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+        if (document.addEventListener) {
+            document.addEventListener("click", myFunction);
+        } else if (document.attachEvent) {
+            document.attachEvent("onclick", myFunction);
+        }
+
+        function myFunction() {
+            alert("Hello World!");
+        }
+        document.addEventListener("click", function () {
+                document.getElementById("demo").innerHTML = "Hello World!";
+            });
+    </script>
+</body>
+</html>
