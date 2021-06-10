@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+        style="background-color:green;color: white; width:90px;height:20px;padding:40px;">
+        Click Me</div>
+    <script>
+        function mDown(obj) {
+            obj.style.backgroundColor = "skyblue";
+            obj.innerHTML = "Release Me";
+        }
+
+        function mUp(obj) {
+            obj.style.backgroundColor = "red";
+            obj.innerHTML = "Thank You";
+        }
+    </script>
+
+</body>
+</html>

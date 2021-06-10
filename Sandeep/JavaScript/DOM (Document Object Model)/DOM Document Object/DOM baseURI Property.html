@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to display the base URI of the document.</p>
+    
+    <button onclick="myFunction()">Try it</button>
+    
+    <p><strong>Note:</strong> The baseURI property is not supported in Internet Explorer.</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+        function myFunction() {
+            var x = document.baseURI;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+</html>
