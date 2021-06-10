@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The indexOf() method accepts a second parameter as the starting position for the search:</p>
+
+<h1 id="demo"></h1>
+<h1 id="demo1"></h1>
+<script>
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate",15); // 15 index position to start
+document.getElementById("demo").innerHTML = "start position:"+pos;
+
+//var str="Please locate where 'locate' occurs!";
+var end = str.lastIndexOf("locate",15); // 15 index position to last
+document.getElementById("demo1").innerHTML = "end position:"+end;
+
+
+
+</script>
+
+</body>
+</html>

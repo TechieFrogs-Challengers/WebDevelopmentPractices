@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body onload="checkCookies()">
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<h2> cookie checking..</h2>
+<script>
+function checkCookies() {
+  var text = "";
+  var history="";
+  if (navigator.cookieEnabled == true) {
+    text = "Cookies are enabled.";
+     
+  } else {
+    text = "Cookies are not enabled.";
+  }
+  document.getElementById("demo").innerHTML = text;
+
+}
+</script>
+
+</body>
+</html> 

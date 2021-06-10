@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Infinity is returned if you calculate a number outside the largest possible number:</p>
+
+<p id="demo"></p>
+
+<script>
+var myNumber = 2; 
+var txt = "";
+var text="";
+while (myNumber != Infinity) {
+   // text+=Infinity;
+   //document.write(text);
+   myNumber = myNumber * myNumber;
+   txt = txt + myNumber + "<br>";
+}
+document.getElementById("demo").innerHTML = txt;
+
+
+var x=9.954;
+var y=x.toExponential(2);
+document.write("Exponential  :  "+y);
+</script>
+
+</body>
+</html>
