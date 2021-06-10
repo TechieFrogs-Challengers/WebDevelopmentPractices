@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Data types</title>
+  </head>
+  <body>
+    <p style="font-weight: bolder">
+      When adding a number and a string, JavaScript will treat the number as a
+      string.
+    </p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+      var x = 16 + "Volvo";
+      var y = "Volvo" + 16;
+      document.getElementById("demo").innerHTML = '16 + "Volvo":   ' + x;
+      document.getElementById("demo1").innerHTML = '"Volvo" +16:   ' + y;
+    </script>
+
+    <p style="font-weight: bolder">
+      JavaScript evaluates expressions from left to right. Different sequences
+      can produce different results:
+    </p>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+      var x = 16 + 4 + "Volvo";
+      var y = "Volvo" + 16 + 4;
+      document.getElementById("demo2").innerHTML = '16 + 4 + "Volvo":   ' + x;
+      document.getElementById("demo3").innerHTML = '"Volvo" + 16 + 4 :   ' + y;
+    </script>
+
+    <h2>JavaScript String</h2>
+    <p style="font-weight: bolder">
+      You can use quotes inside a string, as long as they don't match the quotes
+      surrounding the string:
+    </p>
+
+    <p id="demo4"></p>
+
+    <script>
+      var answer1 = "It's alright";
+      var answer2 = "she is called 'Answini'";
+      var answer3 = 'Instead of "Aswini"';
+
+      document.getElementById("demo4").innerHTML =
+        answer1 + "<br>" + answer2 + "<br>" + answer3;
+    </script>
+
+    <h2>JavaScript Boolean</h2>
+    <p style="font-weight: bolder">
+      Booleans can have two values: true or false:
+    </p>
+
+    <p id="demo5"></p>
+
+    <script>
+      var x = 5;
+      var y = 5;
+      var z = 6;
+      document.getElementById("demo5").innerHTML =
+        "x==y: " + (x == y) + "<br>" + "x==z: " + (x == z);
+    </script>
+
+    <h2>JavaScript typeof</h2>
+    <p style="font-weight: bolder">
+      The typeof operator returns the type of a variable or an expression.
+    </p>
+
+    <p id="demo6"></p>
+
+    <script>
+      document.getElementById("demo6").innerHTML =
+        typeof "" + "<br>" + typeof "John" + "<br>" + typeof "John Doe";
+    </script>
+
+    <h2>JavaScript Numbers</h2>
+    <p style="font-weight: bolder">
+      Numbers can be written with, or without decimals:
+    </p>
+
+    <p id="demo7"></p>
+
+    <script>
+      var x1 = 34.0;
+      var x2 = 34;
+      var x3 = 3.14;
+
+      document.getElementById("demo7").innerHTML =
+        x1 + "<br>" + x2 + "<br>" + x3;
+    </script>
+
+    <p style="font-weight: bolder">
+      The value (and the data type) of a variable with no value is
+      <b>undefined</b>.
+    </p>
+
+    <p id="demo8"></p>
+
+    <script>
+      var car;
+      document.getElementById("demo8").innerHTML =
+        "value of car: " + car + "<br>" + "Type of car: " + typeof car;
+    </script>
+  </body>
+</html>

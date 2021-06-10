@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function goTo() {
+        if (document.getElementById("sendtext").value == "") {
+          document.getElementById("button").disabled = true;
+        } else {
+          document.getElementById("button").disabled = false;
+        }
+      }
+    </script>
+
+    <input type="text" id="sendtext" onkeyup="goTo()" />
+
+    <button
+      type="submit"
+      id="button"
+      disabled
+      onclick="window.location.href='man-standing.png'"
+    >
+      Send
+    </button>
+  </body>
+</html>

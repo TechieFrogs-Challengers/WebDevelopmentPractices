@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    
+    <script>
+        class Car {
+            constructor(name) {
+                this.name = name;
+            }
+            static hello() {
+                return "Hello!!";
+            }
+        }
+
+        let myCar = new Car("Ford");
+
+        //You can call 'hello()' on the Car Class:
+        document.getElementById("demo").innerHTML = Car.hello();
+
+    // But NOT on  a Car Object:
+    // document.getElementById("demo").innerHTML = myCar.hello();
+    // this will raise an error.
+    </script>
+
+</body>
+
+</html>

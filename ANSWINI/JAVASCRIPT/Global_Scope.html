@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global scope</title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <p id="output1"></p>
+    <script>
+      //global variable
+      var num = 10;
+      //calling the function
+      function_scope();
+      function function_scope() {
+        //global variable is accessable within a function...and everywhere in that script
+        document.getElementById("output").innerHTML =
+          "I am in function...so num value is : " + num;
+      }
+      //displays global variable value because it is outside the function
+      document.getElementById("output1").innerHTML =
+        "I am outside function...so num value is : " + num;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical operators</title>
+  </head>
+  <body>
+    <p id="assign"></p>
+    <p id="assign1"></p>
+    <p id="assign2"></p>
+    <script>
+      var num1 = 20,
+        num2 = 5;
+      document.getElementById("assign").innerHTML =
+        "BITWISE AND: " + (num1 > 10 && num2 < 5);
+
+      document.getElementById("assign1").innerHTML =
+        "BITWISE OR: " + (num1 > 10 || num2 < 5);
+
+      document.getElementById("assign2").innerHTML = " NOT: " + !num2;
+    </script>
+  </body>
+</html>
