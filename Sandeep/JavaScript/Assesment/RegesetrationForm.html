@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <script>
+        function formValidation(){
+            var firstname = document.registration.fname;
+            var lastname=document.registration.lname;
+            var umsex = document.registration.msex;
+            var ufsex = document.registration.fsex;
+            var uosex=document.registration.osex;
+            var Dob=document.registration.dob;
+            var mail=document.registration.email;
+            var phone=document.registration.phonenumber;
+            var area=document.registration.city;
+            var area1=document.registration.state;
+            var zip=document.registration.zipcode;
+            var uname=document.registration.username;
+            var pass=document.registration.password;
+
+            if(allLetter(firstname)){
+                if(allLetter1(lastname)){
+                    if(validsex(umsex, ufsex,osex)){
+                        if(ValidateEmail(mail)){
+
+                        }
+
+                    }
+
+                }
+
+            }
+            //validate first name
+            function allLetter(firstname) {
+                var letters = /^[A-Za-z]+$/;
+                if (firstname.value.match(letters)) {
+                    return true;
+                }
+                else {
+                    alert('first name must have alphabet characters only');
+                    firstname.focus();
+                    return false;
+                }
+            }
+
+            //validate lastname
+            function allLetter1(lastname) {
+                var letters1 = /^[A-Za-z]+$/;
+                if (lastname.value.match(letters1)) {
+                    return true;
+                }
+                else {
+                    alert('last name must have alphabet characters only');
+                    lastname.focus();
+                    return false;
+                }
+            }
+            //gender validate
+            function validsex(umsex, ufsex,osex) {
+                x = 0;
+
+                if (umsex.checked) {
+                    x++;
+                } if (ufsex.checked) {
+                    x++;
+                }
+                if(uosex.checked){
+                    x++;
+                }
+                if (x == 0) {
+                    alert('Select Male/Female');
+                    umsex.focus();
+                    return false;
+                }
+                else {
+                    alert('Form Successfully Submitted');
+                    window.location.reload()
+                    return true;
+                }
+            }
+            //validate email
+            function ValidateEmail(mail) {
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if (mail.value.match(mailformat)) {
+                    return true;
+                }
+                else {
+                    alert("You have entered an invalid email address!");
+                    mail.focus();
+                    return false;
+                }
+            }
+
+
+        }
+    </script>
+</head>
+
+<body onload="document.registration.fname.focus();">
+    <form  name='registration' onsubmit="return formValidation();">
+        <div>
+            <!--main div-->
+            <div>
+                <!--page heading-->
+                <center>
+                    <h1>REGISTRATION FORM</h1>
+                </center>
+            </div>
+            <!--page heading-->
+            <div>
+                <!--section1-->
+        
+                <table class="table1">
+                    <tr class="personaldetails">
+                        <td colspan="2">
+                            <center>
+                                <h2>PERSONAL DETAILS</h2>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fname">First Name</label><span class="required" >*</span>
+                        </td>
+                        <td>
+                            <input type="text" name="fname"  size="50" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lname">Last Name</label><span class="required">*</span>
+                        </td>
+                        <td>
+                            <input class="mtop1" type="text" name="lname" size="50" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Gender">Gender</label></td>
+                        <td>
+                            <input class="mtop1" type="radio" name="msex" id="male" checked />Male
+                            <input class="mtop1" type="radio" name="fsex" id="female"  />Female
+                            <input class="mtop1" type="radio" name="osex" id="others" />Others
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">DOB</label></td>
+                        <td><input class="mtop1" type="date" name="dob" id="dob" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label><span class="required">*</span></td>
+                        <td><input class="mtop1" type="email" name="email" id="email" 
+                                placeholder="example@gmail.com" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phonenumber">Mobile Number</label><span class="required">*</span></td>
+                        <td><input class="mtop1" type="tel" name="phonenumber" id="phonenumber"  pattern="[0-9]{10}" maxlength="10" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Address">Address</label></td>
+                        <td><textarea class="mtop1" name="Address" id="Address" cols="50" rows="8"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City</label><span class="required">*</span></td>
+                        <td><input class="mtop1" type="text" name="city" id="city"  /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="state">State</label><span class="required">*</span></td>
+                        <td><input class="mtop1" type="text" name="state" id="state"  /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="zipcode">Zip Code</label><span class="required">*</span></td>
+                        <td><input class="mtop1" type="text" name="zipcode" id="zipcode"  pattern="[0-9]{6}" maxlength="6" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="photo">Photo</label></td>
+                        <td><img src="D:\Classes\Web Technologies\HTML\Images\photo.jpg" width="350px" height="250px"></td>
+                    </tr>
+                </table>
+            </div>
+            <!--section1-->
+        
+            <!--section2-->
+            <br>
+            <div>
+                <table class="table2">
+                    <tr class="LoginDetails">
+                        <td colspan="2">
+                            <center>
+                                <h2>LOGIN DETAILS</h2>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="username">User Name</label></td>
+                        <td><input class="margin" type="text" name="username" id="username" maxlength="20" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input class="margin" type="password" name="password" id="pwd" minlength="8" /></td>
+                    </tr>
+                </table>
+            </div>
+            <!--section2-->
+        
+            <!--section3-->
+            <br>
+            <div>
+                <table class="table3">
+                    <tr class="QualificationDetails">
+                        <td colspan="4">
+                            <center>
+                                <h2>QUALIFICATION DETAILS</h2>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Qualification</td>
+                        <td>Specialization</td>
+                        <td>Year Of Pass</td>
+                        <td>College Name</td>
+                    </tr>
+                    <tr>
+                        <td><select name="qualify" id="qualify" style="width: 176px">
+                                <option value="select">--select--</option>
+                                <option value="MBA">MBA</option>
+                                <option value="M.Tech">M.Tech</option>
+                                <option value="MCA">MCA</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="special" id="special" /></td>
+                        <td><input type="year" name="year" id="year" /></td>
+                        <td><input type="text" name="colname" id="colname" /></td>
+                    </tr>
+                    <tr>
+                        <td><select name="qualify" id="qualify1" style="width: 176px">
+                                <option value="select">--select--</option>
+                                <option value="B.Tech">B.Tech</option>
+                                <option value="M.sc">M.sc</option>
+                                <option value="B.sc">B.Sc</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="special" id="special1" /></td>
+                        <td><input type="year" name="year" id="year1" /></td>
+                        <td><input type="text" name="colname1" id="colname1" /></td>
+                    </tr>
+                    <tr>
+                        <td ><select name="qualify" id="qualify2" style="width: 176px">
+                                <option value="select">--select--</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Polytechnic">Polytechnic</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="special" id="special2" /></td>
+                        <td><input type="year" name="year" id="year2" /></td>
+                        <td><input type="text" name="colname2" id="colname2" /></td>
+                    </tr>
+                    <tr>
+                        <td><select name="qualify" id="qualify3" style="width: 176px">
+                                <option value="select">--select--</option>
+                                <option value="ssc">SSC</option>
+                                <option value="CBSE">CBSE</option>
+                                <option value="ICSE">ICSE</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="special" id="special3" /></td>
+                        <td><input type="year" name="year" id="year3" /></td>
+                        <td><input type="text" name="colname2" id="colname3" /></td>
+                    </tr>
+        
+                </table>
+            </div>
+            <!--section3-->
+            <br>
+        
+            <!--section4-->
+            <div>
+                <table class="table4">
+                    <tr class="TechnicalSkills">
+                        <td colspan="2">
+                            <center>
+                                <h2>TECHNICAL SKILLS</h2>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td ><label for="tehnicalskills">Technical Skills</label></td>
+                        <td >
+                            <select  name="tehnicalskills" id="tehnicalskills" multiple style="width: 176px">
+                                <option value="select">--select--</option>
+                                <option value="Java">Java</option>
+                                <option value="c">C</option>
+                                <option value="C++">C++</option>
+                                <option value="Sql">SQL</option>
+                                <option value="Php">PHP</option>
+                                <option value=".net">.Net</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="technologies">Interested Technologies</label></td>
+                        <td>
+                            <input type="checkbox" value="AWS" />AWS <br>
+                            <input type="checkbox" value="Devops" />Devops <br>
+                            <input type="checkbox" value="Datascience" />DataScience <br>
+                            <input type="checkbox" value="Python" />Python <br>
+                            <input type="checkbox" value="Java" checked />Java
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="linkedin">LinkedIn Profile</label></td>
+                        <td><a href="https://www.linkedin.com/">https://www.linkedin.com/</a></td>
+                    </tr>
+                    <tr>
+                        <td><label for="resume">Upload Resume</label></td>
+                        <td><input type="file" name="resume" id="resume" accept=".doc/.pdf/" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="note">Note</label></td>
+                        <td><textarea name="note" id="note" cols="50" rows="8" placeholder="write here.."></textarea></td>
+                    </tr>
+                </table>
+            </div>
+            <!--section4-->
+            <br>
+            <div>
+                <table class="table5">
+                    <tr>
+                        <center>
+                            <input class="mtop1" type="submit" value="Submit" name="submit"/>
+                            <input class="mtop1" type="reset" value="Reset" />
+                        </center>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--main div-->
+    </form>
+    
+</body>
+
+</html>

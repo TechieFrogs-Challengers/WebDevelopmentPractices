@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        .menu {
+            float: left;
+            width: 20%;
+            background-color: skyblue;
+            height: 280px;
+        }
+
+        .menuitem {
+            padding: 8px;
+            margin-top: 7px;
+            
+        }
+
+        .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        .right {
+            background-color: lightblue;
+            float: left;
+            width: 20%;
+            padding: 10px 15px;
+            margin-top: 7px;
+        }
+
+        @media only screen and (max-width:800px) {
+
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+
+            .right {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+
+            /* For mobile phones: */
+            .menu,
+            .main,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body style="font-family:Verdana;">
+
+    <div style="background-color:darkorchid;padding:15px;">
+        <center>
+            <h1><img src="D:\Sandeep Workapace\WebDevelopmentPractices\Sandeep\Exercises\HTMLEXE\i.png" height="50px"
+                    width="50px">Sample WebSite</h1>
+        </center>
+    </div>
+
+    <div style="overflow:auto">
+        <div class="menu">
+            <div class="menuitem">Home</div>
+            <div class="menuitem">Categories</div>
+            <div class="menuitem">Settings</div>
+            <div class="menuitem">Contact Us</div>
+        </div>
+
+        <div class="main">
+            <h1>London</h1>
+            <p>
+                London is the capital and largest city of England and the United Kingdom.[8][9] The city stands on the
+                River Thames
+                in
+                the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea. London
+                has been a
+                major
+                settlement for two millennia, and was originally called Londinium, which was founded by the Romans.[10]
+                The City of
+                London, London's ancient core and financial centre—an area of just 1.12 square miles (2.9 km2) and
+                colloquially
+                known as
+                the Square Mile—retains boundaries that closely follow its medieval limits.[note 1][11][12][13][14][15]
+                The adjacent
+                City of Westminster has for centuries been the location of much of the national government. Thirty-one
+                additional
+                boroughs north and south of the river also comprise modern London. The London region is governed by the
+                mayor of
+                London
+                and the London Assembly.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div style="background-color:black;color: white; text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+        All copyrights are reseved.@2021
+    </div>
+
+</body>
+
+</html>

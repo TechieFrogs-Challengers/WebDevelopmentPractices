@@ -1,0 +1,28 @@
+p {
+  color: blue;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+h1 {
+  color: blueviolet;
+}
+h2 {
+  color: yellow;
+}
+h3 {
+  color: crimson;
+}
+h4 {
+  color: darkorange;
+}
+h6 {
+  color: grey;
+}
+b {
+  color: orangered;
+}
+u {
+  font-size: x-large;
+}
+i {
+  color: lime;
+}
