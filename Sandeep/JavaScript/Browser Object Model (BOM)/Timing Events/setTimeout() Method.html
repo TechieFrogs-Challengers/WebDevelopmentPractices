@@ -7,19 +7,16 @@
     <title>Document</title>
 </head>
 <body>
+    <center>
+        <p>Click "Try it". Wait 3 seconds, and the page will alert "Hello".</p>
+        
+        <button onclick="setTimeout(myFunction, 3000);">Try it</button>
+    </center>
     <script>
-        var x=[22,23,34,12,55];
-        document.write(x);
-        var xlen=x.length;
-        var max= -Infinity;
-        while(xlen--)
-        {
-            if(x[xlen]> max)
-            {
-                max=x[xlen];        
-            }
+        function myFunction() {
+            alert('Hello');
         }
-        document.write("<br>"+max);       
     </script>
+
 </body>
 </html>

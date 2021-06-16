@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        The screen.colorDepth property returns the number of bits used to display one color.
+
+        All modern computers use 24 bit or 32 bit hardware for color resolution:
+
+        24 bits =      16,777,216 different "True Colors"
+        32 bits = 4,294,967,296 different "Deep Colors"
+        Older computers used 16 bits: 65,536 different "High Colors" resolution.
+
+        Very old computers, and old cell phones used 8 bits: 256 different "VGA colors".
+    -->
+    <center>
+        <p id="demo"></p>
+    </center>
+    
+    <script>
+        document.getElementById("demo").innerHTML ="Screen color depth is " + screen.colorDepth;
+    </script>
+</body>
+</html>

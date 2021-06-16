@@ -7,19 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+    <center>
+        <button onclick="myFunction()">Open Windows</button>
+    </center>
+    
     <script>
-        var x=[22,23,34,12,55];
-        document.write(x);
-        var xlen=x.length;
-        var max= -Infinity;
-        while(xlen--)
-        {
-            if(x[xlen]> max)
-            {
-                max=x[xlen];        
-            }
+        function myFunction() {
+            window.open("https://www.w3schools.com/");
+            window.open("http://www.google.com/");
         }
-        document.write("<br>"+max);       
     </script>
 </body>
 </html>

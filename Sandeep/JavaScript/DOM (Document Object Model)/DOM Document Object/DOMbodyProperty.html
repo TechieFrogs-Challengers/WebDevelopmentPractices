@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <p>Click the button to change the background color of the document.</p>
+        
+        <button onclick="myFunction()">Color change</button>
+        <br>
+        <button onclick="myFunction1()">Try it</button>
+        
+        <p id="demo"></p>
+    </center>
+    
+    <script>
+        function myFunction() {
+            document.body.style.backgroundColor = "yellow";
+        }
+        function myFunction1() {
+                var x = document.body.innerHTML;
+                document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+</html>

@@ -7,19 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>Window.open() method</h2>
+
+    <button onclick="myFunction()">Try it</button>
+    
     <script>
-        var x=[22,23,34,12,55];
-        document.write(x);
-        var xlen=x.length;
-        var max= -Infinity;
-        while(xlen--)
-        {
-            if(x[xlen]> max)
-            {
-                max=x[xlen];        
-            }
+        function myFunction() {
+            var myWindow = window.open("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_open2", "w3school", "width=500,height=500");
         }
-        document.write("<br>"+max);       
     </script>
 </body>
 </html>

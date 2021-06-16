@@ -7,19 +7,16 @@
     <title>Document</title>
 </head>
 <body>
+    <center>
+        <h2>The history.back() method loads the previous URL in the history list.</h2>
+        <br>
+        <input type="button" value="Back" onclick="goBack()">
+    </center>
+
     <script>
-        var x=[22,23,34,12,55];
-        document.write(x);
-        var xlen=x.length;
-        var max= -Infinity;
-        while(xlen--)
-        {
-            if(x[xlen]> max)
-            {
-                max=x[xlen];        
-            }
+        function goBack() {
+            window.history.back()
         }
-        document.write("<br>"+max);       
     </script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {list-style-type: none;
+            font-size: 16pt;
+        }
+        .mail {
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 400px;
+            background : #D8F1F8;
+            border: 1px soild silver;
+        }
+        .mail h2 {
+            margin-left: 38px;
+        }
+        input {
+            font-size: 20pt;
+        }
+        input:focus, textarea:focus{
+            background-color: lightyellow;
+        }
+        input submit {
+            font-size: 12pt;
+        }
+        .rq {
+            color: #FF0000;
+        font-size: 10pt;
+        }
+    </style>
+    <script>
+        function phonenumber(inputtxt) {
+                var phoneno = /^\d{10}$/;
+                if (inputtxt.value.match(phoneno)) {
+                    return true;
+                }
+                else {
+                    alert("Not a valid Phone Number");
+                    return false;
+                }
+            }
+    </script>
+
+</head>
+<body onload='document.form1.text1.focus()'>
+    <div class="mail">
+        <h2>Input an Phone No.[xxxxxxxxxx] and Submit</h2>
+        <form name="form1" action="#">
+            <ul>
+                <li><input type='text' name='text1' /></li>
+                <li>&nbsp;</li>
+                <li class="submit"><input type="submit" name="submit" value="Submit"
+                        onclick="phonenumber(document.form1.text1)" /></li>
+                <li>&nbsp;</li>
+            </ul>
+        </form>
+    </div>
+    <script src="phoneno-all-numeric-validation.js"></script>
+</body>
+</html>

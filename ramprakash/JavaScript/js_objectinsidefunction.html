@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h2>object inside function works first</h2>
+    <script>
+            var person = {
+            firstName: "John",
+            lastName : "Doe",
+            id       : "5566",
+            fullName : function(){
+                return this.firstName + "  " + this.lastName;
+            }
+            };
+
+
+        var obj={name:"Ram",
+        id:"007",
+        age:100,
+        flast: function()
+        {
+          return this.name+" "+this.id;
+        }
+        };
+        document.write(obj.name,obj.id,obj.age);
+        document.write("<br>"+obj.name+" "+obj.id+" "+obj.age);
+
+    </script>
+    
+</body>
+</html>

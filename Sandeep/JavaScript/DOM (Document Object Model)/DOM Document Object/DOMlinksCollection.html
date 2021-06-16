@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <map name="planetmap">
+        <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+        <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+        <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+    </map>
+    
+    <p>
+        <a href="/html/default.asp">HTML</a><br>
+        <a href="/css/default.asp">CSS</a>
+    </p>
+    
+    <p>Click the button to display the URL of the first link (index 0) in the document.</p>
+    
+    <button onclick="myFunction()">Try it</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+        function myFunction() {
+            var x = document.links.item(0).href;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+</html>
