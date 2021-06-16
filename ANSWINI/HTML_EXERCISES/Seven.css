@@ -1,0 +1,16 @@
+body {
+  border: 2px solid green;
+  margin: 50px 300px 50px 300px;
+}
+p {
+  margin-left: 90px;
+}
+h3 {
+  margin-left: 30px;
+  color: black;
+}
+span {
+  font-weight: bolder;
+  font-style: italic;
+  color: green;
+}

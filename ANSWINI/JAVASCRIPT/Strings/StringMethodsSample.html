@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h1>String Methods</h1>
+    
+    <h2>indexof()</h2>
+    <p>Finds the 1st location of the index value</p>
+    <p id="demo"></p>
+
+    <h2>Lastindexof()</h2>
+    <p>Finds the last location of the  index value</p>
+    <p id="demo1"></p>
+
+    <h2>Search()</h2>
+    <p>Searches for the element gives index value</p>
+    <p id="demo2"></p>
+
+    <h2>SubString()</h2>
+    <p>Gives the sub string value</p>
+    <p id="demo3"></p><br>
+    <p id="demo4"></p>
+
+    <h2>Replace()</h2>
+    <p>Repalces with teh given word</p>
+    <p id="demo5"></p>
+
+    <h2>Converting to upper case</h2>
+    <p id="demo6"></p>
+
+    <h2>Converting to lower case</h2>
+    <p id="demo7"></p>
+
+    <h2>padStart()</h2>
+    <p id="demo8"></p>
+
+    <h2>padEnd()</h2>
+    <p id="demo9"></p>
+
+    <h2>CharAt()</h2>
+    <p id="demo10"></p>
+
+    <h2>CharCodeAt()</h2>
+    <p id="demo11"></p>
+
+    <h2>Converting string to array</h2>
+    <p id="demo12"></p>
+    <script>
+        var str = "Hi Iam Maddipati Sai Venkata Krishna Sandeep Sai ";
+        var findfirst = str.indexOf("Sai");
+        document.getElementById("demo").innerHTML = findfirst;
+        
+        var findlast = str.lastIndexOf("Sai");
+        document.getElementById("demo1").innerHTML = findlast;
+
+        var find=str.search("Sandeep");
+        document.getElementById("demo2").innerHTML = find;
+
+        var sub=str.substring(7,17);
+        document.getElementById("demo3").innerHTML = sub;
+
+        var sub1 = str.substring(7);
+        document.getElementById("demo4").innerHTML = sub1;
+
+        var rep=str.replace("Sandeep","Sundeep");
+        document.getElementById("demo5").innerHTML = rep;
+
+        var upper=str.toUpperCase();
+        document.getElementById("demo6").innerHTML = upper;
+
+        var lower = str.toLowerCase();
+        document.getElementById("demo7").innerHTML = lower;
+
+        let str3 = "8";
+        str3 = str3.padStart(6, 0);
+        document.getElementById("demo8").innerHTML = str3;
+
+        let str4 = "5";
+        str4 = str4.padEnd(9, 0);
+        document.getElementById("demo9").innerHTML = str4;
+
+        document.getElementById("demo10").innerHTML = str.charAt(7);
+
+        document.getElementById("demo11").innerHTML = str.charCodeAt(7);
+        
+        var arr = str.split(" ");
+        document.getElementById("demo12").innerHTML = arr[6];
+
+        
+
+
+    </script>
+</body>
+</html>
