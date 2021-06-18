@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+    <link rel="stylesheet" href="Exe13.css">
+</head>
+
+<body>
+    <script src="exe13.js">
+     
+    </script>
+    <h1>
+        Magazine Order Form
+    </h1>
+<div class="main">
+    <form action="" id="reg" name="myForm" onsubmit ="return(validate());">
+        <div class="div1">
+            <lable for="fname" class="n1" id="text">Name:<span class="star">*</span></lable>
+            <input type="text" name="Firstname" id="fname" >
+         </div>   
+        <div  class="div1">
+            <lable for="fname"  class="n1">Address:</lable>
+            <input type="text" name="fname" id="fname">
+        </div>
+        <div  class="div1">
+           <lable for="fname"  class="n1">City:</lable>
+            <input type="text" name="city" id="fname">
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">State:</lable>
+            <input type="text" name="state" id="fnamestate">
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">Zip:<span class="star">*</span></lable>
+            <input type="text" name="zip" id="fname" >
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">Email:<span class="star">*</span></lable>
+            <input type="text" name="email" id="fname">
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">PhoneNumber:<span class="star">*</span></lable>
+            <input type="text"name="phone_number" id="fname" pattern="=/\(?([0-9]{3})\)?([ -]?)([0-9]{3})\2([0-9]{4})/">
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">Magazine:</lable>
+            <select  type="text" name="Dropdown" id="fnameop" >
+                <option vlaue="0">--Select--</option>
+                <option vlaue="1">Eenadu</option>
+                <option vlaue="2">Shakshi</option>
+                <option vlaue="3">Andra Jyothi</option>
+                <option vlaue="4">Vartha</option>
+            </select>
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">Subscription:</lable>
+            <input type="radio" id="fnam" name="sub"> 1 Month&nbsp;
+                       <input type="radio" id="fnam" value="6" name="sub"> 6 Months&nbsp;
+                       <input type="radio" id="fnam"  value="6" name="sub"> 1 Year&nbsp;
+                       <input type="radio" id="fnam"  value="6" name="sub"> 2 Years
+        </div>
+        <br>
+        <div  class="div1">
+            <lable for="fname"class="n1">Comments:</lable>
+            <textarea id="fnametext"> </textarea>
+        </div>
+        <br>
+        <br>
+        <div  class="div1">
+           
+            <button type="submit" id="fnamebtn" >Send Your Order</button>
+        </div>
+
+     
+    </form>
+</div>
+</body>
+</html>
