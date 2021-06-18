@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 3px;
+            text-align: left;
+            background: rgb(221, 174, 53);
+            color: white;
+
+        }
+
+        img {
+            float: left;
+        }
+
+
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex: 10%;
+            background-color: pink;
+            padding: 10px;
+        }
+
+        /* Main column */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin-top: 0px;
+            font-size: 12px;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+
+        h1 {
+            margin-top: 4px;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+
+        <h1><img src="img9.png" height="50px" width="50px">SAMPLE WEBSITE</h1>
+
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <div class="menuitem">Home</div><br>
+            <div class="menuitem">Categories</div><br>
+            <div class="menuitem">Settings</div><br>
+            <div class="menuitem">Contact Us</div><br>
+        </div>
+        <div class="main">
+            <h1>London</h1>
+            <p>
+                London is the capital and largest city of England and the United Kingdom.[8][9] The city stands on the
+                River Thames
+                in
+                the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea. London
+                has been a
+                major
+                settlement for two millennia, and was originally called Londinium, which was founded by the Romans.[10]
+                The City of
+                London, London's ancient core and financial centre—an area of just 1.12 square miles (2.9 km2) and
+                colloquially
+                known as
+                the Square Mile—retains boundaries that closely follow its medieval limits.[note 1][11][12][13][14][15]
+                The adjacent
+                City of Westminster has for centuries been the location of much of the national government. Thirty-one
+                additional
+                boroughs north and south of the river also comprise modern London. The London region is governed by the
+                mayor of
+                London
+                and the London Assembly.
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>All copyrights are reseved.@2021</h2>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 14</title>
+    <style>
+        select {
+            width: 180px;
+            background-color: yellowgreen;
+            color: black;
+
+        }
+
+        #submitbutton {
+            color: red;
+            height: 30px;
+
+        }
+
+        #submitbutton:hover {
+            background-color: yellow;
+            font-weight: bolder;
+
+        }
+    </style>
+    <script>
+        //creating the objects country,state and city
+        //here country is property and sate is value which is object type array to the city i.1 nested object type
+
+        var data = {
+            "India": {
+
+                "Karnataka": ["Bangalore", "Mysore", "Mandya"],
+                "Kerala": ["Allepy", "Thiruvananthapuram", "Palakkad"],
+                "Tamilnadu": ["Chennai", "Coimbatore", "Madhurai"],
+                "AndhraPradesh": ["Nuzvid", "Guntur", "Vizag", "Viajayawada"]
+            },
+            "SouthAfrica": {
+                "Easterncape": ["Port Elizabeth", "Queenstown"],
+                "Gauteng": ["Johanesberg", "Boksburg", "Randburg"],
+                "Northerncape": ["KImberly", "Kuruman"]
+            },
+            "USA": {
+                "California": ["LosAngeles", "Mitchell"],
+                "Washington": ["Dunstan", "Mitchell"],
+                "Oklahama": ["Chicago", "Euroa"],
+                "Texas": ["NewYork", "Euroa"]
+            }
+        }
+
+        //onload function to display the data
+        window.onload = function () {
+            var countySelect = document.getElementById("countySel");
+            var stateSelect = document.getElementById("stateSel");
+            var citySelect = document.getElementById("citySel");
+            //loop for selecting the country so that the relative data of state is showned
+            for (var country in data) {
+                countySelect.options[countySelect.options.length] = new Option(country);
+            }
+            countySelect.onchange = function () {
+                //if any change in country the data will be reset
+                stateSelect.length = 1; // making the defalut option
+                citySelect.length = 1; // making the defalut option
+                if (this.selectedIndex < 1) return; // done
+
+                //loop for selecting the counts so that the relative data of state is showned
+                for (var state in data[this.value]) {
+                    stateSelect.options[stateSelect.options.length] = new Option(state);
+                }
+            }
+
+            stateSelect.onchange = function () {
+                //if any change in state or county the data wil be reset
+                citySelect.length = 1; // making the defalut option
+                if (this.selectedIndex < 1) return; // done
+                var city = data[countySelect.value][this.value];
+                for (var i = 0; i < city.length; i++) {
+                    //as city is array type allwise takes value by array type
+                    citySelect.options[citySelect.options.length] = new Option(city[i]);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body style="background-color: rgb(216, 169, 154); font-weight: bolder;">
+
+    <form name="myform" id="myForm" action="img3.png">
+        <div style="margin-top: 50px;">
+            <div style="float: left; margin-left: 50px;text-align: right;">
+                <div style="margin-bottom: 15px;">
+                    <label for="country">Country :</label>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="state">State :</label>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="city">City :</label>
+                </div>
+            </div>
+            <div style="float:left;margin-left: 50px;">
+                <div style="margin-bottom: 15px;">
+                    <select name="state" id="countySel" size="1" required>
+                        <option value="" selected="selected">Select Country</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <select name="country" id="stateSel" size="1" required>
+                        <option value="" selected="selected">--select state-- </option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <select name="city" id="citySel" size="1" required>
+                        <option value="" selected="selected">--select state-- </option>
+                    </select>
+                </div>
+                <div>
+                    <center>
+                        <input type="submit" name="submit" value="Submit" id="submitbutton">
+                    </center>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>

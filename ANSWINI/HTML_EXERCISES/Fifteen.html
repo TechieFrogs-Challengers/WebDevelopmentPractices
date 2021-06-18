@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web</title>
+    <meta NAME="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Menu formaiting */
+        .menu {
+            float: left;
+            width: 20%;
+            background-color: yellowgreen;
+            height: 500px;
+        }
+
+        /* a tag formating */
+        a {
+            text-align: center;
+            color: white;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+
+        /* menu bar formating */
+        .menuitem {
+            padding: 8px;
+            margin-top: 7px;
+            background-color: rgb(175, 86, 86);
+        }
+
+        /* Main contant formating */
+        .main {
+            float: left;
+            width: 70%;
+            padding: 0 20px;
+            overflow: hidden;
+            height: 500px;
+        }
+
+        .right {
+            background-color: yellowgreen;
+            float: left;
+            width: 20%;
+            padding: 10px 15px;
+            margin-top: 7px;
+        }
+
+        @media only screen and (max-width:800px) {
+
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+
+            .right {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+
+            /* For mobile phones: */
+            .menu,
+            .main,
+            .right {
+                width: 100%;
+            }
+        }
+
+        h1 {
+            margin-top: 4px;
+        }
+
+        table {
+            margin-top: 50px;
+            margin-left: 100px;
+            border-collapse: collapse;
+        }
+
+        /* alternative rows background color */
+        tr:nth-child(even) {
+            background-color: pink;
+        }
+
+        /* Coloums padding */
+        td {
+            padding: 10px;
+            color: rgb(4, 48, 4);
+            text-align: center;
+        }
+
+        /* First row background color */
+        .firstrow {
+            background-color: rgb(241, 241, 121);
+            font-weight: bolder;
+        }
+
+
+
+        th {
+            height: 50px;
+            color: red;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body style="font-family:Verdana;">
+    <!-- HEADER -->
+    <div style="background-color:tomato;padding:5px;">
+        <h1><img src="img9.png" height="50px" width="50px">SAMPLE WEBSITE</h1>
+    </div>
+
+    <!-- MENU BOX -->
+
+    <div style="overflow:auto">
+        <div class="menu">
+            <div class="menuitem"><a href="##">HOME</a></div>
+            <div class="menuitem"><a href="##">CATEGORY</a></div>
+            <div class="menuitem"><a href="##">SETTINGS</a></div>
+            <div class="menuitem"><a href="##">CONTACT US</a></div>
+        </div>
+
+        <!-- CENTER CONTENT -->
+
+        <div class="main">
+            <center id="table" style="margin-top: 60px;">
+
+            </center>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <div style="background-color:black;color: white; text-align:center;padding:10px;font-size:12px;">
+        All copyrights are reseved.@2021
+    </div>
+    <script>
+        //Taking an object with data
+        var rows = [{
+            NAME: "Answini",
+            EMAIL: "answini@gmail.com",
+            PHONE_NUMBER: "1234567894",
+            DESIGNATION: "Mom",
+            DEPARTMENT: "Home"
+        }, {
+            NAME: "Achyuth",
+            EMAIL: "achyuth@gmail.com",
+            PHONE_NUMBER: "1324556934",
+            DESIGNATION: "Elder son",
+            DEPARTMENT: "school"
+        }, {
+            NAME: "Vedansh",
+            EMAIL: "vedansh@gmail.com",
+            PHONE_NUMBER: "1419327254",
+            DESIGNATION: "Younger son",
+            DEPARTMENT: "Play"
+        },
+        {
+            NAME: "Bharat",
+            EMAIL: "bharat@gmail.com",
+            PHONE_NUMBER: "1243832575",
+            DESIGNATION: "Employee",
+            DEPARTMENT: "Production"
+        }];
+
+        //now creating a table 
+        var tblData = "<table border='2px'>";
+        //printing the 1st row of the table i.e header
+        tblData += "<tr class='firstrow'> <th>NAME</th><th>EMAIL</th><th>PHONE_NUMBER</th><th>DESIGNATION</th><th>DEPARTMENT</th></tr>"
+        for (var i = 0; i < rows.length; i++) {
+            //printing the data using the loop to print the data in the data
+            tblData += "<tr>";
+            tblData += "<td>" + rows[i].NAME + "</td>";
+            tblData += "<td>" + rows[i].EMAIL + "</td>";
+            tblData += "<td>" + rows[i].PHONE_NUMBER + "</td>";
+            tblData += "<td>" + rows[i].DESIGNATION + "</td>";
+            tblData += "<td>" + rows[i].DEPARTMENT + "</td>";
+            tblData += "</tr>";
+
+        }
+        tblData += "</table>";
+        document.getElementById("table").innerHTML = tblData;
+    </script>
+</body>
+
+</html>

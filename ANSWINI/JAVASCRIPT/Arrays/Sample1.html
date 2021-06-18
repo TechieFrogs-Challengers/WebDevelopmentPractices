@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <p id="demo"></p><br>
+    <p id="demo3"></p><br>
+    <p id="demo4"></p><hr>
+    <p id="demo1"></p><br>
+    <p id="demo2"></p>
+    <h1>Looping Array</h1>
+    <p id="demo5"></p>
+    <h1>By Using Array.foreach</h1>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <script>
+        var names = ["Sandeep", "Sai", "Krishna","Venkata"];
+        names[2] = "Maddipati";
+        var first=names[0];
+        var last=names[names.length-1];
+        document.getElementById("demo4").innerHTML = "The first element in names  array :: " +first+
+                                                    "<br>The last element in names array is :: "+last;
+        
+        document.getElementById("demo").innerHTML = names;
+        document.getElementById("demo3").innerHTML = "The length of names array :: " + names.length;
+        var details = { firstName: "Sai", lastName: "maddipati", age: 26,city:"Tadepalligudem" };
+        document.getElementById("demo1").innerHTML = details["firstName"];
+        document.getElementById("demo2").innerHTML = "The length of details array :: "+details.length;
+
+        //looping array
+        var tech, text, fLen, i;
+        tech = ["Java", "MySql", "Python", "Web Design"];
+
+        op = "";
+        for (i = 0; i < tech.length; i++) {
+            op += tech[i] + "<br>";
+        }
+        op += "";
+
+        document.getElementById("demo5").innerHTML = op;
+        
+        var tech1, text;
+        tech1 = ["Java", "MySql", "Python", "Web Design"];
+        tech1.push("C++");//adding the elemnt to the array
+        tech1[tech1.length]="Data Science";//another way of addaing the elemnt in array
+        tech1[10]=".Net";//adding elemnt with high index can create undefined
+        //but prtically it is adding at the last index value
+
+        text = "";
+        tech1.forEach(myFunction);
+        text += "";
+        document.getElementById("demo6").innerHTML = text;
+
+        function myFunction(value) {
+            text +=  value + "<br>";
+        }
+
+        //its ture if its a array flase if its not array
+        document.getElementById("demo7").innerHTML = "Is Array?"+Array.isArray(tech1);
+
+        //another way vhecky wether it is array or not
+        document.getElementById("demo8").innerHTML = "IS Array?"+tech1 instanceof Array;
+        
+
+        
+    </script>
+</body>
+</html>

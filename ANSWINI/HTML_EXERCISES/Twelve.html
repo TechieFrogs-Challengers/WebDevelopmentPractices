@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine order form</title>
+    <style>
+        body {
+            background-color: rgb(252, 214, 220);
+        }
+
+        input[type="submit"] :hover {
+            background-color: goldenrod;
+            color: white;
+        }
+
+        :required {
+            background-color: yellow;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .divgap {
+            margin-bottom: 20px;
+        }
+
+        .label {
+            margin-bottom: 23px;
+        }
+
+        .divinput {
+            margin-left: 50px;
+        }
+
+        span {
+            color: red;
+        }
+
+        .note {
+            margin-top: 80px;
+        }
+
+        .divlab {
+            margin-left: 500px;
+        }
+
+        input:invalid {
+            background-color: rgb(206, 241, 135);
+            color: black;
+        }
+
+
+        hr {
+            margin-bottom: 35px;
+            margin-top: 5px;
+            border: 1px outset white;
+        }
+
+        select option:hover {
+            background-color: darkcyan;
+            color: white;
+        }
+
+        .sub[type="submit"]:hover {
+            background-color: rgb(132, 132, 190);
+            color: black;
+            margin-right: 20px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+        }
+
+        div label {
+            font-weight: bolder;
+        }
+
+        .bottom {
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center>MAGAZINE ORDER FORM</center>
+    </h1>
+    <hr>
+    <form action="abc.php">
+        <div>
+            <div class="left divlab">
+                <div class="label">
+                    <label for="Name">Name<span>* </span>:</label>
+                </div>
+                <div class="label">
+                    <label for="Address">Address :</label>
+                </div>
+                <div class="label">
+                    <label for="City">City :</label>
+                </div>
+                <div class="label">
+                    <label for="zipcode">Zip Code<span>* </span>:</label>
+                </div>
+                <div class="label">
+                    <label for="email">Email<span>* </span>:</label>
+                </div>
+                <div class="label">
+                    <label for="phonenumber">Phone number<span>* </span>:</label>
+                </div>
+                <div class="label">
+                    <label for="magazine">Magazines :</label>
+                </div>
+                <div class="label">
+                    <label for="Subscription">Subscription :</label>
+                </div>
+                <div class="note">
+                    <label for="Note">Note :</label>
+                </div>
+            </div>
+            <div class="left divinput">
+                <div class="divgap">
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="divgap">
+                    <input type="text" name="Address" id="Address" placeholder="LANDMARK">
+                </div>
+                <div class="divgap">
+                    <input type="text" name="city" id="city" placeholder="CITY / TOWN / VILLAGE">
+                </div>
+                <div class="divgap">
+                    <input type="text" name="zipcode" id="zipcode" minlength="6" maxlength="6" required
+                        pattern="[0-9]+">
+                </div>
+                <div class="divgap">
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="divgap">
+                    <input type="tel" name="phonenumber" id="phonenumber" required pattern="[0-9]+" minlength="10"
+                        maxlength="10">
+                </div>
+                <div class="divgap">
+                    <select name="magazine" id="magazine">
+                        <option value="Empty">--Select--</option>
+                        <option value="Eenadu">Eenadu</option>
+                        <option value="Shakshi">Shakshi</option>
+                        <option value="Andra Jyothi">Andra Jyothi</option>
+                        <option value="Vartha">Vartha</option>
+                    </select>
+                </div>
+                <div class="divgap">
+                    <input type="radio" id="SubscriptionOneMonth" name="Subscription">1 Month Subscription <br>
+                    <input type="radio" id="SubscriptionSixMonth" name="Subscription">6 Month Subscription <br>
+                    <input type="radio" id="SubscriptionOneYear" name="Subscription">1 Year Subscription <br>
+                    <input type="radio" id="SubscriptionTwoYears" name="Subscription">2 Years Subscription
+                </div>
+                <div class="divgap">
+                    <textarea name="note" id="note" cols="22" rows="8"></textarea>
+                </div>
+                <div class="bottom">
+                    <input type="submit" name="submit" id="submit" class="sub">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

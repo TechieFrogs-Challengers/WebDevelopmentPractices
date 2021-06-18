@@ -1,0 +1,20 @@
+body {
+  border: 2px solid black;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+p {
+  margin-left: 90px;
+}
+h3 {
+  margin-left: 30px;
+  color: crimson;
+}
+span {
+  font-weight: bolder;
+  font-style: italic;
+  color: brown;
+}
+div {
+  background-color: aquamarine;
+}

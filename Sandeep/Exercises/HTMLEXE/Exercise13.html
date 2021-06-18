@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine order form</title>
+    <style>
+        /* body background color*/
+        body {
+            background-color: skyblue;
+        }
+        /* Submit button mouse over animation*/
+        input[type="submit"] :hover {
+            background-color: blue;
+            color: white;
+        }
+        /* required field animation*/
+        :required {
+            background-color: yellow;
+        }
+        /* div tag float left*/
+        .left {
+            float: left;
+        }
+        /* gaps betwwen the input types*/
+        .divgap {
+            margin-bottom: 20px;
+        }
+        /* gaps betwwen the labels*/
+        .label {
+            margin-bottom: 23px;
+        }
+        /* input and labels gap*/
+        .divinput {
+            margin-left: 50px;
+        }
+        /* span tag color*/
+        span {
+            color: red;
+        }
+        /* note lable margin gap*/
+        .note {
+            margin-top: 80px;
+        }
+        /* main div margin*/
+        .divlab {
+            margin-left: 500px;
+        }
+        /* invalid input*/
+        input:invalid {
+            background-color: red;
+            color: black;
+        }
+
+        input:focus {
+            background-color: plum;
+            color: black;
+        }
+        /* input type text box animations*/
+        input[type="text"] {
+            width: 169px;
+            -webkit-transition: width 0.5s ease-in-out;
+            transition: width 0.5s ease-in-out;
+        }
+        /* input type text box animations*/
+        input[type="text"]:focus {
+            width: 250px;
+        }
+        /* hr tag style*/
+        hr {
+            margin-bottom: 35px;
+            margin-top: 5px;
+            border: 1px outset white;
+        }
+        /* drop doe=wn animation*/
+        select option:hover {
+            background-color: darkcyan;
+            color: white;
+        }
+        /* submit button animation*/
+        .sub[type="submit"]:hover {
+            background-color: yellow;
+            color: blue;
+            margin-right: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        /* sudo class of div followed by label*/
+        div label {
+            font-weight: bolder;
+        }
+        /* page bottom padding*/
+        .bottom {
+            padding-bottom: 50px;
+        }
+    </style>
+    <script>
+        //main  function to call or run the validations
+        function validate(){
+            var nam=document.myForm.name;
+            var stat=document.myForm.state;
+            var zip=document.myForm.zipcode;
+            var uemail=document.myForm.email;
+            var phn=document.myForm.phonenumber;
+            var mag=document.myForm.magazine;
+            var sub=document.myForm.subscription;
+            //calling functions
+            if(name_validation(nam, 10, 25)){
+                if(stat1(stat)){
+                    if(zipc(zip)){
+                        if(ValidateEmail(uemail)){
+                            if(phonenumber(phn)){
+                                if(Magazine(magazine)){
+                                    if(validsub(sub)){
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+        //validation for name
+            function name_validation(nam, mx, my) {
+                var nam_len = nam.value.length; //geting length
+                var pattern = /^[A-Za-z]+$/ //pattren for name
+                if (nam_len == 0 || nam_len >= my || nam_len < mx) {//checking false conditions
+                    alert("User Id should not be empty / length be between " + mx + " to " + my);
+                    nam.focus();
+                    return false;
+                }
+                return true;
+            }
+
+            //validation for  State
+                function stat1(stat) {
+                    if (stat.value.length != 2) { //checking the length
+                        alert('length should be 2 alpahets only')
+                        return false;
+                    }
+                    var letters = /^[a-zA-Z]/;//pattern for the state
+                    if (stat.value.match(letters)) {//checking the true condition pattern match
+                        return true;
+                    }
+                    else {//checking for other false condition is any
+                        alert('User address must have alphabet two characters only');
+                        stat.focus();
+                        return false;
+                    }
+                }
+            
+            //validate Zip code
+                function zipc(zip) {
+                    if (zip.value.length != 6) { //getting the length and checking the condition
+                        alert('ZIP code must  length 6');
+                        zip.focus();//if false the focus should be in the same block
+                        return false;
+                    }
+                    var numbers = /^[0-9]{6}/;//pattren for entering only numbers
+                    if (zip.value.match(numbers)) {//checking for the pattern match
+                        return true;
+                    }
+                    else{//checking for other false conditions
+                        alert('ZIP code must have numeric characters only of length 6');
+                        zip.focus();
+                        return false;
+                    }
+                }
+                //validate email
+                    function ValidateEmail(uemail) {
+                        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;//patren for email format
+                        if (uemail.value.match(mailformat)) {
+                            return true;
+                        }
+                        else {
+                            alert("You have entered an invalid email address!");
+                            uemail.focus();
+                            return false;
+                        }
+                    }
+                //validation for phone number
+                function phonenumber(phn) {
+                        var pattern = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;//pattren for phone number
+                        if (phn.value.match(pattern)) {//cheking for thepattren match or not
+                            return true;
+                        }
+                        else {//checing if any false condition is there or not
+                            alert("Not a valid Phone Number");
+                            return false;
+                        }
+                    }
+                
+                //validate magazine
+                    function Magazine(magazine) {
+                        if (magazine.value == "Default") {//cheking wether the drop down is selected or not
+                            alert('Select your magazine from the list');
+                            magazine.focus();
+                            return false;
+                        }
+                        else {
+                            return true;
+                        }
+                    }
+                    //validate subscription
+                        function validsub(sub) {
+                            var x = 0;
+                            if (sub.checked) {//checking wether the radio buttion is checked or not
+                                x++;
+                            } 
+                            if (x == 0) {//condition for radio button not checked
+                                alert('Select Subscription');
+                                sub.focus();
+                                return false;
+                            }
+                            else {//as radio button is last validation when ever we click on the submit its is successful
+                                alert('Form Successfully Submitted');
+                                window.location.reload()
+                                return true;
+                            }
+                        }
+
+            
+
+    </script>
+</head>
+
+<body onload="document.myForm.name.focus();">
+    <!--Headder-->
+    <h1>
+        <center>Magazine order form</center>
+    </h1>
+    <hr>
+    <form  name="myForm" onsubmit="return validate();">
+        <div>
+            <!--Div module for all labels-->
+            <div class="left divlab">
+                <div class="label">
+                    <label for="Name">Name<span>* </span>:</label>
+                </div>
+                <div class="label">
+                    <label for="Address">Address :</label>
+                </div>
+                <div class="label">
+                    <label for="City">City :</label>
+                </div>
+                <div class="label">
+                    <label for="state">State :</label>
+                </div>
+                <div class="label">
+                    <label for="zipcode">Zip Code<span>* </span>:</label>
+                </div>
+                <div class="label">
+                    <label for="email">Email<span>* </span>:</label>
+                </div>
+                <div class="label">
+                    <label for="phonenumber">Phone number<span>* </span>:</label>
+                </div>
+                <div class="label">
+                    <label for="magazine">Magazines :</label>
+                </div>
+                <div class="label">
+                    <label for="Subscription">Subscription :</label>
+                </div>
+                <div class="note">
+                    <label for="Note">Note :</label>
+                </div>
+            </div>
+            <!--Div tag for all the input types-->
+            <div class="left divinput">
+                <div class="divgap">
+                    <input type="text" name="name" id="name" size="25">
+                </div>
+                <div class="divgap">
+                    <input type="text" name="Address" id="Address" placeholder="landmark">
+                </div>
+                <div class="divgap">
+                    <input type="text" name="city" id="city" placeholder="city / town / village">
+                </div>
+                <div class="divgap">
+                    <input type="text" name="state" id="state" style="text-transform: uppercase"  >
+                </div>
+                <div class="divgap">
+                    <input type="text" name="zipcode" id="zipcode"  >
+                </div>
+                <div class="divgap">
+                    <input type="email" name="email" id="email" >
+                </div>
+                <div class="divgap">
+                    <input type="tel" name="phonenumber" id="phonenumber" >
+                </div>
+                <div class="divgap">
+                    <select name="magazine" id="magazine">
+                        <option value="Default">--Select--</option>
+                        <option value="Eenadu">Eenadu</option>
+                        <option value="Shakshi">Shakshi</option>
+                        <option value="Andra Jyothi">Andra Jyothi</option>
+                        <option value="Vartha">Vartha</option>
+                    </select>
+                </div>
+                <div class="divgap">
+                    <input type="radio" id="SubscriptionOneMonth" name="subscription">1 Month Subscription <br>
+                    <input type="radio" id="SubscriptionSixMonth" name="subscription">6 Month Subscription <br>
+                    <input type="radio" id="SubscriptionOneYear" name="subscription">1 Year Subscription <br>
+                    <input type="radio" id="SubscriptionTwoYears" name="subscription">2 Years Subscription
+                </div>
+                <div class="divgap">
+                    <textarea name="note" id="note" cols="22" rows="8"></textarea>
+                </div>
+                <div class="bottom">
+                    <input type="submit" name="submit" id="submit" class="sub">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

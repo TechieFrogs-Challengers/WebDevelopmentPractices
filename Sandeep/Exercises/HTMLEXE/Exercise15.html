@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Table adjustment */
+        table {
+            margin-top: 200px;
+            margin-left: 100px;
+            border-collapse: collapse;
+        }
+        /* alternative rows background color */
+        tr:nth-child(even) {
+            background-color: skyblue;
+        }
+        /* Coloums padding */
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+        /* First row background color */
+        .firstrow {
+            background-color: darkred;
+            color: white;
+            font-weight: bolder;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        /* Menu formaiting */
+        .menu {
+            float: left;
+            width: 20%;
+            background-color: skyblue;
+            height: 500px;
+        }
+        /* a tag formating */
+        a {
+            background-color: coral;
+        }
+        /* menu bar formating */
+        .menuitem {
+            padding: 8px;
+            margin-top: 7px;
+            background-color: coral;
+        }
+        /* Main contant formating */
+        .main {
+            float: left;
+            width: 70%;
+            padding: 0 20px;
+            overflow: hidden;
+            height: 500px;
+        }
+
+        .right {
+            background-color: lightblue;
+            float: left;
+            width: 20%;
+            padding: 10px 15px;
+            margin-top: 7px;
+        }
+
+        @media only screen and (max-width:800px) {
+
+            /* For tablets: */
+            .main {
+                width: 100%;
+                padding: 0;
+            }
+
+            .right {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+
+            /* For mobile phones: */
+            .menu,
+            .main,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body style="font-family:Verdana;">
+    <!-- headder -->
+    <div style="background-color:darkorchid;padding:5px;">
+        <center>
+            <h1><img src="D:\Sandeep Workapace\WebDevelopmentPractices\Sandeep\Exercises\HTMLEXE\i.png" height="40px"
+                    width="40px">Sample WebSite</h1>
+        </center>
+    </div>
+
+    <!-- menu box -->
+
+    <div style="overflow:auto">
+        <div class="menu">
+            <div class="menuitem"><a href="##">Home</a></div>
+            <div class="menuitem"><a href="##">Categories</a></div>
+            <div class="menuitem"><a href="##">Settings</a></div>
+            <div class="menuitem"><a href="##">Contact Us</a></div>
+        </div>
+
+        <!-- Main content -->
+
+        <div class="main">
+            <center id="table">
+
+            </center>
+
+        </div>
+
+    </div>
+
+    <!-- fotter -->
+
+    <div style="background-color:black;color: white; text-align:center;padding:10px;font-size:12px;">
+        All copyrights are reseved.@2021
+    </div>
+    <script>
+        //taking a object with data
+        var rows = [{
+            name: "Sai",
+            email: "sai@gmailmail.com",
+            phonenumber: "789342117",
+            designation: "Manager",
+            department: "Quality"
+        }, {
+            name: "sandeep",
+            email: "sandeep@gmailmail.com",
+            phonenumber: "8332092349",
+            designation: "Developer",
+            department: "Coding"
+        }, {
+            name: "Krishna",
+            email: "krishan@gmailmail.com",
+            phonenumber: "9948141932",
+            designation: "Associate",
+            department: "Testing"
+        },
+        {
+            name: "Venkata",
+            email: "venkata@gmailmail.com",
+            phonenumber: "9441128325",
+            designation: "Recuiter",
+            department: "HR"
+        }];
+
+        //now creating a table 
+        var data = "<table border='1px'>";
+        //printing the 1st row of the table i.e headder
+        data += "<tr class='firstrow'> <td>Names</td><td>Email</td><td>Phonenumber</td><td>Designation</td><td>Department</td></tr>"
+        for (var i = 0; i < rows.length; i++) {
+            //printing the data using the loop to print the data in the data
+            data += "<tr>";
+            data += "<td>" + rows[i].name + "</td>";
+            data += "<td>" + rows[i].email + "</td>";
+            data += "<td>" + rows[i].phonenumber + "</td>";
+            data += "<td>" + rows[i].designation + "</td>";
+            data += "<td>" + rows[i].department + "</td>";
+            data += "</tr>";
+
+        }
+        data += "</table>";
+        document.getElementById("table").innerHTML = data;
+    </script>
+</body>
+
+</html>
