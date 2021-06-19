@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+</head>
+<style>
+    *{
+        margin:0%;
+    }
+    h1{
+        text-align: center;
+        background-color: black;
+        color:white;
+    }
+    .n1
+    {
+        width:180px;
+        font-size: 25px;
+        display:inline-block;
+    }
+    .div1
+    {
+        padding: 2px;
+        width:550px;
+    }
+    #fnametext
+    {
+        width:300px;
+        height:70px;
+        border-radius: 8px;
+    }
+    #fnametext:hover
+    {
+        width:300px;
+        height:70px;
+        border-radius: 8px;
+        border-radius: 8px;
+        border: 2px blue solid;
+    }
+    #fname
+    {
+        width:300px;
+        height:30px;
+        border-radius: 8px;
+    }
+    #fname:hover
+    {
+        width:300px;
+        height:30px;
+        border-radius: 8px;
+        border: 2px blue solid;
+    }
+    #fnameop
+    {
+        width:310px;
+        height:35px;
+        border-radius: 8px;
+    }
+    #fnameop:hover
+    {
+        width:310px;
+        height:35px;
+        border-radius: 8px;
+        border: 2px blue solid;
+    }
+
+    #fnamebtn
+    {
+        width:300px;
+        height:30px;
+        margin-left: 150px;
+        background-color: rgb(64, 146, 71);
+    }
+    #fnamebtn:hover
+    {
+        width:300px;
+        height:30px;
+        margin-left: 150px;
+        background-color: rgb(26, 253, 18);
+        box-shadow: 0px 0px 12px black;
+    }
+
+    
+    .main
+    {
+       width: 45%;
+       height:600px;
+       background-color: rgb(124, 250, 223);
+       margin-left:400px ;
+       border-radius: 18px;
+    }
+    option,.text
+    {
+        font-size: 25px;
+    }
+    #reg
+    {
+        margin-left: 20px;
+    }
+.star
+{
+    color: rgb(255, 23, 23);
+}
+</style>
+<body>
+    <h1>
+        Magazine Order Form
+    </h1>
+<div class="main">
+    <form action="" id="reg">
+        <div class="div1">
+            <lable for="fname" class="n1" id="text">Name:<span class="star">*</span></lable>
+            <input type="text" name="fname" id="fname" required>
+         </div>   
+        <div  class="div1">
+            <lable for="fname"  class="n1">Address:</lable>
+            <input type="text" name="fname" id="fname">
+        </div>
+        <div  class="div1">
+           <lable for="fname"  class="n1">City:</lable>
+            <input type="text" name="fname" id="fname">
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">State:</lable>
+            <input type="text" name="fname" id="fname">
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">Zip:<span class="star">*</span></lable>
+            <input type="text" name="fname" id="fname" required>
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">Email:<span class="star">*</span></lable>
+            <input type="text" name="fname" id="fname" required>
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">PhoneNumber:<span class="star">*</span></lable>
+            <input type="text"name="fname" id="fname" required>
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">Magazine:</lable>
+            <select  type="text"name="fname" id="fnameop" >
+                <option>--Select--</option>
+                <option >Eenadu</option>
+                <option>Shakshi</option>
+                <option>Andra Jyothi</option>
+                <option>Vartha</option>
+            </select>
+        </div>
+        <div  class="div1">
+            <lable for="fname"  class="n1">Subscription:</lable>
+            <input type="radio" id="fnam" name="gender"> 1 Month&nbsp;
+                       <input type="radio" id="fnam" name="gender"> 6 Months&nbsp;
+                       <input type="radio" id="fnam" name="gender"> 1 Year
+        </div>
+        <br>
+        <div  class="div1">
+            <lable for="fname"class="n1">Comments:</lable>
+            <textarea id="fnametext"> </textarea>
+        </div>
+        <br>
+        <br>
+        <div  class="div1">
+           
+            <button type="submit" id="fnamebtn" >Send Your Order</button>
+        </div>
+
+    </div>
+    </form>
+    
+</body>
+</html>

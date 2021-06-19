@@ -1,0 +1,72 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    min-height: calc(115vh - 40vh);
+  }
+  #main > article {
+    font-size: 20px;
+  }
+  #main > nav
+   {
+    flex: 0 0 20vw;
+    background: beige;
+  }
+  #main > nav {
+    order: -1;
+  }
+  .menu
+  {
+      text-decoration: none;
+      display: block;
+      padding-top: 10px;
+  }
+
+  header, footer, article, nav{
+    padding: 1em;
+  }
+  header{
+    background: rgb(125, 135, 182);
+    height: 15vh;
+    text-align: center;
+    font-size: 35px;
+    
+  }
+  footer 
+  {
+    background: rgb(12, 12, 12);
+    height: 10vh;
+    color: white;
+    text-align: center;
+  }
+
+</style>
+<body>
+  <header>Sample Website</header>
+  <div id="main">
+    <article>London
+    <p class="p1">
+        London is the capital city of England it is the most populors
+        city in the United with metropolitian of over 13 million inhabitants.
+    </p>
+    <p>
+  been a major settlement for two millennia,its history going back  its foundation
+  by the Romans,who named its Londinium
+ </p>
+</article>
+    <nav>
+        <a class="menu" href="#">Home</a>
+        <a class="menu" href="#">Categories</a>
+        <a class="menu" href="#">Settings</a>
+        <a class="menu" href="#">Contat us</a>
+    </nav>
+  </div> 
+  <footer>All copyrights are Reserved.@2021</footer>
+</body>
