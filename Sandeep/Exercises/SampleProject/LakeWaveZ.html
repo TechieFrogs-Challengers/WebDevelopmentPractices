@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="LakeWaveZ.css">
+</head>
+
+<body>
+	<div class="navbar">
+        <a href="#logo" style="float: left;"><img class="logo" src="D:\Sandeep Workapace\WebDevelopmentPractices\Sandeep\Exercises\HTMLEXE\logo.jpeg" ></a>
+        <a href="#contactus">Contact Us</a>
+        <a href="#careers">Careers</a>
+        <a href="#aboutus">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#home" class="hom">Home</a>
+    </div>
+
+    <div class="main">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="imgslide" src="file:///D:/KIRAN/html/HTML1/images/lake1.jpg" style="width:100%">
+                <div class="text">Lake</div>
+                
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="imgslide" src="file:///D:/KIRAN/html/HTML1/images/lake2.jpg" style="width:100%">
+                <div class="text">Lake Navigation</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="imgslide" src="file:///D:/KIRAN/html/HTML1/images/lake3.jpg" style="width:100%">
+                <div class="text">Food Delivery</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="imgslide" src="file:///D:/KIRAN/html/HTML1/images/lake4.jpg" style="width:100%">
+                <div class="text">Social Wavez</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <div class="head">
+            <center>Find the lake that suits you</center>
+        </div>
+        <div class="dropdown align">
+            <button class="dropbtn" onclick="myFunction()">Lakes
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <form action="form1">
+                <div class="dropdown-content" id="myDropdown">
+                    <div>
+                        <span>Lakes</span>
+                        <input type="radio" name="Lake" id="lakes">
+                    </div>
+                    <div>
+                        <label class="label" for="lakerayhubbard">Lake Ray Hubbard</label><input type="radio" name="Lake"
+                            id="lakerayhubbard">
+                    </div>
+                    <div>
+                        <label class="label" for="whiterocklake">White Rock Lake</label>
+                        <input type="radio" name="Lake" id="whiterocklake">
+                    </div>
+                    <div>
+                        <label class="label" for="bachmanlake">Bachman Lake</label>
+                        <input type="radio" name="Lake" id="bachmanlake">
+                    </div>
+                    <div>
+                        <label class="label" for="mountaincreeklake">Mountain Creek Lakes</label>
+                        <input type="radio" name="Lake" id="mountaincreeklake">
+                    </div>
+                    <div>
+                        <label class="label" for="">northlake</label>
+                        <input type="radio" name="Lake" id="northlake">
+                    </div>
+                </div>
+            </form>
+        
+        </div>
+        <div class="dropdown ">
+            <button class="dropbtn" onclick="myFunction1()">Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <form action="form1">
+                <div class="dropdown-content" id="myDropdown1">
+                    <div>
+                        <span>Services</span>
+                        <input type="radio" name="Services" id="services">
+                    </div>
+                    <div>
+                        <label class="label" for="lakenavigation">Lake Navigation</label>
+                        <input type="radio" name="Services"id="lakenavigation">
+                    </div>
+                    <div>
+                        <label class="label" for="boattours">Boat Tours</label>
+                        <input type="radio" name="Services" id="boattours">
+                    </div>
+                    <div>
+                        <label class="label" for="fooddelivery">Food Delivery</label>
+                        <input type="radio" name="Services" id="fooddelivery">
+                    </div>
+                    <div>
+                        <label class="label" for="socialwavez">Social Wavez</label>
+                        <input type="radio" name="Services" id="socialwavez">
+                    </div>
+                    
+                </div>
+            </form>
+        
+        </div>
+        <div >
+            <button class="srchbtn">Search</button>
+        </div>
+<script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        //drop down script
+        /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+            //dropdown script 2
+            /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction1() {
+                    document.getElementById("myDropdown1").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function (e) {
+                    if (!e.target.matches('.dropbtn')) {
+                        var myDropdown = document.getElementById("myDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                            myDropdown.classList.remove('show');
+                        }
+                    }
+                }
+    </script>
+        <div class="header">
+                    <p>Restaurants</p>
+              </div>
+    <div>
+                <div class="image1">
+                      <div class="img1">
+                           <img src="D:\KIRAN\img\img\hooters1.jpg">
+                      </div>
+                      <div class="img1-matter">
+                          <a href="Hooters">Hooters</a>
+                          <br>
+                           #657 of 2,453 Restaurants in Dallas.
+                           <br>
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span><br>
+                            Oak Lawn
+                            <br>
+                            0.3 miles from The Sixth Floor Museum at Dealey Plaza
+                            <br>
+                            American, Bar
+                      </div>
+                </div>
+
+                <div class="image2">
+                    <div class="img2">
+                        <img src="D:\KIRAN\img\img\urban1.jpg">
+                    </div>
+                      <div class="img2-matter">
+                          <a href="Urban Vines Wine Bistro">Urban Vines Wine Bistro</a>
+                          <br>
+                           #692 of 2,834 Restaurants in Dallas
+                          <br>
+                          <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <br>
+                           9219 Garland Rd
+                          <br>
+                           2 miles from White Rock Lake Park
+                          <br>
+                          Cuisines: Wine Bar
+                     </div>
+                </div>
+                
+
+                 <div class="image3">
+                    <div class="img3">
+                        <img src="D:\KIRAN\img\img\lounge1.jpg">
+                    </div>
+                    <div class="img3-matter">
+                        <a class="" href="Lounge Here">Lounge Here</a>
+                        <br>
+                        #508 of 2,453 Restaurants in Dallas
+                        <br>
+                        <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <br>
+                        9028 Garland Rd
+                        <br>
+                        2.2 miles from White Rock Lake Park
+                        <br>
+                        Cuisines: Bar, Pub
+                   </div>
+                </div>
+     
+                <div class="image4">
+                    <div class="img4">
+                        <img src="D:\KIRAN\img\img\latindeli1.jpg">
+                    </div>
+                      <div class="img4-matter">
+                          <a class="" href="Latin Deli">Latin Deli</a>
+                          <br>
+                          #513 of 2,834 Restaurants in Dallas
+                          <br>
+                          <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <br>
+                          5844 Abrams Rd
+                          <br>
+                          1.9 miles from White Rock Lake Park
+                          <br>
+                          Cuisines: Latin, South American
+                     </div>
+                </div>
+ 
+                  <div>
+                    <button class="btn" value="Explore">Explore</button>
+                 </div>
+    </div>             
+   
+         
+            <div class="header1">
+                <p>Boat Tours</p>
+            </div>
+           
+            <div>
+                <div class="bt1">
+                    <img src="D:\KIRAN\img\img\boats11.jpg">
+                    <h1 class="text4">Boats</h1>
+                </div>
+                <div class="bt2">
+                    <img src="D:\KIRAN\img\img\boats21.jpg">
+                    <h1 class="text5">Plan A Boat Tour</h1>
+                </div>
+                <div class="bt3">
+                    <img src="D:\KIRAN\img\img\boats31.jpg">
+                    <h1 class="text6">Boat Events</h1>
+                </div>
+                <div>
+                    <button class="btn" value="Explore">Explore</button>
+                 </div>
+            </div>
+            <br>
+            <div>
+                <div class="header11">
+                    <p>Featured Events</p>
+                </div>
+                <div class="fv1">
+                    <img src="D:\KIRAN\img\img\fe11.jpg">
+                    <h4 class="top-left1">Sat<br>Feb 24</h4> 
+                    <h4 class="bottom1">LOREM IPSUM DOLOR SIT AMET,CONSECT...<br>
+                          Lorem Ipsum Dolor Sit Amet,Consectetur,Adipiscin...</h4>
+                </div>
+                <div class="fv2">
+                    <img src="D:\KIRAN\img\img\fe21.jpg">
+                    <h4 class="top-left2">Sat<br>Feb 24</h4>
+                    <h4 class="bottom1">ONLINE:PRESCHOOL STORY TIME<br>Lakeavez Comunity Library</h4>
+                </div>
+                <div class="fv3">
+                    <img src="D:\KIRAN\img\img\fe31.jpg">
+                    <h4 class="top-left3">Sat<br>Feb 24</h4>
+                    <h4 class="bottom1">LOREM IPSUM DOLOR SIT AMET<br>Lorem Ipsum Dolor Sit Amet</h4>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        <div>
+            <div class="soc">
+                <div class="header12">
+                    <p>Social Wavez</p>
+                </div>
+                <br>
+                <div class="sw1">
+                    <img src="D:\KIRAN\img\img\fw1.jpg">
+                </div>
+                <div class="sw2">
+                    <img src="D:\KIRAN\img\img\fw3.jpg">
+                </div>
+                <div class="sw3">
+                    <img src="D:\KIRAN\img\img\fw4.jpg">
+                </div>
+                <div class="sw4">
+                    <img src="D:\KIRAN\img\img\fw2.jpg">
+                </div>
+                <div class="sw5">
+                    <img src="D:\KIRAN\img\img\fw5.jpg">
+                </div>
+            </div>
+        </div>
+            <div>
+                <button class="btn" value="Explore People">Explore People</button>
+             </div>
+             <br>
+             <div>
+            <div class="box">
+            <span>
+            <p>What our Happy Customers<br>
+            Say About Us</p></span>
+                <div class="box1" >
+<div class="slideshow-container1">
+    <div class="ourSlides fade1">
+      <div class="numbertext"></div>
+      <p>Lorem ipsum dolor sit amet consectetur <br>adipiscing elit. Praesent bibendum dolor<br> eros imperdiet amet hendrerit</p>
+      <span><img src="file:///D:/KIRAN/html/HTML1/images/Amelia.jpg" width="50" alt="review image"></span>
+      <div class="text1">Amelia</div>
+      <div class="icon">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+    <div class="ourSlides fade1">
+      <div class="numbertext"></div>
+      <p>Lorem ipsum dolor sit amet consectetur <br>adipiscing elit. Praesent bibendum dolor<br> eros imperdiet amet hendrerit</p>
+      <span><img src="file:///D:/KIRAN/html/HTML1/images/Jhon.jpg" width="50" alt="review image"></span>
+      <div class="text1">Jhon Smith</div>
+      <div class="icon">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+    <div class="ourSlides fade1">
+      <div class="numbertext"></div>
+      <p>Lorem ipsum dolor sit amet consectetur <br>adipiscing elit. Praesent bibendum dolor<br> eros imperdiet amet hendrerit</p>
+      <span><img src="file:///D:/KIRAN/html/HTML1/images/Willam.jpg" width="50" alt="review image"></span>
+      <div class="text1">Willamson</div>
+      <div class="icon">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+    <div class="ourSlides fade1">
+      <div class="numbertext"></div>
+      <p>Lorem ipsum dolor sit amet consectetur <br>adipiscing elit. Praesent bibendum dolor<br> eros imperdiet amet hendrerit</p>
+      <span><img src="file:///D:/KIRAN/html/HTML1/images/Amelia.jpg" width="50" alt="review image"></span>
+      <div class="text1">Amelia</div>
+      <div class="icon">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>  
+    </div> 
+    <a class="prev1" onclick="plusSlide(-1)">&#10094;</a>
+    <a class="next1" onclick="plusSlide(1)">&#10095;</a>
+    
+    </div>
+    <br>   
+</div>
+</div>
+<div class="container2">
+<h1>Stay Tuned to Lakewavez</h1>
+<h4>Lorem ipsum dolor sit amet consectetur adipiscing elit. Praesent bibendum dolor eros imperdiet amet hendrerit</h4>
+<form>
+    <input type="email" placeholder="Enter your email address"><button class="bon">Subscribe</button>
+</form>
+</div>
+<div>
+    <div class="logo1">
+        <div class="logo2">
+        <img src="file:///D:/KIRAN/html/HTML1/images/lakelogo.jpg">
+        <h5>Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry.</h5>
+    </div>
+    <div class="link">
+      <span class="lin">Quick Links</span>
+       <a href="">Home</a>
+       <a href="">Services</a>
+       <a href="">About Us</a>
+       <a href="">Careers</a>
+       <a href="">Contact Us</a>
+    </div>
+    <div class="Social">
+        <span class="lin">Social Media</span>
+        <a href="https://www.facebook.com/pages/category/Musician-Band/Lakewaves-647760238577542/"><i class="fab fa-facebook-square"></i>Facebook</a>
+        <a href="https://www.instagram.com/lakewavesloto/"><i class="fab fa-instagram"></i>Instagram</a>
+        <a href="https://twitter.com/PepitaCorona/status/1185706643079815169"><i class="fab fa-twitter"></i>Twitter</a>
+        <a href="https://www.linkedin.com/in/grahammarlowe"><i class="fab fa-linkedin"></i>Linkedlin</a>
+     </div>
+    </div>
+</div>
+<div class="footer">
+    <p>© 2021, All rights Reserved. Powered by LakewaveZ</p>
+</div>
+</div>
+ </div>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlide(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("ourSlides");
+      var dots = document.getElementsByClassName("dott");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</body>
+</html>

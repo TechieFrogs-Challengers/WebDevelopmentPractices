@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Websitestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>doc</title>
+    
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#logo" style="float: left;"><img class="logo" src="D:\Sandeep Workapace\WebDevelopmentPractices\Sandeep\Exercises\HTMLEXE\logo.jpeg" ></a>
+        <a href="#contactus">Contact Us</a>
+        <a href="#careers">Careers</a>
+        <a href="#aboutus">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#home" class="active">Home</a>
+    </div>
+
+    <div class="main">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="imgslide" src="D:\Sandeep Workapace\WebDevelopmentPractices\Sandeep\How To Do\hand.jpg" style="width:100%">
+                <div class="text">Lake</div>
+                
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="imgslide" src="D:\Sandeep Workapace\WebDevelopmentPractices\Sandeep\How To Do\leaf.jpg" style="width:100%">
+                <div class="text">Lake Navigation</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="imgslide" src="D:\Sandeep Workapace\WebDevelopmentPractices\Sandeep\How To Do\natur1.jpg" style="width:100%">
+                <div class="text">Food Delivery</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img class="imgslide" src="D:\Sandeep Workapace\WebDevelopmentPractices\Sandeep\How To Do\natur1.jpg" style="width:100%">
+                <div class="text">Social Wavez</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <div class="head">
+            <center>Find the lake that suits you</center>
+        </div>
+        <div class="dropdown align">
+            <button class="dropbtn" onclick="myFunction()">Lakes
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <form action="form1">
+                <div class="dropdown-content" id="myDropdown">
+                    <div>
+                        <span>Lakes</span>
+                        <input type="radio" name="Lake" id="lakes">
+                    </div>
+                    <div>
+                        <label class="label" for="lakerayhubbard">Lake Ray Hubbard</label><input type="radio" name="Lake"
+                            id="lakerayhubbard">
+                    </div>
+                    <div>
+                        <label class="label" for="whiterocklake">White Rock Lake</label>
+                        <input type="radio" name="Lake" id="whiterocklake">
+                    </div>
+                    <div>
+                        <label class="label" for="bachmanlake">Bachman Lake</label>
+                        <input type="radio" name="Lake" id="bachmanlake">
+                    </div>
+                    <div>
+                        <label class="label" for="mountaincreeklake">Mountain Creek Lakes</label>
+                        <input type="radio" name="Lake" id="mountaincreeklake">
+                    </div>
+                    <div>
+                        <label class="label" for="">northlake</label>
+                        <input type="radio" name="Lake" id="northlake">
+                    </div>
+                </div>
+            </form>
+        
+        </div>
+        <div class="dropdown ">
+            <button class="dropbtn" onclick="myFunction1()">Servises
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <form action="form1">
+                <div class="dropdown-content" id="myDropdown1">
+                    <div>
+                        <span>Services</span>
+                        <input type="radio" name="Services" id="services">
+                    </div>
+                    <div>
+                        <label class="label" for="lakenavigation">Lake Navigation</label>
+                        <input type="radio" name="Services"id="lakenavigation">
+                    </div>
+                    <div>
+                        <label class="label" for="boattours">Boat Tours</label>
+                        <input type="radio" name="Services" id="boattours">
+                    </div>
+                    <div>
+                        <label class="label" for="fooddelivery">Food Delivery</label>
+                        <input type="radio" name="Services" id="fooddelivery">
+                    </div>
+                    <div>
+                        <label class="label" for="socialwavez">Social Wavez</label>
+                        <input type="radio" name="Services" id="socialwavez">
+                    </div>
+                    
+                </div>
+            </form>
+        
+        </div>
+        <div >
+            <button class="srchbtn">Search</button>
+        </div>
+        
+    </div>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        //drop down script
+        /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function (e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+            //dropdown script 2
+            /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction1() {
+                    document.getElementById("myDropdown1").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function (e) {
+                    if (!e.target.matches('.dropbtn')) {
+                        var myDropdown = document.getElementById("myDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                            myDropdown.classList.remove('show');
+                        }
+                    }
+                }
+    </script>
+</body>
+
+</html>

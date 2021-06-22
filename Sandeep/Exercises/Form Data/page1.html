@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            font-size: 25px;
+            margin-bottom: 10px;
+            margin-left: 30px;
+        }
+        label{
+            color: rgb(16, 8, 46);
+            font-weight: bolder;
+            margin-bottom: 10px;
+        }
+        div{
+            margin-left: 400px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+        <div>
+            <form action="page2.html">
+                <h1 style="margin-left: 70px;">Sign Up Form</h1>
+                <label>Name:
+                    <input type="text" name="uname" id="uname" /></label><br>
+                <label>Email:
+                    <input type="email" name="email" id="email" /></label><br />
+                <label>Password:
+                    <input style="margin-left: 12px;" type="password" name="password" id="password" /></label><br>
+                <label>Mobile:
+                    <input type="tel" name="mobile" id="mobile" /></label><br />
+                    <label for=""> Country:
+                        <select style="margin-left: 20px; width: 320px;" name="country" id="country">
+                            <option value="india">India</option>
+                            <option value="usa">USA</option>
+                            <option value="london">London</option>
+                        </select>
+                    </label><br>
+                <input style="margin-left: 70px; margin-top: 30px;" type="submit" value="Submit" onclick="getData()">
+            </form>
+
+        </div>
+    <script>
+        function getData() {
+                //gettting the values
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                var username = document.getElementById("uname").value;
+                var mobile = document.getElementById("mobile").value;
+                //var val = document.getElementById("country").selectedIndex.value;
+                var e = document.getElementById("country");
+                var val = e.options[e.selectedIndex].text;
+
+                
+                //saving the values in local storage
+                localStorage.setItem("txtValue", email);
+                localStorage.setItem("txtValue2", mobile);
+                localStorage.setItem("txtValue3", username);
+                localStorage.setItem("txtValue4",val);
+            }
+    </script>
+    
+</body>
+</html>
