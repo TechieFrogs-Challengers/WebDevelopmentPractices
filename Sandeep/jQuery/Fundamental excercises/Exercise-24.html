@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Appends a jQuery object to all paragraphs.</title>
+    <style type="text/css">
+        button {
+            display: block;
+            margin: 20px 0 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <strong> Maddipati</strong>
+    <p>Sai</p>
+    <p>Sandeep</p>
+    <button id="button1">Click to see the changes</button>
+
+    <script>
+        $('#button1').click(function () {
+                $("p").append($("strong"));
+            });
+    </script>
+</body>
+</html>

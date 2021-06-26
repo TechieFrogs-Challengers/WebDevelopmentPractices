@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Move one DIV element inside another.</title>
+
+    <style>
+        #nonSelected{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 180px;
+            height: 180px;
+            background-color: #884333;
+            border-width: 1px;
+            border-style: dotted;
+            border-color:black;
+            padding: 10px;
+        }
+
+        #selected{
+            position: absolute;
+            top: 10px;
+            left: 200px;
+            width: 180px;
+            height: 180px;
+            background-color: #498933;
+            border-width: 1px;
+            border-style: dotted;
+            border-color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+    
+    <body>
+        <div id="nonSelected">
+            <!--Declaring BUTTON TAGS -->
+            <button id="btnDefault" onclick="moveButton(this)" type="button">Button1</button>
+            <button id="btnPrimary" onclick="moveButton(this)" type="button">Button2</button>
+    
+            <button id="btnDanger" onclick="moveButton(this)" type="button">Button3</button>
+    
+        </div>
+        <div id="selected">
+        </div>
+
+        <script>
+            function moveButton(elem) {
+                    if ($(elem).parent().attr("id") == "nonSelected") {
+                        $(elem).detach().appendTo('#selected');
+                    }
+                    else {
+                        $(elem).detach().appendTo('#nonSelected');
+                    }
+                }
+        </script>
+    </body>
+</html>

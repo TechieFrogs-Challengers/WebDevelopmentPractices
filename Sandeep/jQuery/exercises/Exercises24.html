@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>How to get textarea text using jQuery.</title>
+</head>
+
+<body>
+    <textarea id="mytextarea" rows="4" cols="50">
+        MySQL was developed by Michael Widenius and David Axmark in 1994. Presently MySQL is maintained by Oracle (formerly Sun, formerly MySQL AB). 
+    </textarea>
+
+    <script>
+        var text = $('textarea#mytextarea').val();
+            console.log(text);
+    </script>
+</body>
+</html>

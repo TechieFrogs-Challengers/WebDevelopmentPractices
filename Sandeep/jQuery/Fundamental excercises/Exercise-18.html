@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Count all elements within a division.</title>
+
+    <style>
+        button {
+            display: block;
+            margin: 20px 0 0 0;
+            clear: both
+            }  
+
+
+        span, p {
+            width: 160px;
+            height: 40px;
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            background-color:#B0E0E6
+        }
+    </style>
+</head>
+
+<body>
+    <div id="iddiv">
+        <span>This is a span</span>
+        <p>This is a Paragraph</p>
+        <button id="button1">Click to see the effect</button>
+
+        <script>
+            $('#button1').click(function () {
+
+                    var elementCount = $("#iddiv").find("*").css("border", "2px solid blue").length;
+
+                    $("body").prepend("" + elementCount + " element(s) found");
+                });
+        </script>
+    </div>
+</body>
+</html>

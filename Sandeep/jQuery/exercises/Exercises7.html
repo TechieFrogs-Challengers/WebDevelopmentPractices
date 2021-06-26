@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .tablestyle {
+            width: 500px;
+            margin: 0px auto;
+        }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    
+        table tr td {
+            width: 50%;
+            border: 1px solid #ff751a;
+            padding: 5px;
+            text-align: center;
+        }
+    
+        table tr th {
+            border: 1px solid #79ff4d;
+            padding: 5px;
+            text-align: center;
+        }
+    
+        .zebra {
+            background-color:
+                #ff0066;
+        }
+    </style>
+    <title>Create a Zebra Stripes table effect</title>
+</head>
+<body>
+    <div class="tablestyle">
+        <table>
+            <tr>
+                <th>Student Name</th>
+                <th>Marks in Science</th>
+            </tr>
+            <tr>
+                <td>Janet</td>
+                <td>85.00</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>92.00</td>
+            </tr>
+            <tr>
+                <td>Arthur</td>
+                <td>79.00</td>
+            </tr>
+            <tr>
+                <td>Bill</td>
+                <td>82.00</td>
+            </tr>
+        </table>
+    </div>
+<script>
+    $(document).ready(function () {
+            $("tr:odd").addClass("zebra");
+        });
+</script>
+</body>
+</html>

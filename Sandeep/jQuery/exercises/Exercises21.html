@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Check if object is a jQuery object.</title>
+</head>
+<body>
+    
+    <script>
+        var obj1 = { what: "A regular JS object" },
+                obj2 = $('body');
+
+            if (obj1.jquery) {
+                console.log('obj1 is a jQuery object.');
+            }
+
+            if (obj2.jquery) {
+                console.log('obj2 is a jQuery object.');
+            }
+    </script>
+</body>
+</html>

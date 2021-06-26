@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Blink text using jQuery</title>
+</head>
+<body>
+    <p>Hi Iam <span class="blink">Maddipati </span> S V Krishna <span class="blink">Sandeep</span> </p>
+
+    <script>
+        function blink_text() {
+                $('.blink').fadeOut(500);
+                $('.blink').fadeIn(500);
+            }
+            setInterval(blink_text, 1000);
+    </script>
+</body>
+</html>

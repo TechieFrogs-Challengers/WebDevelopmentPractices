@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Access form input fields using jQuery</title>
+</head>
+
+<body>
+    <form id="myForm" action="##">
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p> Click Submit button to get all the forms elements and their values</p>
+    
+    <script>
+        $('#myForm').submit(function () {
+                var values = $(this).serialize();
+                console.log(values);
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Add a specified class to the matched elements.</title>
+
+    <style>
+        p {
+            margin: 8px;
+            font-size: 16px;
+        }
+        .w3r_font_color{
+            color: 
+        red;
+        }
+        .w3r_background {
+            background: 
+        yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Sai</p>
+    <p>Sandeep</p>
+    <p>Maddipati</p>
+
+    <script>
+        $("p").last().addClass("w3r_font_color");
+    </script>
+</body>
+</html>

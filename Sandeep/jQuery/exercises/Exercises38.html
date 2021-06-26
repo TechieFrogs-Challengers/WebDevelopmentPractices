@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Count child elements using jQuery.</title>
+</head>
+
+<body>
+    <div id="para">
+        <p>Sai</p>
+        <p>Sandeep</p>
+        <p>Venkata</p>
+        <p>Krishna</p>
+        <p>Maddipati</p>
+        <p>Hari</p>
+        <p>Sai</p>
+        <p>Sandeep</p>
+        <p>Venkata</p>
+        <p>Krishna</p>
+        <p>Maddipati</p>
+        <p>Hari</p>
+    </div>
+
+    <script>
+        var count = $("#para p").length;
+            console.log(count);
+    </script>
+</body>
+</html>

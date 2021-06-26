@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Using jQuery add the previous set of elements on the stack to the current set.</title>
+
+    <style>
+        p, div {
+            margin: 5px;
+            padding: 5px;
+            color: 
+        #c03199;
+        }
+        .border {
+            border: 2px solid 
+        #360e9b;
+        }
+        .background {
+            background: 
+        #cdc8b1;
+        }
+        .left, .right {
+            width: 40%;
+            float: left;
+        }
+        .right {
+            margin-left: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <p><strong>Before <code>addBack()</code></strong></p>
+        <div class="before-addback">
+            <p>JavaScript</p>
+            <p>jQuery</p>
+        </div>
+    </div>
+    <div class="right">
+        <p><strong>After <code>addBack()</code></strong></p>
+        <div class="after-addback">
+            <p>JavaScript</p>
+            <p>jQuery</p>
+        </div>
+    </div>
+
+    <script>
+        $("div.left, div.right").find("div, div > p").addClass("border");
+
+        // First Part
+        $("div.before-addback").find("p").addClass("background");
+
+        // Second Part
+        $("div.after-addback").find("p").addBack().addClass("background");
+    </script>
+</body>
+</html>

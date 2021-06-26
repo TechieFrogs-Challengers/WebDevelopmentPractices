@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Click the button to animate the paragraph element with a number of different properties.</title>
+    <style>
+        button {
+            display: block;
+            margin: 20px 0 0 0;
+            }  
+
+        p {
+            background-color: 
+        #B0E0E6;
+            width: 70px;
+            border: 1px solid 
+        red;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="pid">jQuery</p>
+    <button id="button1">Click to see the animation</button>
+
+    <script>
+        $('#button1').click(function () {
+                $("#pid").animate({
+                    width: "70%",
+                    opacity: 0.4,
+                    marginLeft: "0.6in",
+                    fontSize: "3em",
+                    borderWidth: "10px"
+                }, 1500);
+            });
+    </script>
+</body>
+</html>

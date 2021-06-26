@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>How to get the value of a textbox using jQuery</title>
+    </head>
+
+    <body>
+        <center>
+            
+                Name :: <input type="text" value="Input" >
+            
+        </center>
+
+        <script>
+            $("input")
+                    .keyup(function () {
+                        var tvalue = $(this).val();
+                        console.log(tvalue);
+                    })
+                    .keyup();
+        </script>
+    </body>
+</html>

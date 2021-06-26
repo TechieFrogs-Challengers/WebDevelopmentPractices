@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Distinguish between left and right mouse click with jQuery</title>
+</head>
+
+<body>
+    <h1 class="element">jQuery Exercises</h1>
+
+    <script>
+        $(document).on("contextmenu", ".element", function (e) {
+                console.log('Right Mouse Clicked!');
+                return false;
+            });
+
+            $(document).on('click', '.element', function () {
+                console.log('Left Mouse Clicked!');
+            });
+    </script>
+</body>
+</html>

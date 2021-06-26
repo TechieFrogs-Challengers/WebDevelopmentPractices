@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Make first word bold of all elements</title>
+</head>
+<body>
+    <p>PHP Exercises</p>
+    <p>Python Exercises</p>
+    <p>JavaScript Exercises</p>
+    <p>jQuery Exercises</p>
+
+    <script>
+        $('p').each(function () {
+                var data = $(this);
+                data.html(data.text().replace(/(^\w+)/, '$1'));
+            });
+    </script>
+</body>
+</html>

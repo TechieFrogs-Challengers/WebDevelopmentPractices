@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Disable a link using jQuery</title>
+</head>
+
+<body>
+    <a href="https://meet.google.com/">Google meet Link</a>
+    <p></p>
+    <input id="button1" type="button" value="Click to remove the link!" />
+
+    <script>
+        $(document).ready(function () {
+                $('#button1').click(function () {
+                    $("a").removeAttr('href');
+                });
+            });
+    </script>
+</body>
+</html>

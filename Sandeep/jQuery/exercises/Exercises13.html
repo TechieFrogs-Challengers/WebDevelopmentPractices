@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Select values from a JSON object using jQuery.</title>
+    </head>
+    
+<body>
+    <div id="divSelect"></div>
+
+    <script>
+        colors = { "color1": "Red", "color2": "Green", 'color3': "Blue" };
+
+            $.each(colors, function (key, value) {
+                $('#divSelect').append($("<option/>", {
+                    value: key,
+                    text: value
+                }));
+            });
+    </script>
+</body>
+</html>

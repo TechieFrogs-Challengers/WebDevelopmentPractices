@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Add a CSS class using jQuery.</title>
+    <style>
+        p.center {
+            text-align: center;
+            color: 
+        red;
+        }
+
+        p.large {
+            font-size: 200%;
+            color: 
+        blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="pid" class="center"> jQuery Exercises</p>
+    <input id="button1" type="button" value="Click to add a new Class" />
+
+    <script>
+        $(document).ready(function () {
+                $('#button1').click(function () {
+                    $('#pid').addClass('large');
+                });
+            });
+    </script>
+</body>
+</html>
