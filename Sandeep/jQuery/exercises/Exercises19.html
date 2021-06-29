@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Check if internet connection is working</title>
+    <style>
+        body { font-family: sans-serif; }
+        h1 {
+            margin: 10px 0;
+            padding: 0 5px;
+            font-size: 2em;
+            border: 2px double  green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="MyInput">jQuery Exercises</h1>
+
+    <input type="button" value="Remove border style" onClick="remove_style()" />
+
+    <script>
+        function remove_style() {
+                $("#MyInput").css("border", "0");
+            }
+    </script>
+</body>
+</html>

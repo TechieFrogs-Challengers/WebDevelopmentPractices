@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Restrict number only input for textboxes including decimal points.</title>
+</head>
+
+<body>
+    <div>Input the Amount:
+        <input type="text" class="numbers" value="" />
+    </div>
+
+    <script>
+        $('.numbers').keyup(function () {
+                this.value = this.value.replace(/[^0-9\.]/g, '');
+            });
+    </script>
+</body>
+</html>

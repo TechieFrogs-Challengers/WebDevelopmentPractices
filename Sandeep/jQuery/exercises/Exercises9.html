@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Limit character input in the textarea including count</title>
+    <style type="text/css">
+        textarea {
+            display: block;
+            margin: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form>
+            <label>Maximum 15 characters</label>
+            <textarea id="textarea" maxlength="15"></textarea>
+            <span id="rchars">15</span> Character(s) Remaining
+        </form>
+    </center>
+    <script>
+        var maxLength = 15;
+            $('textarea').keyup(function () {
+                var textlen = maxLength - $(this).val().length;
+                $('#rchars').text(textlen);
+            });
+    </script>
+</body>
+</html>

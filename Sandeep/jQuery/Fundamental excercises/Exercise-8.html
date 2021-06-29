@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Using jQuery insert a paragraph after all paragraphs.</title>
+    <style type="text/css">
+        button {
+            display: block;
+            margin: 20px 0 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Iam</p>
+    <button id="button1">Click to see Name</button>
+
+    <script>
+        $('#button1').click(function () {
+                $("p").after("<b><i>Maddipati S v Krishna Sandeep</i></b><br>");
+            });
+    </script>
+</body>
+</html>

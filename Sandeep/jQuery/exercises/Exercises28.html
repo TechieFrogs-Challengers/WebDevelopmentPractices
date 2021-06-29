@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>How to detect a textbox's content has changed using jQuery</title>
+</head>
+
+<body>
+    <form action="##">
+        First name: <input type="text" id="name1" name="fname"><br>
+        Last name: <input type="text" id="name2" name="lname"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        $('#name1').on('input', function () {
+                console.log('New First name added');
+            });
+    </script>
+</body>
+</html>

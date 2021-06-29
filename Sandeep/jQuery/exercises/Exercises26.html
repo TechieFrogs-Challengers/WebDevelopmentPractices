@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Find the absolute position of an element using jQuery</title>
+</head>
+
+<body>
+    <form id="myForm" action="##">
+        First name:<br>
+        <input type="text" id="nam12" name="firstname" value="Mickey">
+        <br>
+        Last name:<br>
+        <input type="text" id="name2" name="lastname" value="Mouse">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        var left_position = $("#name2").offset().left - $(document).scrollTop();
+            console.log('Left: ' + left_position);
+
+            var top_position = $("#name2").offset().top - $(document).scrollTop();
+            console.log('Right: ' + top_position);
+    </script>
+</body>
+</html>

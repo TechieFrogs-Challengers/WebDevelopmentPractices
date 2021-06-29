@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $("div").scroll(function () {
+                $("span").text(x += 1);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Try the scrollbar in the div</p>
+    
+    <div style="border:1px solid black;width:200px;height:100px;overflow:scroll;">In my younger and more vulnerable years my
+        father gave me some advice that I've been turning over in my mind ever since.
+        <br><br>
+        'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't had
+        the advantages that you've had.'
+    </div>
+    
+    <p>Scrolled <span>0</span> times.</p>
+</body>
+</html>

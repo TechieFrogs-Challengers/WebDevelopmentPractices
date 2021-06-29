@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Underline all words of a text through jQuery</title>
+        <style>
+            p span{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p>The best way we learn anything is by practice and exercise questions. Here you have the opportunity to practice
+            the Java programming language concepts by solving the exercises starting from basic to more complex exercises.
+        </p>
+        <script>
+            $('p').each(function () {
+
+                    var text_words = $(this).text().split(' ');
+
+                    $(this).empty().html(function () {
+
+                        for (i = 0; i < text_words.length; i++) {
+                            if (i === 0) {
+                                $(this).append('<span>' + text_words[i] + '</span>');
+                            } else {
+                                $(this).append(' <span>' + text_words[i] + '</span>');
+                            }
+                        }
+
+                    });
+
+                });
+        </script>
+    </body>
+</html>

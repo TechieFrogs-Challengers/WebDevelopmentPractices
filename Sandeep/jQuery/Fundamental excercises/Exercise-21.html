@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Animates the first div's left property and synchronizes the remaining divs.</title>
+
+    <style>
+        div {
+            position: relative;
+            background-color: #B0E0E6;
+            width: 45px;
+            height: 45px;
+            float: left;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <p><button id="run">Click to Run »</button></p>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+
+    <script>
+        $("#run").click(function () {
+                $(".block:first").animate({
+                    left: 200
+                }, {
+                    duration: 4000,
+                    step: function (now, fx) {
+                        $(".block:gt(0)").css("left", now);
+                    }
+                });
+            });
+    </script>
+</body>
+</html>

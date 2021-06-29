@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Disable right click menu in html page using jquery</title>
+</head>
+<body>
+    <script>
+            $(document).bind("contextmenu", function (e) {
+                    return false;
+                });
+    </script>
+</body>
+</html>

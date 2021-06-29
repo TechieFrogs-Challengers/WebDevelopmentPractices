@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Delete all table rows except first one using jQuery.</title>
+</head>
+
+<body>
+    <table border="1" id="myTable">
+        <tr>
+            <th>Year</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>2014</td>
+            <td>$10000</td>
+        </tr>
+        <tr>
+            <td>2015</td>
+            <td>$8000</td>
+        </tr>
+        <tr>
+            <td>2016</td>
+            <td>$9000</td>
+        </tr>
+    </table>
+    <p>
+        <input id="button1" type="button" value="Click to remove all rows except first one" />
+    </p>
+
+    <script>
+        $(document).ready(function () {
+                $('#button1').click(function () {
+                    $("#myTable").find("tr:gt(0)").remove();
+                });
+            });
+    </script>
+</body>
+</html>

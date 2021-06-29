@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>How to get the selected value and currently selected text of a dropdown box using jQuery?</title>
+</head>
+
+<body>
+    <select id="ddid">
+        <option id="op1" value="red">Red</option>
+        <option id="op2" value="green">Green</option>
+        <option id="op3" value="blue">Blue</option>
+        <option id="op4" value="white">White</option>
+    </select>
+    <form action="##">
+        <input id="button1" type="button" value="Click!" />
+    </form>
+
+    <script>
+        $(document).ready(function () {
+                $('#button1').click(function () {
+                    console.log($('#op2').val());
+                    console.log($('#op4').val());
+                    console.log($('#ddid :selected').text());
+                });
+            });
+    </script>
+</body>
+</html>

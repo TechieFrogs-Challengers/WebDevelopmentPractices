@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Remove a specific value from an array using jQuery.</title>
+</head>
+<body>
+    
+    <script>
+        var y = ['Red', 'Green', 'White', 'black', 'Yellow'];
+            var remove_Item = 'White';
+
+            console.log('Array before removing the element = ' + y);
+            y = $.grep(y, function (value) {
+                return value != remove_Item;
+            });
+            console.log('Array after removing the element = ' + y);
+    </script>
+</body>
+</html>

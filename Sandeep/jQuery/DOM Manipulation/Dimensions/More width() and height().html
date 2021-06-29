@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var txt = "";
+                txt += "Document width/height: " + $(document).width();
+                txt += "x" + $(document).height() + "\n";
+                txt += "Window width/height: " + $(window).width();
+                txt += "x" + $(window).height();
+                alert(txt);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Display dimensions of document and window</button>
+</body>
+</html>

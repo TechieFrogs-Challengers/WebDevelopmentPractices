@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Detect pressing Enter key on keyboard using jQuery.</title>
+</head>
+
+<body>
+    <p>Input a value within the textbox and press Enter</p>
+    <form>
+        <input type="text" id="hello">
+    </form>
+
+    <script>
+        $(document).keypress(function (e) {
+                if (e.which == 13) {
+                    console.log('You pressed enter!');
+                }
+            });
+
+    </script>
+</body>
+</html>
