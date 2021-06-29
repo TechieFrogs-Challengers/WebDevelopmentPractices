@@ -1,0 +1,22 @@
+*
+{
+    margin:0%;
+    width: 100vw;
+    overflow: hidden;
+}
+div{
+  background-color: rgb(0, 255, 76);
+  text-align: center;
+}
+div h1
+{
+    font-size: 6rem;
+}
+div p{
+    color: black;
+    font-size: 1rem;
+}
+div svg
+{
+    display: block;
+}
