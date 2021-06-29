@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Attaches a change event to the select element (Use to create a drop-down list.) that gets the text for each selected option and writes them in a paragraph.</title>
+</head>
+<script>
+    // A sample function f1 
+var foo = function( value ) {
+  console.log( "foo: " + value );
+};
+
+var callbacks = $.Callbacks();
+ 
+$( "select" )
+.change(function () {
+var str = "";
+$( "select option:selected" ).each(function() {
+str += $( this ).text() + " ";
+});
+$( "p" ).text("Selected Colors: "+str) .css( "color", "blue" );
+})
+.change();
+
+</script>
+<body>
+<select name="colors" multiple="multiple">
+<option selected="selected">Red</option>
+<option selected="selected">Green</option>
+<option>Blue</option>
+<option>Orange</option>
+<option>Black</option>
+<option>White</option>
+</select>
+<p></p>
+</body>
+</html>

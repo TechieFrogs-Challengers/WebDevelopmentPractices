@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>JS Bin</title>
+</head>
+<style>
+  p {
+  background: blue;
+  color: white;   
+  }
+  p.dbl {
+  background: red;
+  color: white;
+  }
+
+</style>
+<script>
+var pdbl = $( "p:first" );
+pdbl.dblclick(function() {
+pdbl.toggleClass( "dbl" );
+});
+
+</script>
+<body>
+<p>Double click to toggle background color</p>
+</body>
+</html>

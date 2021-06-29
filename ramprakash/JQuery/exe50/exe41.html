@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>Find all button inputs and mark them using jQuery.</title>
+ </head>
+ <script>
+     $().ready(function(){     $('#button1').click(function(){ 
+var input = $( ":button" ).addClass( "marked" );
+$( "p" ).text( "No. of butttons(s): " + input.length  );
+});
+});
+ </script>
+ <body>
+  <form>
+  <fieldset>
+  <textarea rows="4" cols="50">
+  At w3resource.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+  </textarea>
+   <input type="button" value="Input Button">
+    </fieldset>
+	</form>
+	<p></p>
+	<button id="button1">Click to see the effect</button> 
+	</body>
+	</html>

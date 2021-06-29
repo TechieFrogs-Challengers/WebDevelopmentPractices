@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Finds all checkbox inputs.</title>
+</head>
+<script>
+    var input = $( "form input:checkbox" )
+.wrap( "<span></span>" )
+.parent()
+.css({
+background: "black",
+border: "2px red solid"
+});
+$( "p" )
+.text( "No. of checkbox: " + input.length)
+.css( "color", "blue" );
+
+</script>
+<body>
+<form>
+<input type="button" value="Input Button">
+<input type="checkbox">
+<input type="checkbox">
+<input type="hidden">
+<input type="button" value="Output Button">
+<select>
+<option>Option</option>
+</select>
+</form>
+<p></p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Get the styles (width, height, text color, and background color) of a clicked division.</title>
+</head>
+<style>
+     div {
+ height: 50px;
+ margin: 5px;
+ padding: 5px;
+ float: left;
+ }
+ #box1 {
+ width: 50px;
+ color: yellow;
+ background-color: red;
+ }
+ #box2 {
+ width: 50px;
+ color: rgb(255, 255, 255);
+ background-color: rgb(15, 99, 30);
+ }
+ #box3 {
+ width: 50px;
+ color: #fcc;
+ background-color: #123456;
+ }
+ p {
+ color: blue;
+ }
+
+</style>
+<script>
+    $( "div" ).click(function() {
+var html = [ "The clicked div has the following styles:" ];
+var styleProps = $( this ).css([
+"width", "height", "color", "background-color"
+]);
+$.each( styleProps, function( prop, value ) {
+html.push( prop + ": " + value );
+});
+
+$( "#result" ).html( html.join( "<br>" ) );
+});
+</script>
+<body>
+<p id="result">&nbsp;</p>
+<div id="box1">A</div>
+<div id="box2">B</div>
+<div id="box3">C</div>
+</body>
+</html>

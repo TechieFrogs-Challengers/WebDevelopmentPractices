@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Increase the size of a div when you click it.</title>
+</head>
+<style>
+    .div1 {
+    width: 100px;
+    height: 60px;
+    background-color: #f33;
+    color: white
+  }
+.div2 {
+    width: 100px;
+    height: 60px;
+    background-color: #a14;
+    color: white
+  }
+
+</style>
+<script>
+    $( "div" ).on( "click", function(){
+  $( this ).css({
+      width: function( index, value ) {
+	        return parseFloat( value ) * 1.2;
+			},
+			height: function( index, value ) {
+				return parseFloat( value ) * 1.2;
+			}
+	});
+});
+
+</script>
+<body>
+<div class="div1">Click to increase the size</div>
+<div class="div2">Click to increase the size</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Finds all elements that are empty.</title>
+</head>
+<script>
+$( "td:empty" )
+    .text( "Empty!" )
+    .css( "background", "rgb(255,230,210)" );
+    </script>
+<body>
+<table border="1">
+<tr><td>R1C1</td><td></td><td>R1C3</td></tr>
+<tr><td>R2C1</td><td>R2C2</td><td></td></tr>
+<tr><td></td><td>R3C2</td><td>R3C3</td></tr>
+</table>
+</body>
+</html>

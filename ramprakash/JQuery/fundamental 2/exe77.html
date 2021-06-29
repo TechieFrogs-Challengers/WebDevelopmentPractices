@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <script src="https://code.jquery.com/jquery-git.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Find  all inputs that are descendants of a form  and mark them with a dotted red border. </title>
+  </head>
+  <style>
+      form {
+border: 2px blue solid;
+padding: 2px;
+margin: 0;
+background: #efe;
+}
+div {
+color: red;
+}
+fieldset {
+margin: 1px;
+padding: 3px;
+}
+  </style>
+  <script>
+      $( "form input" ).css( "border", "2px dotted red" );
+$( "form fieldset input" ).css( "backgroundColor", "green" );
+  </script>
+  <body>
+  <form>
+<label for="name">Child of form:</label>
+  <input name="name" id="name">
+  <fieldset>
+  <label for="newsletter">Grandchild of form, child of fieldset:</label>
+  <input name="newsletter" id="newsletter">
+  </fieldset>
+  </form>
+  Sibling to form: <input name="none">
+  </body>
+  </html>

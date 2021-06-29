@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Border around all list items that are children of  a specified class of an unordered list.</title>
+</head>
+<script>
+    $().ready(function(){
+    $( "ul.tutorial > li" ).css( "border", "3px double blue" );
+});
+</script>
+<body>
+<ul class="tutorial">
+<li>Frontend</li>
+<li>Backend
+<ul>
+<li>C#</li>
+<li>Java</li>
+<li>PHP</li>
+<li>Python</li>
+</ul>
+</li>
+<li>Database
+<ul>
+<li>MySQL</li>
+<li>PostgreSQL</li>
+<li>SQLite</li>
+<li>Oracle</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>

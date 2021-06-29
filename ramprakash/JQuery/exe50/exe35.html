@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Finds all inputs with an attribute name that starts with 'P' and puts text in them.</title>
+<style type="text/css">
+button {
+ display: block;
+  margin: 20px 0 0 0;
+   }
+   </style>
+   <script>
+       $().ready(function(){
+       $('#button1').click(function(){ 
+$( "input[name^='P']" ).val( "Tutorials & Exercises " );//were starting position p is there it applys
+});
+});
+   </script>
+   </head>
+   <body>
+   <input name="PHP">
+   <input name="Python">
+   <input name="RPdis">
+   <button id="button1">Click to see the effect</button>
+   </body>
+ </html>

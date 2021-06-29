@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Finds all inputs that don't have the name 'color' and appends text to the span next to it.</title>
+<style type="text/css">
+button {
+display: block;
+margin: 20px 0 0 0;
+} 
+</style>
+<script>
+       $().ready(function(){
+    $('#button1').click(function(){ 
+$( "input[name!='color']" ).next().append( "<b>: not a color</b>" );
+});
+});
+</script>
+</head>
+<body>
+<div>
+<input type="radio" name="color" value="Red">
+<span>Red</span>
+</div>
+<div>
+<input type="radio" value="Cold Fusion">
+ <span>Sky</span>
+ </div>
+ <div>
+ <input type="radio" name="accept" value="Evil Plans">
+ <span>Sea</span>
+ </div>
+ <button id="button1">Click to see the effect</button>
+ </body>
+ </html>

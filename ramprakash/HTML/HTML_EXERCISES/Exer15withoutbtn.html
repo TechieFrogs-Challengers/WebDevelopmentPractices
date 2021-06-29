@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+   margin: 0%;
+  box-sizing: border-box;
+}
+table
+{
+    width:100%;
+    height:300px;
+}
+.top{
+  background-color: #2578bd;
+  padding: 20px;
+  float: left;
+  width: 100%; 
+}
+
+.left {
+  background-color: #d0d1d1;
+  float: left;
+  width: 20%;
+  height: 500px;
+}
+
+.right {
+  background-color: #fafcfa;
+  padding: 20px;
+  float: left;
+  width: 80%;
+  height:500px;
+}
+.menu
+{
+    text-decoration: none;
+    display: block;
+    padding-top:10px;
+    color:black;
+    font-size: 18px;
+    padding-left:20px;
+    font-weight: bold;
+}
+.menu:hover
+{
+    background-color: crimson;
+}
+.foot
+{
+    background-color: black;
+    width:100%;
+    height: 35px;
+    float: left;
+}
+.img
+{
+    width:50px;
+    float: left;
+}
+.websitename{
+    color: white;
+    margin-left:100px;
+    margin-top:5px;
+}
+footer
+{
+    color:white;
+    padding-top:10px;
+}
+th{
+        background-color: blue;
+    }
+    tr:nth-child(even)
+    {
+        background-color: rgb(243, 241, 127);
+    }
+@media screen and (max-width: 800px) {
+  .top, .right{
+    width: 100%;
+  }
+  .right{
+      height:300px;
+  }
+  .left
+  {
+    width:100%;
+    height:330px;
+    background-color: rgb(20, 220, 120);
+  }
+  .menu{
+      text-align: center;
+      padding:30px;
+      width:100%;
+      background-color: rgb(20, 220, 120);
+  }
+  .p1
+  {
+    padding-top: 30px;
+  }
+  .foot{
+      width: 100%;
+      
+  }
+  .menu:hover{
+      text-align: center;
+      padding:30px;
+      width:100%;
+      background-color: crimson;
+  }
+}
+   
+</style>
+<script type="text/javascript">
+    window.onload=function() {
+        //Build an array containing Customer records.
+        var customers = new Array();
+        customers.push(["Name","Email","Phone", "Designation", "Department"]);
+        customers.push(["John Hammond","jon@gmail",7788999000,"Assitant","Tcssupport"]);
+        customers.push([ "Mudassar Khan","mudas@gmail", 8788999880,"Developer","Virtusa"]);
+        customers.push(["Suzanne Mathews", "mathew@gmail",7418919990,"software tester","Google"]);
+        customers.push(["Robert Schidner", "Robert@gmail",9668999000,"cybersecurity","Wipro"]);
+ 
+        //Create a HTML Table element.
+        var table = document.createElement("TABLE");
+        table.border = "1";
+ 
+        //Get the count of columns.
+        var columnCount = customers[0].length;
+ 
+        //Add the header row.
+        var row = table.insertRow(-1);
+        for (var i = 0; i < columnCount; i++) {
+            var headerCell = document.createElement("TH");
+            headerCell.innerHTML = customers[0][i];
+            row.appendChild(headerCell);
+        }
+ 
+        //Add the data rows.
+        for (var i = 1; i < customers.length; i++) {
+            row = table.insertRow(-1);
+            for (var j = 0; j < columnCount; j++) {
+                var cell = row.insertCell(-1);
+                cell.innerHTML = customers[i][j];
+            }
+        }
+ 
+        var dvTable = document.getElementById("dvTable");
+        dvTable.innerHTML = "";
+        dvTable.appendChild(table);
+    }
+</script>
+<body>
+    <div class="top">
+       <img class="img" src="https://www.pinclipart.com/picdir/big/334-3348039_about-information-flat-icon-png-clipart.png">
+            <h1 class="websitename">Sample Website</h1>  
+      </div>
+      
+      <div class="left">
+        <a  class="menu" href="#">Home</a>
+        <a class="menu" href="#">Categories</a>
+        <a class="menu" href="#">Settings</a>
+        <a class="menu" href="#">Contat Us</a>
+      </div>
+      
+      <div class="right">
+        <h1>London</h1>
+        <br>
+        <p class="p1">
+            London is the capital city of England it is the most populos
+            city in the United with metropolitian of over 13 million inhabitants. 
+        </p>
+        <br>
+        <p class="p1">
+      been a major settlement for two millennia,its history going back  its foundation
+      by the Romans,who named its Londinium </p>
+     
+      <center>  
+      <div id="dvTable"></div>
+    </center>  
+      </div>
+     
+      <div class="foot">
+          <center>
+          <footer>All copyrights are Reserved.@2021</footer>
+      </center>
+      </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Increase the width of a division by specified pixels once it is clicked.</title>
+</head>
+<style>
+    #box {
+background: red;
+color: black;
+width: 100px;
+padding: 10px;
+}
+
+</style>
+<script>
+    $( "#box" ).one( "click", function() {
+$( this ).css( "width", "+=150" );
+});
+</script>
+<body>
+<div id="box">Click me to expand</div>
+</body>
+</html>

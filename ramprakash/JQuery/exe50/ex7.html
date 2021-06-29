@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>JS Bin</title>
+</head>
+<style>
+  button {
+    display: block;
+    margin: 20px 0 0 0;
+    } 
+ 
+p {
+    background: 
+white;
+  }
+  .w3r_bg_orange{
+    background: 
+orange;
+  }
+  .w3r_bg_red {
+    color: 
+red;
+  }
+</style>
+<script>
+  $().ready(function(){
+  $('#button1').click(function(){ 
+$( "p" ).addClass(function( index, currentClass ) {
+  var addedClass;
+   if ( currentClass === "w3r_bg_orange" ) {
+    addedClass = "w3r_bg_red";
+    }
+ return addedClass;
+});
+});
+});
+</script>
+<body>
+<p class="w3r_bg_orange">The best way we learn anything is by practice and exercise questions.</p>
+<button id="button1">Click to see the effect</button>
+</body>
+</html>

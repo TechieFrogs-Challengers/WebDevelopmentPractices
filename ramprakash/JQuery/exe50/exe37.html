@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width">
+    <title>Inserts a jQuery object before all paragraphs.</title>
+ </head> 
+ <style>
+    button {
+        display: block;
+        margin: 20px 0 0 0;
+        }
+    </style>
+    <script>
+        $().ready(function(){
+        $('#button1').click(function(){ 
+    $( "p" ).before( $( "b" ) );
+    });
+});
+        </script>
+ <body> 
+     <p>PHP Tutorial</p>
+     <b>w3resource</b>
+      <button id="button1">Click to see the effect</button> 
+    </body>
+</html>

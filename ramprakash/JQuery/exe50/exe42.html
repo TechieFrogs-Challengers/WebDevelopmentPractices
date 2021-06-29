@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Using jQuery add new callbacks to a callback list.</title>
+</head>
+<script>
+    $().ready(function(){
+            var f1 = function( value ) {
+  console.log( "f1: " + value );
+};
+
+var f2 = function( value ) {
+  console.log( "f2: " + value );
+};
+
+var callbacks = $.Callbacks();
+ 
+// Add the function "f1" to the list
+callbacks.add(f1);
+ 
+// Fire the above items
+callbacks.fire( "jQuery" );
+
+ 
+// Add the function f2 to the list
+callbacks.add(f2 );
+ 
+// Fire the above items  again
+callbacks.fire( "Javascript" );
+});
+ </script>
+
+<body>
+<h2>open console</h2>
+</body>
+</html>

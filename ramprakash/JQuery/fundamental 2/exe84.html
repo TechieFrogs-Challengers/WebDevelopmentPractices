@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Find all input elements that are enabled.</title>
+</head>
+<script>
+    $( "input:enabled" ).val( "This element is enabled.");
+</script>
+<body>
+<form>
+First name: <input type="text" name="fname"><br>
+Last name: <input type="text" name="lname" disabled><br>
+</form>
+</body>
+</html>

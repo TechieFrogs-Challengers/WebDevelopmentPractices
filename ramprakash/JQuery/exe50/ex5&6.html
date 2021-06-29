@@ -1,0 +1,32 @@
+<head>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+       <title>Add a specified class to the matched elements.</title>
+       </head>
+       <style>
+           p {
+    margin: 8px;
+    font-size: 16px;
+  }
+  .w3r_font_color{
+    color: red;
+  }
+  .w3r_background {
+    background: yellow;
+  }
+       </style>
+       <script>
+           $().ready(function(){
+            $('#button').click(function(){
+                $( "p" ).last().addClass( "w3r_font_color" );
+           $( "p" ).last().addClass( "w3r_background" );
+        });
+    });
+       </script>
+       <body>
+       <p>PHP</p>
+       <p>Java</p>
+       <p>Python</p>
+       <button id=button >try</button>
+     </body>

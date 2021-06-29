@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Click on a paragraph and add another paragraph.</title>
+</head>
+<style>
+ p {
+ background: orange;
+ font-weight: bold;
+ cursor: pointer;
+ padding: 5px;
+ }
+ 
+</style>
+<script>
+    $( "body" ).delegate( "p", "click", function() {
+$( this ).after( "<p>New paragraph!</p>" );
+});
+
+</script>
+<body>
+<p>Click me to add new paragraph.</p>
+</body>
+</html>

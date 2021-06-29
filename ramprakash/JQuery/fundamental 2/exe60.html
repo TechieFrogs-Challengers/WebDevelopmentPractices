@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Find all the text nodes inside a paragraph and wrap them with a italic tag.</title>
+</head>
+<script>
+    $( "p" )
+.contents()
+.filter(function(){
+return this.nodeType !== 1;
+})
+.wrap( "<i></i>" );
+
+</script>
+<body>
+<p><a href="https://www.w3resource.com/jquery-exercises/">jQuery</a> Exercises, Practice and Solution</p>
+<p><a href="https://www.w3resource.com/javascript-exercises/">JavaScript</a>  Exercises, Practice and Solution</p>
+</body>
+</html>

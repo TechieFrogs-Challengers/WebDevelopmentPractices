@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Display the mouse position relative to the left and top edges of the document (within this iframe).</title>
+</head>
+<style>
+ body {
+ background-color: #CCDD96;
+ }
+ div {
+ padding: 20px;
+ }
+</style>
+<script>
+    $( document ).on( "mousemove", function( event ) {
+$( "#position" ).text( "pageX: " + event.pageX + ", pageY: " + event.pageY );
+});
+
+</script>
+<body>
+<div id="position"></div>
+</body>
+</html>

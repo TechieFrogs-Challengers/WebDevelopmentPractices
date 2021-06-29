@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Remove all paragraphs from the DOM.</title>
+</head>
+<style>
+    p {
+background: orange;
+margin: 6px 0;
+}
+p.off {
+background: black;
+}
+</style>
+<script>
+    $( "p" ).click(function() {
+$( this ).toggleClass( "off" );
+});
+var p;
+$( "button" ).click(function() {
+  if ( p ) {
+p.appendTo( "body" );
+p = null;
+} else {
+p = $( "p" ).detach();
+}
+});
+</script>
+<body>
+<ul>
+<li>Exercises</li>
+</ul>
+<p>jQuery</p>
+<p>JavaScript</p>
+<button>Attach/detach paragraphs</button>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Display a message when the focus is removed from an  element.</title>
+</head>
+<script>
+      $().ready(function(){
+    $( "#target" ).blur(function() {
+  console.log( "Remove focus from fields1!" );
+});
+});
+</script>
+<body>
+<form>
+<input id="target" type="text" value="Field 1">
+<input type="text" value="Field 2">
+</form>
+<p>Set and remove focus from field1
+</p>
+</body>
+</html>

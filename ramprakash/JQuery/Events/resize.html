@@ -1,0 +1,20 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+<script>  
+ x = 0;  
+$(document).ready(function(){  
+    $(window).load(function(){  
+        $("span").text(x += 1);  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<h2>Heading 1</h2>  
+<p>This is the first paragraph.<span>0</span> times.</p>  
+<p>Window resized <span>0</span> times.</p>  
+<p>Try resizing your browser window.</p>  
+</body>  
+</html>

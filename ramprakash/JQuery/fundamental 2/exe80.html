@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Iterate over three paragraphs and sets their color property red.</title>
+</head>
+<script>
+    $( document.body ).click(function() {
+$( "p" ).each(function( i ) {
+if ( this.style.color !== "red" ) {
+this.style.color = "red";
+} else {
+this.style.color = "";
+}
+});
+});
+
+</script>
+<body>
+<p>Click here</p>
+<p>to iterate through</p>
+<p>these paragraphs.</p>
+</body>
+</html>

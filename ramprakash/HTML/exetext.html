@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //creating the objects country,state and city
+        //here country is property and sate is value which is object type array to the city i.1 nested object type
+
+        var data = {
+            "India": {
+                "AndhraPradesh": ["Viajawada", "Vizag"],
+                "Delhi": ["new Delhi", "North Delhi"],
+                "Kerala": ["Thiruvananthapuram", "Palakkad"],
+                "Maharastra": ["Nagpur", "Mumbai"],
+            },
+            "USA": {
+                "Washington": ["Dunstan", "Mitchell"],
+                "Arizona": ["Altona", "Euroa"]
+            }, "Canada": {
+                "Alberta": ["Acadia", "Bighorn"],
+                "Columbia": ["Washington", ""]
+            },
+        }
+
+        //onload function to display the data
+        window.onload = function () {
+            var countySelect = document.getElementById("countySel");
+            var stateSelect = document.getElementById("stateSel");
+            var citySelect = document.getElementById("districtSel");
+                //loop for selecting the country so that the relative data of state is showned
+            for (var country in data) {
+                countySelect.options[countySelect.options.length] = new Option(country);
+            }
+            countySelect.onchange = function () {
+                //if any change in country the data will be reset
+                stateSelect.length = 1; // making the defalut option
+                citySelect.length = 1; // making the defalut option
+                if (this.selectedIndex < 1) return; // done
+
+                //loop for selecting the counts so that the relative data of state is showned
+                for (var state in data[this.value]) {
+                    stateSelect.options[stateSelect.options.length] = new Option(state);
+                }
+            }
+            
+            stateSelect.onchange = function () {
+            //if any change in state or county the data wil be reset
+                citySelect.length = 1; // making the defalut option
+                if (this.selectedIndex < 1) return; // done
+                var city = data[countySelect.value][this.value];
+                for (var i = 0; i < city.length; i++) {
+                    //as city is array type allwise takes value by array type
+                    citySelect.options[citySelect.options.length] = new Option(city[i]);
+                }
+            }
+        }
+    </script>
+</head>
+<body style="background-color: chocolate; font-weight: bolder;">
+    <form name="myform" id="myForm">
+        <div style="margin-top: 200px;">
+            <div style="float: left; margin-left: 450px;">
+                <div style="margin-bottom: 15px;">
+                    <label for="country">Select Country :</label>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="state">Select State :</label>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="city">Select City :</label>
+                </div>
+            </div>
+            <div style="float:left;margin-left: 50px;">
+                <div style="margin-bottom: 15px;">
+                    <select name="state" id="countySel" size="1">
+                        <option value="" selected="selected">Select Country</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <select name="countrya" id="stateSel" size="1">
+                        <option value="" selected="selected">Please select Country first</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <select name="district" id="districtSel" size="1">
+                        <option value="" selected="selected">Please select State first</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Resolve a deferred object when the user clicks a button, triggering a number of callback functions:</title>
+</head>
+<script>
+    function f1() {
+$( "p" ).append( "Ex.-1 " );
+  }
+  function f2() {
+  $( "p" ).append( "Ex.-2 " );
+  }
+  function f3( n ) {
+  $( "p" ).append( n + "Ex.-3 " + n );
+  }
+   // Create a deferred object
+  var dfdobj = $.Deferred();
+   // Add handlers to be called when dfd is resolved
+  dfdobj
+  // .done() can take any number of functions or arrays of functions
+  .done( [ f1, f2 ], f3, [ f2, f1 ] )
+  // We can chain done methods, too
+  .done(function( n ) {
+  $( "p" ).append( n + " we have done." );
+  });
+// Resolve the Deferred object when the button is clicked
+  $( "button" ).on( "click", function() {
+  dfdobj.resolve( "and " );
+  });
+
+</script>
+<body>
+<button>Go</button>
+<p>Ready...</p>
+</body>
+</html>

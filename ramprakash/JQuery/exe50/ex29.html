@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Using jQuery find all links with an hreflang attribute de.</title>
+<style type="text/css">
+button {
+ display: block;
+ margin: 20px 0 0 0;
+  } 
+</style>
+<script>
+     $().ready(function(){
+    $('#button1').click(function(){ 
+$( "a[hreflang|='de']" ).css( "border", "2px solid red" );
+});
+});
+</script>
+</head>
+<body>
+<p><a href="w3resource.com" hreflang="es">href language es</a></p>
+<p><a href="w3resource.com" hreflang="de">href language de</a></p>
+<p><a href="w3resource.com" hreflang="en">href language en</a></p>
+<button id="button1">Click to see the effect</button>
+</body>
+</html>

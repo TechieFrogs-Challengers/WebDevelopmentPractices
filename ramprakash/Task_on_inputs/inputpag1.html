@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<script>
+  function ram()
+   {
+    const fname = document.getElementById('fname').value;
+    const lastname = document.getElementById('lname').value;
+    const email = document.getElementById('femail').value;
+    const phone = document.getElementById('fphone').value;
+    const age = document.getElementById('fage').value;
+     var gender1= document.getElementById("Gender1").checked;
+     var gender2= document.getElementById("Gender2").checked;
+     var check1= document.getElementById("check1").checked;
+     var check2= document.getElementById("check2").checked;
+     var check3= document.getElementById("check3").checked;
+     console.log(check1);
+     var skills=[];
+     if(check1 == true)
+     {
+       skills [0]=document.getElementById("check1").value;
+       console.log(skills);
+     }
+     if(check2 ==true)
+     {
+       skills[1] =document.getElementById("check2").value;
+       console.log(skills);
+     }
+     if(check3 ==true)
+     {
+       skills [2]=document.getElementById("check3").value;
+       console.log(skills);
+     }
+     if(gender1 == true)
+     {
+         var gender= document.getElementById("Gender1").value;
+     }
+     if(gender2 == true)
+     {
+        var gender= document.getElementById("Gender2").value;
+    }
+    
+  var val=document.getElementById("qualify").value;
+    
+    sessionStorage.setItem("NAME",fname);
+    sessionStorage.setItem("SURNAME",lastname);
+    sessionStorage.setItem("EMAIL", email);
+    sessionStorage.setItem("PHONE",phone);
+    sessionStorage.setItem("age", age);
+    sessionStorage.setItem("Gender",gender);
+    sessionStorage.setItem("Drop",val);
+    sessionStorage.setItem("checking",skills);
+    //console.log("setiteam :"+skills);
+   
+   return;
+}
+</script>
+<style>
+*{
+    margin:0%;
+}
+.n1
+{
+    width: 120px;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.div1{
+    width:552px
+}
+
+#fname,#lname,#femail,#fphone,#fage,#qualify
+{
+    width:300px;
+    height:30px;
+    border-radius: 8px;
+}
+.container
+{
+    width:100%;
+    height: 650px;
+    background-color: rgb(171, 91, 245);
+}
+input:hover
+{
+  background-color: rgb(190, 253, 255);
+  transition: 0.3s;
+}
+#check1,#check2,#check3
+{
+  width: 40px;
+  height: 20px;
+  color: rgb(51, 255, 0);
+}
+.move
+{
+    margin-left: 450px;
+}
+#fnamebtn
+{
+    padding: 15px;
+    background-color: rgb(185, 247, 123);
+    border-radius: 8px;
+}
+#fnamebtn:hover
+{
+    padding: 15px;
+    background-color: rgb(122, 236, 9);
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px black;
+}
+.divbtn
+{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.container h1{
+     background-color: black;
+     color: white;
+     padding: 10px;
+     box-shadow: 0px 0px 12px rgb(9, 10, 10);
+     }
+</style>
+<body>
+    <div class="container">
+        <center> 
+            <h1>Form result display in next page</h1>
+        </center>
+ <form action="resultpage.html" > 
+    <div class="move">
+       <div class="div1"> 
+        <lable for="fname" class="n1">First name:</lable>
+        <input type="text" name="firstname" id="fname" placeholder="Enter Firstname">
+       </div>
+
+       <div class="div1"> 
+        <lable  for="lname"class="n1">Last name:</lable>
+        <input type="text" name="lastname" id="lname" placeholder="Enter Lastname" >
+       </div>
+       <div class="div1"> 
+        <lable for="femail"class="n1">Email:</lable>
+        <input type="text" name="email" id="femail" placeholder="Email">
+       </div>
+       <div class="div1"> 
+        <lable for="fphone"class="n1">phone no:</lable>
+        <input type="text" name="phoneno" id="fphone" placeholder="PhoneNumber">
+       </div>
+       <div class="div1"> 
+        <lable for="fage"class="n1">Age:</lable>
+        <input type="number" name="age" id="fage" placeholder="Age">
+       </div>
+       <div class="div1"> 
+        <lable for="fradio"class="n1">Gender:</lable>
+        <input type="radio" name="gender" id="Gender1" value='Male' > Male &nbsp;&nbsp;
+        <input type="radio" name="gender" id="Gender2" value='Female'> Female
+       </div>
+       <div class="div1"> 
+        <lable for="qualification"class="n1">Qualification:</lable>
+        <select  id="qualify" name="qual" id="qualification">
+         <option value="None">Select</option>
+         <option value="Btech">Btech</option>
+         <option value="Mtech">Mtech</option>
+         <option value="Bcom">Bcom</option>
+         </select>
+         <div class="div1"> 
+            <lable for="checked"class="n1">Skills:</lable>
+            <input type="checkbox"  id="check1" value='C++' > C++ &nbsp;&nbsp;
+            <input type="checkbox"  id="check2" value='Python'> Python&nbsp;&nbsp;
+            <input type="checkbox"  id="check3" value='Javascript'> Javascript
+        </div>
+
+       </div>
+       <div  class="divbtn">
+        <button type="submit" id="fnamebtn" onclick="ram()" >Submit</button>
+       </div>
+ </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <script src="https://code.jquery.com/jquery-git.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Using jQuery remove all of the callbacks from a list.</title>
+  </head>
+  <script>
+    $().ready(function(){
+
+      // Sample function (f1) to be added to a callbacks list
+var f1 = function( value1, value2 ) {
+  console.log( "f1: " + value1 + "," + value2 );
+};
+ 
+// Another function (f2) to also be added to the list
+var f2 = function( value1, value2 ) {
+  console.log( "f2: " + value1 + "," + value2 );
+};
+ 
+var callbacks = $.Callbacks();
+ 
+// Add the two functions
+callbacks.add( f1 );
+callbacks.add( f2 );
+ 
+// Empty all callbacks
+callbacks.empty();
+ 
+// Test to confirm all callbacks have been removed
+console.log( callbacks.has( f1 ) );
+console.log( callbacks.has( f2 ) );
+    });
+  </script>
+  <body>
+</body>
+  </html>

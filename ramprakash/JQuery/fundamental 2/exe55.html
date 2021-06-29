@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Finds all elements that are checked or selected.</title>
+</head>
+<script>
+    var count_Checked = function() {
+var n = $( "input:checked" ).length;
+$( "p" ).text( n + (n === 1 ? " is" : " are") + " checked." );
+};
+count_Checked();
+$("input[type=checkbox]" ).on( "click", count_Checked );
+
+</script>
+<body>
+<form>
+<input type="checkbox" name="color" value="Bike">Red
+<input type="checkbox" name="color" value="Car">Green
+<input type="checkbox" name="color" value="Car">Blue
+<input type="checkbox" name="color" value="Car">Black
+</form>
+<p></p>
+</body>
+</html>

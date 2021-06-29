@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>On mouseout of anchors, alert the element type being entered.</title>
+</head>
+<script>
+    $().ready(function(){
+    $( "a" ).mouseout(function( event ) {
+console.log(event.relatedTarget.nodeName );
+});
+});
+</script>
+<body>
+<a href="https://www.w3resource.com/">Visit w3resource</a>
+</body>
+</html>

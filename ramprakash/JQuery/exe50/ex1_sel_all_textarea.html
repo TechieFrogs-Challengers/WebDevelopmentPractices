@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $().ready(function(){
+        $('#button1').click(function(){ 
+    $( "textarea" ).css( "border", "2px solid red" ).add( "p" )
+      .css( "border", "2px solid red" );
+    });
+});
+    </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Using jQuery find all textareas and makes a border. Now adds all paragraphs to the jQuery object and makes a border.</title>
+</head>
+<style>
+    button {
+    display: block;
+    margin: 20px 0 0 0;
+    }
+textarea {
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    float: left;
+    font-size: 18px;
+  }
+  p {
+    clear: left;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(128, 119, 0);
+    margin: 5px 10px 0 10px;
+    padding: 2px;
+  }
+</style>
+<body>
+<textarea>jQuery</textarea>
+<textarea>JavaScript</textarea>
+<p>jQuery</p>
+<p>JavaScript</p>
+<button id="button1">Click to check the effect</button>
+</body>
+</html>

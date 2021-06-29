@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter a number and click OK:</p>
+<form action="" name="myform" onsubmit= "return(myFunction());" >
+<input id="num" type="text" name="t1" ><br><br>
+<input id="num1" type="text" name="t2" >
+<input type="submit" value="submit" >OK</input>
+</form>
+<p>If an error message will be displayed.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() 
+{
+
+  var  f=document.getElementById("num").value;
+ // document.write(f);
+
+  var s=f.length;
+  //document.write(s);
+  if (!s<3 && s< 10)
+  {
+    return true;
+  }
+  else
+   {
+    //alert("allowed only below 20 charaters");
+    document.myForm.t1.focus();
+    return false;
+  } 
+} 
+</script>
+
+</body>
+</html>

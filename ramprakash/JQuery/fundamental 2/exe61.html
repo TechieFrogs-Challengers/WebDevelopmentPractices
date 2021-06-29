@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Display a message when the contextmenu event is triggered on the paragraph elements.</title>
+</head>
+<script>
+    $( "p" ).contextmenu(function() {
+alert( "Hello!" );
+});
+
+</script>
+<body>
+<p>Right click here.</p>
+<p>Again right click here.</p>
+</body>
+</html>

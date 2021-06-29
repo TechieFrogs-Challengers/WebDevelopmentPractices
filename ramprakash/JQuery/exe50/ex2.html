@@ -1,0 +1,26 @@
+<html>
+  <head>
+  <script src="https://code.jquery.com/jquery-git.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Set the background color red of the following elements using jQuery.</title>
+  <style type="text/css">
+  button {
+  display: block;
+  margin: 20px 0 0 0;
+  }   </style>
+</head>
+<script>
+      $().ready(function(){
+    $('#button1').click(function(){ 
+$("p").add( "span" ).add("textarea").css( "background", "red" );
+});
+});
+</script>
+  <body>
+  <textarea>TutoRIAL</textarea> 
+  <p>jQuery</p>
+  <span>Exercises</span>
+  <button id="button1">Click to see the effect</button>
+  </body>
+  </html>

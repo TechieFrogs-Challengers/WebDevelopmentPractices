@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Appends a jQuery object to all paragraphs.</title>
+<style type="text/css">
+button {
+display: block;
+margin: 20px 0 0 0;
+ }   
+ </style>
+ <script>
+      $().ready(function(){
+     $('#button1').click(function(){ 
+$( "p" ).append( $( "strong" ) );
+});
+});
+ </script>
+ </head>
+ <body>
+ <strong> Exercises</strong>
+ <p>JavaScript</p>
+ <p>jQuery</p>
+ <button id="button1">Click to see the changes</button>
+ </body>
+ </html>

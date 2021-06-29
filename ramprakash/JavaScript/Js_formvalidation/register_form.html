@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Js_style.css">
+   
+</head>
+<script src="js_valid.js">
+   </script>
+<body>
+   <div class="main">
+<center> 
+    <h1 class="reg">Registration Form</h1>
+  </center>
+
+      <div class="personaldetails">
+            <form action="" method="POST" id="register" name = "myForm" onsubmit = "return(validate());">
+              <diV class="lab">
+                       <h1 class="personalHead"> Personal Details</h1>
+                       <lable >First Name:<span class="required">*</span></lable>&nbsp;&nbsp;
+                       <input type="text" name="Firstname"placeholder="Firstname" id="fname" required ><br><br>
+                       <lable >Last Name:<span class="required">*</span></lable>&nbsp;&nbsp;
+                       <input type="text" name="Lastname"placeholder="Lasttname"id="lname"><br><br>
+                       <lable >Gender:</lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input type="radio" id="gen" name="gender">  Male&nbsp;&nbsp;
+                       <input type="radio" id="gen" name="gender">  Female&nbsp;&nbsp;
+                       <input type="radio" id="gen" name="gender">  Others<br><br>             
+                       <lable >Date of Birth:</lable>
+                       <input type="date" name="date" id="dobname"><br><br>
+                       <lable>Email:<span class="required">*</span></lable>&nbsp;
+                       <input type="text" name="email"id="email" placeholder="Enter your Email "><br><br>
+                       <lable>Phone No:</lable>&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input type="tel" name="phone_number"id="namep"placeholder="+91" ><br><br>
+                       <lable>Address:<span class="required">*</span></lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input type="text" id="nameline1" name="address" placeholder="Address line1"><br>
+                       <input type="text" id="nameline2" placeholder="Address line2">
+                       <br><br>
+                       <lable> City:<span class="required">*</span></lable>&nbsp;
+                       <input type="text" id="emails" name="city" placeholder="Enter City"><br><br>
+                       <lable> State:<span class="required">*</span></lable>
+                       <input type="text" id="emails" name="state" placeholder="Enter State" > <br><br>
+                       <lable>ZIP Code:</lable>
+                       <input type="tel"name="zip"id="zip" placeholder="Zip Code:"><br><br>
+                       <lable>UploadPhoto:</lable>
+                       <img src="https://lh3.googleusercontent.com/proxy/DftVHRmUuTWbac489xCKk803FuH8i5BaJONz0uCqP5dRuVdm-9ETKs4gnismPlGrqHfDjzSXQs51eJZoc3PQ4IpqjbeAnO_kPP2ojkw4HGGdMiT_4bDtw6-gvn4sDU1LOSKi" width="350px" height="250px">                       
+                      </diV> <br>
+                      <br><br>
+                        <div class="loginm">
+                       <h1 class="loginhead">Login Details </h1><br><br>       
+                        <lable id="tleftuser">User Name:<span class="required">*</span></lable>&nbsp;
+                        <input type="text" name="Username"placeholder="Username"id="nameuser"><br><br>
+                        <lable id="tleftpass">Password:<span class="required">*</span></lable>&nbsp;&nbsp;&nbsp;
+                        <input type="password" name="password"placeholder="Password"id="namepass">&nbsp;
+                        <br><br>
+                     </div>
+                  <br>
+                     <div class="qual">
+                        <h1 class="qualifyhead">Qualification Details</h1><br>
+                        <div class="tablediv">
+                          <center>
+                           <table border="0" width="80%" height="300px">
+                             <tr>
+                               <th>Qualification<span class="required">*</span></th>
+                               <th>Specialization<span class="required">*</span></th>
+                               <th>Year<span class="required">*</span></th>
+                               <th>CollegeName<span class="required">*</span></th>
+                             </tr>
+                               <tr>
+                                       <td>
+                                          <select id="name" name="qualification1">
+                                            <option value="none">--Select--</option>
+                                            <option value="B.Tech">B.Tech</option>
+                                            <option value="M.Tech">M.Tech</option>
+                                            <option value="Degree">SSC</option>
+                                            <option value="PHD">PHD</option>
+                                          </select>
+                                        </td>
+                                     <td>
+                                         <input type="text" id="e1" name="specialization1" placeholder="Enter specialization">
+                                     </td>
+                                     <td>
+                                         <input type="year" id="y1" name="year1" placeholder="Enter Year" >
+                                     </td>
+                                     <td>
+                                         <input type="text" name="college1" placeholder="Enter College name" id="c1">
+                                     </td>
+                                 </tr>  <tr>
+                                  <td>
+                                     <select id="name" name="qualification2">
+                                      <option value="none">--Select--</option>
+                                       <option value="B.Tech">B.Tech</option>
+                                       <option value="M.Tech">M.Tech</option>
+                                       <option value="Degree">SSC</option>
+                                       <option value="PHD">PHD</option>
+                                     </select>
+                                   </td>
+                                <td>
+                                    <input type="text" id="e2" name="specialization2"placeholder="Enter specialization">
+                                </td>
+                                <td>
+                                    <input type="year" id="y2" name="year2" placeholder="Enter Year" >
+                                </td>
+                                <td>
+                                    <input type="text" name="college2"placeholder="Enter College name"id="c2" >
+                                </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                 <select id="name" name="qualification3">
+                                  <option value="none">--Select--</option>
+                                   <option value="B.Tech">B.Tech</option>
+                                   <option value="M.Tech">M.Tech</option>
+                                   <option value="Degree">SSC</option>
+                                   <option value="PHD">PHD</option>
+                                 </select>
+                               </td>
+                            <td>
+                                <input type="text" id="e3" name="specialization3"placeholder="Enter specialization">
+                            </td>
+                            <td>
+                                <input type="year" id="y3" name="year3" placeholder="Enter Year" >
+                            </td>
+                            <td>
+                                <input type="text" name="college3"placeholder="Enter College name"id="c3">
+                            </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                             <select id="name" name="qualification4">
+                               <option value="none">--Select--</option>
+                               <option value="B.Tech">B.Tech</option>
+                               <option value="M.Tech">M.Tech</option>
+                               <option value="Degree">SSC</option>
+                               <option value="PHD">PHD</option>
+                             </select>
+                           </td>
+                        <td>
+                            <input type="text" id="e4" name="specialization4"placeholder="Enter specialization">
+                        </td>
+                        <td>
+                            <input type="year" id="y4" name="year4" placeholder="Enter Year" >
+                        </td>
+                        <td>
+                            <input type="text" name="college4"placeholder="Enter College name"id="c4">
+                        </td>
+                    </tr>
+                </table>
+              </center>
+              </div> 
+          </div><br>
+                      <div class="tech">
+                        <h1 class="techhead">Professional Skills</h1><br>
+                        <lable id="tleft">Technical Skills:</lable>&nbsp;
+                        <select id="tskills" name="Technical Skils:" multiple >
+                          <option value="cyber security">Cyber security</option>
+                          <option value="Hacking">Hacking</option>
+                          <option value="coding">Coding</option>
+                          <option value=">web developer">web developer</option>
+                        </select><br><br>
+                        <lable id="tleft">Interested Technologies:</lable>
+                       <ul id="ul">
+                       <li><input type="checkbox" id="nam" > C </li> 
+                       <li> <input type="checkbox" id="nam" > C++ </li>
+                       <li><input type="checkbox" id="nam" > JAVA</li>
+                       <li><input type="checkbox" id="nam" > PYTHON</li>
+                        <li><input type="checkbox" id="nam" > HTML</li>
+                        <li><input type="checkbox" id="nam" > CSS</li>
+                      </ul> 
+                        <br><br>
+                        <lable id="tleft">LinkedIn Profile:</lable>
+                        <a id="linkedin"href="https://www.linkedin.com/">Linked_IN</a><br><br><br>
+                        <lable id="tleft">Upload Resume</lable>
+                        <input type="file" id="file" accept=".pdf"><br>
+                      </div>
+                      <br>
+                      <div class="multi">
+                        <h1 class="multihead"> Note Section</h1><br><br>
+                        <textarea cols="50" row="8"  placeholder ="Enter Some description..."id="note" name="notesection"></textarea> 
+                        <br><br><br>
+                        <center>
+                            <input type="submit" value="Submit" id="fsubmit">
+                            <input type="reset"  value="Reset"  id="freset">
+                        </center>  
+                      </div>                          
+            </form>
+      </div>         
+   </div>           
+</body>
+</html>

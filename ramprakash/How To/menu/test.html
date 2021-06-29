@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+</head>
+<style>
+    *{margin:0%;}
+     a{
+         float: right;
+        text-decoration: none;
+       font-size: 15px;
+       margin-top: 10px;
+    }
+  .righthead     /* menus */
+   {
+    margin-right: 40px;
+     
+     background-color: chartreuse;
+   }
+   .header
+   {
+       width:100%;
+       height: 30px;
+       background-color: cornsilk;
+       padding: 20px;
+       box-shadow: 0px 0px 12px black;
+       
+   }
+   .img{
+       margin-left:50px;
+   }
+   .row2img {
+    position: relative;
+    background-size: cover !important;
+    width: 100%;
+    height:350px;
+}
+/* .row2img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 1;
+} */
+.menu
+{
+   float: left;
+   background-color: darkcyan;
+   height:800px;
+   width: 25%;
+}
+.menulink
+{
+    display:block;
+    text-decoration: none;
+    margin-left:70px;
+    font-size: 18px;
+}
+h2
+{
+margin-top:50px;
+margin-left:90px;
+}
+iframe{
+    float:right;
+    border: none;
+}
+.menuright
+{
+    margin-right: 50px;
+    float: right;
+}
+</style>
+<script>
+    function openPage(p){
+        document.getElementById('view').src = p;
+    }
+</script>
+<body>
+    <div class="header">
+            <img class="img" src="logo2.png">
+        <div class="menuright">
+        <a  class="righthead" href="#">Home</a>
+        <a  class="righthead" href="#">Services</a>
+        <a  class="righthead" href="#">About Us</a>
+        <a  class="righthead" href="#">Contact us</a>
+       </div>
+    </div>
+    <div class="row2">
+       <img class="row2img" src= "https://dev.lakewavez.com/assets/lakes/lake4.jpg">
+    </div>
+  <div class="menu">
+    <h2>Services</h2>
+    <a class="menulink" onclick="openPage('Lakenav.html')">Lake Navigation</a><!--enter ur page name-->
+    <a class="menulink"href="#">Boat Tour</a>
+    <a class="menulink"href="#">Food Delivery</a>
+    <a class="menulink" href="#">Social Wavez</a>
+  </div>
+    <iframe height="800px" width="74%" id="view" src="Lakenav.html"></iframe>
+</body>
+</html>

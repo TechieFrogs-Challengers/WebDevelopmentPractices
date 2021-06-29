@@ -1,0 +1,107 @@
+*{
+    margin:0%;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+.n1
+{
+    width:180px;
+    font-size: 18px;
+    display:inline-block;
+    margin-top: 20px;
+}
+.div1
+{
+    width:550px;
+}
+#fnametext
+{
+    width:300px;
+    height:70px;
+    border-radius: 8px;
+}
+#fnametext:hover
+{
+    width:300px;
+    height:70px;
+    border-radius: 8px;
+    border-radius: 8px;
+    border: 2px blue solid;
+}
+#fname,#fnamestate
+{
+    width:300px;
+    height:30px;
+    border-radius: 8px;
+
+}
+#fnamestate
+{
+    text-transform: uppercase;
+}
+#fname:hover
+{
+    width:300px;
+    height:30px;
+    border-radius: 8px;
+    border: 2px blue solid;
+}
+#fnamestate:hover{
+    width:300px;
+    height:30px;
+    border-radius: 8px;
+    border: 2px blue solid;
+}
+#fnameop
+{
+    width:310px;
+    height:35px;
+    border-radius: 8px;
+}
+#fnameop:hover
+{
+    width:310px;
+    height:35px;
+    border-radius: 8px;
+    border: 2px blue solid;
+}
+
+#fnamebtn
+{
+    width:300px;
+    height:30px;
+    margin-left: 150px;
+    background-color: rgb(64, 146, 71);
+}
+#fnamebtn:hover
+{
+    width:300px;
+    height:30px;
+    margin-left: 150px;
+    background-color: rgb(26, 253, 18);
+    box-shadow: 0px 0px 12px black;
+}
+.main
+{
+   width: 45%;
+   height:750px;
+   background-color: rgb(124, 250, 223);
+   margin-left:400px ;
+   border-radius: 18px;
+  
+}
+option,.text
+{
+    font-size: 15px;
+}
+#reg
+{
+    margin-left: 20px;
+}
+.star
+{
+color: rgb(255, 23, 23);
+}

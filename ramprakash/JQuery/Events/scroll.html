@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+<script>  
+x = 0;  
+$(document).ready(function(){  
+    $("div").scroll(function(){  
+        $("span").text( x+= 1);  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p>Try the scrollbar in the div</p>  
+<div style="border:1px solid black;width:200px;height:100px;overflow:scroll;">   
+If you cannot do great things, do small things in a great way.
+Love has no age, no limit; and no death.o great things, do small things in a great way.
+Love has no age, no limit; and no death</div>  
+<p>Scrolled <span>0</span> times </p>  
+</body>  
+</html> 

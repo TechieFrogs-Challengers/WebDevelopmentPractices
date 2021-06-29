@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <script src="https://code.jquery.com/jquery-git.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Test if the callback list has been disabled.</title>
+  </head>
+  <script>
+    $().ready(function(){
+
+      // A sample logging function 
+var f1 = function( value ) {
+  console.log( "f1:" + value );
+};
+
+var callbacks = $.Callbacks();
+ // Add the  function f1 to the callback list
+callbacks.add( f1 );
+ 
+// Fire the items on the list, passing an argument
+callbacks.fire( "jQuery" );
+// Outputs "f1: jQuery"
+ 
+// Disable the callbacks list
+callbacks.disable();
+ 
+// Check the disabled state of the list
+console.log ( callbacks.disabled() );
+    });
+  </script>
+  <body>
+</body>
+</html>

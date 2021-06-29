@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>End a custom queue function using dequeue which allows the queue to keep going.</title>
+</head>
+<style>
+    div {
+margin: 25px;
+width: 40px;
+position: absolute;
+height: 40px;
+left: 10px;
+top: 40px;
+background-color: green;
+}
+div.red {
+background-color: red;
+}
+
+</style>
+<script>
+    $( "button" ).click(function() {
+$( "div" )
+.animate({ left:"+=200px" }, 1500 )    .animate({ top:"0px" }, 400 )
+.queue(function() {
+$( this ).toggleClass( "red" ).dequeue();
+})
+.animate({ left:"10px", top:"30px" }, 400 );
+});
+
+</script>
+<body>
+<button>Start</button>
+<div></div>
+</body>
+</html>

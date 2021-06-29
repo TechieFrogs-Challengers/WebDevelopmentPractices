@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Finds the checked radio input.</title>
+</head>
+<script>
+    $( "input" ).on( "click", function() {
+$( "p" ).html( $( "input:checked" ).val() + " is checked!" );
+});
+
+</script>
+<body>
+<form>
+<input type="radio" name="color" value="Red">Red
+<input type="radio" name="color" value="Green">Green
+<input type="radio" name="color" value="Blue">Blue
+<input type="radio" name="color" value="Black">Black
+</form>
+<p></p>
+</body>
+</html>
