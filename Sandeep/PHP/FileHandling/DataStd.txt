@@ -1,0 +1,5 @@
+name:Sandeep;Email:sandeep@gmail.com;City:Tadepalligudem;number:7893421117;
+name:Sai;Email:sai@gmail.com;City:Elur;number:8332092349;
+name:Krishna;Email:Krishna@gmail.com;City:Vijaywada;number:9948141932;
+name:Venkat;Email:venkata@gmail.com;City:Rajhamandry;number:9441128925;
+name:Hari;Email:hari@gmail.com;City:Vizag;number:8500448515;
