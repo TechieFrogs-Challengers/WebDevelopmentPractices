@@ -1,0 +1,113 @@
+body {
+    font-family:Arial, Sans-Serif;
+    background-image: url(https://wallpaperaccess.com/full/867175.jpg);
+   background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.btn {
+  background-color: rgb(69, 116, 0);
+  border: none;
+  color: white;
+  padding: 9px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  float: right;
+}
+.btn:hover {
+  background-color: rgb(0, 97, 0);
+}
+.btnview {
+  background-color: rgb(35, 84, 243);
+  border: none;
+  color: white;
+  padding: 6px 13px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.btnview:hover {
+  background-color: rgb(6, 41, 138);
+}
+
+a:link,a:focus,a:active, a:visited {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+
+.btntd {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 6px 13px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .btntd:hover {
+    background-color: rgb(47, 72, 146);
+  }
+  .btndel {
+    background-color: rgb(206, 6, 6);
+    border: none;
+    color: white;
+    padding: 6px 13px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .btndel:hover {
+    background-color: rgb(138, 9, 9);
+  }
+  .back {
+    background-color: rgb(29, 129, 196);
+    border: none;
+    color: white;
+    padding: 7px 16px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  .back:hover {
+    background-color: rgb(6, 85, 138);
+  }
+  
+  
+a:link,a:focus,a:active, a:visited {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+h2{
+    color: rgb(16, 33, 129);
+    
+}
+
+
+.form{
+    width: 100%; margin: 0 auto;
+}
+table{
+    border-collapse: collapse;
+    border: none;
+  
+}
+th{
+    padding: 3px;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+}
+td{
+    align-items:center;
+    background-color: aliceblue;
+    font-size: 13px;
+    font-weight: bold;
+}
+tr{
+    height: 45px;
+}
+tr:nth-child(even) { 
+  background-color: rgb(125, 134, 125); 
+} 
+
